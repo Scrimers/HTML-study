@@ -5,23 +5,29 @@
 		<title>HTML 공부</title>
 	</head>
 	<body>
-		<h3>한글이 깨지는 것에 대하여.</h3><p>
+		<h3>HTML이란</h3>
+		<p>
+			Hypertext Markup Language의 줄임말.<br>
+			웹페이지를 구성하는 요소로서 쓰인다.			
+		</p>
+
+		<h3>한글이 깨지는 것에 대하여.</h3>
 		한글이 깨지는 경우는 웹페이지가 저장한 문자표현 방식과 웹페이지를 불러올때의 문자표현 방식이 다르기 떄문이다.
 		웹페이지를 저장할 때 UTF-8로 저장되었했다면
 		웹페이지를 불러올 때도 UTF-8로 불러와야 한다.
 		아래와 같이 UTF-8로 불러오도록 설정할 수 있다.
 		<xmp><meta charset="utf-8"></xmp>
 
-		<h3>strong 태그</h3><p>
+		<h3>strong 태그</h3>
 		<strong>강조표시는 strong</strong>
 		<xmp><strong>강조표시는 strong</strong></xmp>
 
-		<h3>u태그.</h3><p> 
-		Underline의 줄임말.<p>
+		<h3>u태그.</h3> 
+		Underline의 줄임말.<br>
 		<u>밑줄은 u</u>
 		<xmp><u>밑줄은 u</u></xmp>
 
-		<h3>h태그.</h3><p>
+		<h3>h태그.</h3>
 		header의 줄임말.
 		<h1>h1</h1>
 		<xmp><h1>h1</h1></xmp>
@@ -36,28 +42,28 @@
 		<h6>h6</h6>
 		<xmp><h6>h6</h6></xmp>
 
-		<h3>br태그.</h3><p>
-		Break의 줄임말.
-		<br>대부분의 태그는 컨텐츠에 적용시키기 위해 감싸는 구조로 되어있지만
-		<br>br, img, input, hr, meta 등은 컨텐츠에 적용시킨다는 개념이 아니기에 감싸지 않는다.
+		<h3>br태그.</h3>
+		Break의 줄임말.<br>
+		대부분의 태그는 컨텐츠에 적용시키기 위해 감싸는 구조로 되어있지만<br>
+		br, img, input, hr, meta 등은 컨텐츠에 적용시킨다는 개념이 아니기에 감싸지 않는다.
 		<xmp>줄바꿈은<br>br</xmp>
 
-		<h3>p태그.</h3><p>
-		Paragraph의 줄임말.
-		<p>단락을 표현할떄는 p를 쓰는데 일반적으로 br보다는 적게 쓰인다.
+		<h3>p태그.</h3>
+		Paragraph의 줄임말.<br>
+		단락을 표현할떄는 p를 쓰는데 일반적으로 br보다는 적게 쓰인다.<br>
 		<p style="margin-top:45px;">하지만 p태그는 css적용이 가능하지만 br태그는 css적용이 불가능하기에 용도에 따라 쓸 필요가 있다.
-		<p>위에서 쓰인 style는 css라고 부른다.
-		<xmp>단락은<p style="margin-top:45px;">p</xmp>
+		<br>아래에서 쓰일 style과 같은 것을 CSS이며, 그 중에서도 inline-style이라고 부른다.</p>
+		<xmp><p style="margin-top:45px;">단락은 p</p></xmp>
 
-		<h3>img태그.</h3><p>
-		Image의 줄임말. src는 Source의 줄임말.<p>
-		src와 같은 것을 속성(attribute) 라고 한다.<p>
+		<h3>img태그.</h3>
+		Image의 줄임말. src는 Source의 줄임말.<br>
+		src와 같은 것을 속성(attribute) 라고 한다.<br>
 		<img src="image/html/heart.png" style="width: 10%;">
 		<xmp><img src="image/html/heart.png" style="width: 10%;"></xmp>
 
-		<h3>ul과 li태그.</h3><p>
-		ul은 Unordered Lists의 줄임말. li는 Listed Item의 줄임말.<p>
-		가급적 부모(ul)-자식(li)관계로 쓰여야 한다.<p>
+		<h3>ul과 li태그.</h3>
+		ul은 Unordered Lists의 줄임말. li는 Listed Item의 줄임말.<br>
+		가급적 부모(ul)-자식(li)관계로 쓰여야 한다.<br>
 		ul은 li들을 그룹짓게 하며 li는 각 항목을 나타내게 된다.
 		<ul>
 			<li>그룹1-1</li>
@@ -83,9 +89,9 @@
 		</ul>
 		</xmp>
 
-		<h3>ol과 li태그.</h3><p>
-		ol은 Ordered List의 줄임말.<p>
-		가급적 부모(ol)-자식(li)관계로 쓰여야 한다.<p>
+		<h3>ol과 li태그.</h3>
+		ol은 Ordered List의 줄임말.<br>
+		가급적 부모(ol)-자식(li)관계로 쓰여야 한다.<br>
 		ol은 li에 순번을 노출시킬수 있게 해준다.
 		<ol>
 			<li>그룹1-1</li>
@@ -98,12 +104,12 @@
 		</ol>
 		</xmp>
 
-		<h3>title태그.</h3><p>
-		탭의 제목을 변경해준다.<p>
-		검색엔진이 웹페이지를 분석할떄 title을 바라본다고도 한다.<p>
+		<h3>title태그.</h3>
+		탭의 제목을 변경해준다.<br>
+		검색엔진이 웹페이지를 분석할떄 title을 바라본다고도 한다.<br>
 		<xmp><title>html 공부</title></xmp>
 
-		<h3>기본적인 html 구성</h3><p>
+		<h3>기본적인 html 구성</h3>
 		<xmp>
 		<!doctype html>
 		<html>
@@ -111,64 +117,64 @@
 			<body></body>
 		</html>
 		</xmp>
-		doctype html은 이 웹페이지가 html로 만들어졌다는 것을 표현하는 것이다.<p>
-		html태그는 html내용물을 감싸는 태그이다. html은 HyperText Markup Language의 줄임말.<p>
-		head태그는 본문 설명 태그이다.<p>
+		doctype html은 이 웹페이지가 html로 만들어졌다는 것을 표현하는 것이다.<br>
+		html태그는 html내용물을 감싸는 태그이다. html은 HyperText Markup Language의 줄임말.<br>
+		head태그는 본문 설명 태그이다.<br>
 		body태그는 본문 태그이다.<br>
 
-		<h3>a태그.</h3><p>
-		Anchor의 줄임말. href는 Hypertext Refernce의 줄임말.<p>
-		href는 이동하고자 하는 경로.<p>
-		target="_blank"는 새창에서 웹 페이지 불러오기.<p>
-		title은 툴팁이다.<p>
+		<h3>a태그</h3>
+		Anchor의 줄임말. href는 Hypertext Refernce의 줄임말.<br>
+		href는 이동하고자 하는 경로.<br>
+		target="_blank"는 새창에서 웹 페이지 불러오기.<br>
+		title은 툴팁이다.<br>
 		<a href="https://www.w3.org/TR/html5/" target="_blank" title="오호?">HTML의 공식 사용설명서 페이지</a>
 		<xmp>
 		<a href="https://www.w3.org/TR/html5/" target="_blank" title="오호?">HTML의 공식 사용설명서 페이지</a>
 		</xmp>
 
-		<h3>클라이언트와 서버에 대하여</h3><p>
-		사용자 = 클라이언트 = 웹 클라이언트 = 웹 브라우저<p>
-		제공자 = 서버 = 웹 서버<p>
-		<img src="image/html/client_and_server.jpeg"><p>
-		작동원리<p>
-		1. 사용자는 어떤 사이트를 들어가려고자 한다. (클라이언트)<p>
-		2. 사용자의 컴퓨터는 들어가고자 하는 사이트의 파일에 해당하는 코드를 서버에 요청한다. (클라이언트 -> 서버)<p>
-		3. 사용자의 요청을 전달받은 제공자의 컴퓨터는 요청한 코드를 찾는다. (서버)<p>
-		4. 제공자의 컴퓨터는 사용자의 컴퓨터에게 요청한 코드를 제공한다. (서버 -> 클라이언트)<p>
+		<h3>클라이언트와 서버에 대하여</h3>
+		사용자 = 클라이언트 = 웹 클라이언트 = 웹 브라우저<br>
+		제공자 = 서버 = 웹 서버<br>
+		<img src="image/html/client_and_server.jpeg"><br>
+		작동원리<br>
+		1. 사용자는 어떤 사이트를 들어가려고자 한다. (클라이언트)<br>
+		2. 사용자의 컴퓨터는 들어가고자 하는 사이트의 파일에 해당하는 코드를 서버에 요청한다. (클라이언트 -> 서버)<br>
+		3. 사용자의 요청을 전달받은 제공자의 컴퓨터는 요청한 코드를 찾는다. (서버)<br>
+		4. 제공자의 컴퓨터는 사용자의 컴퓨터에게 요청한 코드를 제공한다. (서버 -> 클라이언트)<br>
 		5. 사용자의 컴퓨터는 전달받은 코드를 읽어서 웹페이지를 화면에 출력하여 사용자에게 노출시킨다. (클라이언트)<br>
 		
-		지금까지 위에서 다룬 내용들은 전부 클라이언트에 해당하는 내용이었다.<p>
-		웹 서버를 공부하기 위한 방법은 크게 2가지가 있다.<p>
-		1. 웹호스팅 업체를 찾아 맛보기<p>
+		지금까지 위에서 다룬 내용들은 전부 클라이언트에 해당하는 내용이었다.<br>
+		웹 서버를 공부하기 위한 방법은 크게 2가지가 있다.<br>
+		1. 웹호스팅 업체를 찾아 맛보기<br>
 		2. 웹서버를 직접 설치 및 실행해보기<br>
 		
-		<h3>웹 호스팅</h3><p>
-		호스트 = 인터넷에 연결된 컴퓨터 하나 하나를 뜻 함.<p>
-		호스트를 제공하는 업체를 웹호스팅 업체라고 함.<p>
-		대표적인 업체로서 gitHub가 있다.<p>
-		<img src="image/html/webHosting1.jpeg" style="width: 50%;"><p>
-		<img src="image/html/webHosting2.jpeg" style="width: 50%;"><p>
-		작동원리<p>
-		1. 개발자는 자신이 생성한 파일을 웹호스팅 업체에 업로드 한다.<p>
-		2. 웹호스팅 업체는 웹서버에서 전달받은 파일을 노출 시키며 이를 타 사용자가 볼 수 있도록 주소를 제공한다.<p>
+		<h3>웹 호스팅</h3>
+		호스트 = 인터넷에 연결된 컴퓨터 하나 하나를 뜻 함.<br>
+		호스트를 제공하는 업체를 웹호스팅 업체라고 함.<br>
+		대표적인 업체로서 gitHub가 있다.<br>
+		<img src="image/html/webHosting1.jpeg" style="width: 50%;"><br>
+		<img src="image/html/webHosting2.jpeg" style="width: 50%;"><br>
+		작동원리<br>
+		1. 개발자는 자신이 생성한 파일을 웹호스팅 업체에 업로드 한다.<br>
+		2. 웹호스팅 업체는 웹서버에서 전달받은 파일을 노출 시키며 이를 타 사용자가 볼 수 있도록 주소를 제공한다.<br>
 		3. 사용자의 웹호스팅 업체에서 제공하는 주소를 통해 개발자가 생성한 작업물을 볼 수 있다.<br>
 		
-		<h3>url에 대한 간단 정보</h3><p>
-		<img src="image/html/urlInfo.png" style="width: 50%;"><p>
-		http = 웹페이지를 주고받기 위한 통신 약속<p>
-		IP Address = 0.0.0.0 ~ 255.255.255.255 까지 있으며 이 중 127.0.0.1은 내 컴퓨터를 가리킨다<p>
+		<h3>url에 대한 간단 정보</h3>
+		<img src="image/html/urlInfo.png" style="width: 50%;"><br>
+		http = 웹페이지를 주고받기 위한 통신 약속<br>
+		IP Address = 0.0.0.0 ~ 255.255.255.255 까지 있으며 이 중 127.0.0.1은 내 컴퓨터를 가리킨다<br>
 		Port = 컴퓨터에서 여러개의 서버가 동작하고 있을때 서버를 구분하는 정보<br>
 		
-		<h3>iframe 태그</h3><p>
-		inline frame의 줄임말.<p>
-		HTML 문서내에 다른 HTML 문서를 보여줄때 사용한다.<p>
-		아래의 예제에선 동영상을 추가했다.<p>
+		<h3>iframe 태그</h3>
+		inline frame의 줄임말.<br>
+		HTML 문서내에 다른 HTML 문서를 보여줄때 사용한다.<br>
+		아래의 예제에선 동영상을 추가했다.<br>
 		<xmp>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE?si=5Lg9ycetPj_QpRip" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 		</xmp>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE?si=5Lg9ycetPj_QpRip" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br>
 		
-		<h3>간단히 웹페이지 만들어본 것</h3><p>
+		<h3>간단히 웹페이지 만들어본 것</h3>
 		<a href="homework/index1.html">간단 웹페이지</a>
 	</body>
 </html>
