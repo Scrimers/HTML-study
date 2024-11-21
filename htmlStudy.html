@@ -2,9 +2,33 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>HTML 공부</title>
+		<title>HTML</title>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
+		<div class="indexTitleEmpty studyVer"></div>
+		<div class="indexTitle">
+			<h1 class="indexTitleText">
+				<a href="index.html" class="indexMainATag">STUDY LIST</a><br>						
+			</h1>
+		</div>
+		<div class="indexStudyListGrid">
+			<div class="indexStudy rightB">
+				<a href="htmlStudy.html" class="indexATag">HTML</a><br>		
+			</div>
+			<div class="indexStudy">
+				<a href="cssStudy.html" class="indexATag">CSS</a>
+			</div>
+		</div>
+
+		<div class="studyTitleGrid">
+			<div class="studyTitleDiv">
+				<h1 class="studyTitleText">HTML</h1>
+				<span class="studyTitleTextUnderLine">underLine</span>
+			</div>
+			<div></div>
+		</div>
+
 		<h3>HTML이란</h3>
 		<p>
 			Hypertext Markup Language의 줄임말.<br>
@@ -174,6 +198,20 @@
 		</xmp>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE?si=5Lg9ycetPj_QpRip" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br>
 		
+		<h3>link 태그</h3>
+		다른 파일의 내용을 적용하려는 페이지와 연결하는것<br>
+		예를 들어 style.css라는 CSS관련 내용을 담은 페이지에 CSS 문구를 입력하고<br>
+		head태그 밑에 아래와 같이 작성해주면 style.css 파일의 CSS가 적용되는 방식이다.
+		<xmp>
+		<link rel="stylesheet" href="style.css">
+		</xmp>
+		link를 쓰는 이유는 코드의 재사용성과 효율 떄문이다.<br>
+		여러 페이지에 긴 CSS문구를 일일이 적는 것보다 하나의 CSS파일에 정의해둔 CSS문구를 단 한줄만에 가져오게 되어 유지보수가 더욱 쉬워진다.<br>
+		또한 한번 style.css라는 파일을 웹브라우저가 다운받으면<br>
+		해당 파일에 변경점이 생기기 전까지는 웹브라우저는 해당 파일을 우리의 컴퓨터에 저장해 놨다가<br>
+		style.css 파일을 요청할때 다운로드 없이 그대로 불러오기 떄문에(네트워크 사용x)<br>
+		보다 빠르고, 네트워크 적으로 이점을 볼 수 있다.<br>
+
 		<h3>간단히 웹페이지 만들어본 것</h3>
 		<a href="homework/index1.html">간단 웹페이지</a>
 	</body>

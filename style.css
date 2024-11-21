@@ -1,0 +1,56 @@
+/* index.html 시작============================ */
+.indexTitleEmpty {
+    min-height: 30dvh;
+}
+.indexTitle {
+    border: 2px solid black;
+    border-bottom: none;
+    padding: 2dvh 0dvh 2dvh 0dvh;
+}
+.indexTitleText {
+    text-align: center;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.indexStudyListGrid {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.indexStudy {
+    text-align: center;
+}
+.rightB {
+    border-right: 2px solid black;
+}
+.indexMainATag, .indexATag {
+    text-decoration: none;
+}
+.indexMainATag:link, .indexMainATag:visited {
+    color: black;
+}
+.indexATag:link, .indexATag:visited {
+    color: rgb(33, 199, 69);
+}
+/* index.html 끝============================ */
+.studyVer {
+    min-height: 5dvh;
+}
+.studyTitleGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.studyTitleDiv {
+    padding: 20px 0px 20px 0px;
+}
+.studyTitleText {
+    border-bottom: 2px dotted black;
+    margin-block-start: 0px;
+    margin-block-end: 0;
+}
+.studyTitleTextUnderLine {
+    border-bottom: 2px dotted black;
+    display: block;
+    font-size: 2px;
+    color: white;
+}

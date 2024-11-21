@@ -313,6 +313,23 @@
 		</xmp>
 
 		<h3>반응형 디자인에 대하여</h3>
+		반응형 디자인 : 화면의 크기에 따라서 웹페이지의 각 요소들이 최적화된 모양으로 바뀌게 하는 것.<br>
+		이러한 반응형 디자인을 만들기 위해선 미디어쿼리(@media)를 써야한다.
+		<xmp>
+		<div>Responsive</div>
+
+		div {
+			border: 10px solid green;
+			font-size: 60px;
+		}
+		@media(max-width:600px) {
+			div {
+				display: none;
+			}
+		}
+		</xmp>
+		위의 내용은 div태그는 기본적으로 border, font-size속성을 지니고 있되<br>
+		화면의 최대 크기가 600이하일떄는 div태그를 보이지 않게 하라는 의미이다.<br>
 
 		<h3>의사 클래스(가상 클래스) 에 대하여</h3>
 		
