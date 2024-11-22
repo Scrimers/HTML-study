@@ -15,7 +15,7 @@
 .indexStudyListGrid {
     border: 2px solid black;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .indexStudy {
     text-align: center;

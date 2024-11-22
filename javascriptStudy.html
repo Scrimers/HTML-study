@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS</title>
+		<link rel="stylesheet" href="style.css">
+		<style>
+			i {
+				color:red;
+			}		
+		</style>
+	</head>
+	<body>
+		<div class="indexTitleEmpty studyVer"></div>
+		<div class="indexTitle">
+			<h1 class="indexTitleText">
+				<a href="index.html" class="indexMainATag">STUDY LIST</a><br>						
+			</h1>
+		</div>
+		<div class="indexStudyListGrid">
+			<div class="indexStudy rightB">
+				<a href="htmlStudy.html" class="indexATag">HTML</a><br>		
+			</div>
+			<div class="indexStudy rightB">
+				<a href="cssStudy.html" class="indexATag">CSS</a>
+			</div>
+			<div class="indexStudy">
+				<a href="javascriptStudy.html" class="indexATag">JAVASCRIPT</a>
+			</div>
+		</div>
+
+		<div class="studyTitleGrid">
+			<div class="studyTitleDiv">
+				<h1 class="studyTitleText">JAVASCRIPT</h1>
+				<span class="studyTitleTextUnderLine">underLine</span>
+			</div>
+			<div></div>
+		</div>
+
+		<h3>JavaScript란</h3>
+		정적인 요소만을 지닌 HTML에 사용자와 상호작용 가능한 동적인 요소를 추가하기 위해 사용한다.
+
+		<h3>JavaScript 이용방법</h3>
+		웹브라우저가 JavaScript를 인식할 수 있도록 HTML코드로 알려줘야 한다.<br>
+		아래와 같은 태그를 body태그 안에 쓰면 된다.
+		<xmp>
+		<body>	
+		<script></script>
+		</body>
+		</xmp>
+
+		<h3>write에 대하여</h3>
+		웹페이지에 글씨를 출력할 때 사용
+		<xmp>
+		document.wirte(1+1);
+		document.wirte('wow');
+		</xmp>
+
+		<h3>이벤트에 대하여</h3>
+		onclick = 클릭 시 이벤트 발생<br>
+		<input type="button" value="asd" onclick="alert('onclick')">	
+		<xmp>
+		<input type="button" value="asd" onclick="alert('onclick')">	
+		</xmp><br>
+
+		onchange = 내용물 변경 시 이벤트 발생 (내용물 변경 후 해당 영역에서 벗어나야 작동)<br>		
+		<input type="text" onchange="alert('onchange')">	
+		<xmp>
+		<input type="text" onchange="alert('onchange')">	
+		</xmp><br>
+
+		onkeydown = 내용물에 입력 시(키를 눌렀을때) 이벤트 발생<br>
+		<input type="text" onkeydown="alert('onkeydown')">	
+		<xmp>
+		<input type="text" onkeydown="alert('onkeydown')">	
+		</xmp><br>
+	</body>
+</html>
