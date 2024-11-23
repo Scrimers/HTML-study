@@ -32,6 +32,12 @@
 .indexATag:link, .indexATag:visited {
     color: rgb(33, 199, 69);
 }
+.indexETCGrid {
+    border: 2px solid black;
+    border-top: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 /* index.html 끝============================ */
 .studyVer {
     min-height: 5dvh;
