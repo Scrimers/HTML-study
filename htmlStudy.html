@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
+		<!-- navigation 시작 -->
 		<div class="indexTitleEmpty studyVer"></div>
 		<div class="indexTitle">
 			<h1 class="indexTitleText">
@@ -31,7 +32,9 @@
 				<a href="remainStudy.html" class="indexATag">Remain Study</a>
 			</div>
 		</div>
+		<!-- navigation 끝 -->
 
+		<!-- title 시작 -->
 		<div class="studyTitleGrid">
 			<div class="studyTitleDiv">
 				<h1 class="studyTitleText">HTML</h1>
@@ -39,6 +42,7 @@
 			</div>
 			<div></div>
 		</div>
+		<!-- title 끝 -->
 
 		<h3>HTML이란</h3>
 		<p>
@@ -47,6 +51,10 @@
 			HTML은 JavaScript와 같이 순차적으로 동작하질 않으므로 프로그래밍 언어라고 하지는 않는다.			
 		</p>
 
+		<h3>올바른 태그를 사용하는게 중요한 이유</h3>
+		HTML5에서 부터는 브라우저가 태그를 통해 HTML에서 어떤 부분이 무슨 역할을 하는지 인식하기 떄문에 적절한 태그를 이용하는 것이 중요하다.<br>
+		이 의미는 아마 검색과 같은 기능에서도 중요하게 작동한다라는 뜻인 것 같다.
+
 		<h3>한글이 깨지는 것에 대하여.</h3>
 		한글이 깨지는 경우는 웹페이지가 저장한 문자표현 방식과 웹페이지를 불러올때의 문자표현 방식이 다르기 떄문이다.
 		웹페이지를 저장할 때 UTF-8로 저장되었했다면
@@ -54,17 +62,22 @@
 		아래와 같이 UTF-8로 불러오도록 설정할 수 있다.
 		<xmp><meta charset="utf-8"></xmp>
 
-		<h3>strong 태그</h3>
-		<strong>강조표시는 strong</strong>
-		<xmp><strong>강조표시는 strong</strong></xmp>
+		<h3>작성규칙에 대하여</h3>
+		태그는 소문자로, 속성은 큰따옴표("") 안에 쓰는 것이 좋다.
 
-		<h3>u태그.</h3> 
-		Underline의 줄임말.<br>
-		<u>밑줄은 u</u>
-		<xmp><u>밑줄은 u</u></xmp>
+		<h3>element에 대하여</h3>
+		element(엘리먼트) = tag(태그) 라고 이해하면 된다. 
 
-		<h3>h태그.</h3>
-		header의 줄임말.
+		<h3>주석</h3>
+		웹페이지에서는 보이지 않지만, 소스상에서는 보인다.<br>
+		아래와 같이 사용한다.
+		<xmp>
+			<!-- 주석내용 -->
+		</xmp>
+
+		<h3>제목 관련</h3>
+		h태그를 사용. header의 줄임말.<br>
+		body 태그 안에서 쓰이며 제목을 표시하는 태그이다.
 		<h1>h1</h1>
 		<xmp><h1>h1</h1></xmp>
 		<h2>h2</h2>
@@ -78,24 +91,143 @@
 		<h6>h6</h6>
 		<xmp><h6>h6</h6></xmp>
 
-		<h3>br태그.</h3>
-		Break의 줄임말.<br>
-		대부분의 태그는 컨텐츠에 적용시키기 위해 감싸는 구조로 되어있지만<br>
-		br, img, input, hr, meta 등은 컨텐츠에 적용시킨다는 개념이 아니기에 감싸지 않는다.
-		<xmp>줄바꿈은<br>br</xmp>
-
-		<h3>p태그.</h3>
-		Paragraph의 줄임말.<br>
-		단락을 표현할떄는 p를 쓰는데 일반적으로 br보다는 적게 쓰인다.<br>
+		<h3>문단 관련</h3>
+		p태그를 사용. Paragraph의 줄임말.<br>
+		문단을 표현할떄는 p를 쓰는데 일반적으로 br보다는 적게 쓰인다.<br>
 		<p style="margin-top:45px;">하지만 p태그는 css적용이 가능하지만 br태그는 css적용이 불가능하기에 용도에 따라 쓸 필요가 있다.
 		<br>아래에서 쓰일 style과 같은 것을 CSS이며, 그 중에서도 inline-style이라고 부른다.</p>
 		<xmp><p style="margin-top:45px;">단락은 p</p></xmp>
 
-		<h3>img태그.</h3>
-		Image의 줄임말. src는 Source의 줄임말.<br>
-		src와 같은 것을 속성(attribute) 라고 한다.<br>
-		<img src="image/html/heart.png" style="width: 10%;">
-		<xmp><img src="image/html/heart.png" style="width: 10%;"></xmp>
+		<h3>줄관련</h3>
+		br태그. Break의 줄임말.<br>
+		대부분의 태그는 컨텐츠에 적용시키기 위해 감싸는 구조로 되어있지만<br>
+		br, img, input, hr, meta 등은 컨텐츠에 적용시킨다는 개념이 아니기에 감싸지 않는다.
+		<xmp>줄바꿈은<br>br</xmp><br>
+
+		hr태그.Horizontal Rule의 줄임말.<br>
+		줄바꿈과 동시에 가로줄이 생긴다.<br>
+		콘테츠 내용에서 주제가 바뀔 때 사용한다고 한다.
+		<xmp>줄바꿈+가로줄은<hr>hr</xmp>
+
+		<h3>서식 관련</h3>
+		강조<br>
+		<strong>strong = 브라우저에서 진짜 강조 의미로 인식</strong><br>
+		<b>b = bold의 줄임말. 디자인적으로 글자 강조.</b>
+		<xmp>
+			<strong>strong = 브라우저에서 진짜 강조의미로 인식</strong>
+			<b>b = bold의 줄임말. 디자인적으로 글자 강조.</b>
+		</xmp><br><br>
+
+		기울임<br>
+		<em>em = emphasize의 줄임말. 브라우저에서 진짜 기울임 의미로 인식</em><br>
+		<i>i = italic의 줄임말. 디자인적으로 기울임.</i>
+		<xmp>
+		<em>em = emphasize의 줄임말. 브라우저에서 진짜 기울임 의미로 인식</em>
+		<i>i = italic의 줄임말. 디자인적으로 기울임.</i>
+		</xmp><br><br>
+
+		인용<br>
+		<blockquote>
+			blockquote = 인용문을 쓸 때 쓴다.<br>
+			자동으로 들여쓰기가 적용된다.<br>
+			<q>
+				q = quote의 줄임말. 자동으로 쌍따옴표("")가 적용된다.<br>
+				blockquote 태그 안에 쓸 필요는 없다.<br>
+				보통 누군가의 말을 인용할때 쓰는 듯 하다?
+			</q>
+		</blockquote>
+		<xmp>
+		<blockquote>
+			blockquote = 인용문을 쓸 때 쓴다.<br>
+			자동으로 들여쓰기가 적용된다.<br>
+			<q>
+				q = quote의 줄임말. 자동으로 쌍따옴표("")가 적용된다.<br>
+				blockquote 태그 안에 쓸 필요는 없다.<br>
+				보통 누군가의 말을 인용할때 쓰는 듯 하다?
+			</q>
+		</blockquote>
+		</xmp><br><br>
+
+		출처<br>
+		cite = 저작물의 출처를 표기할 때 사용<br>
+		이 글은 이 곳에서 출처되었습니다. <cite>출처명</cite>
+		<xmp><cite>출처명</cite></xmp><br><br>
+
+		첨자<br>
+		sub = subscript의 줄임말. 아래첨자를 나타낼떄 사용. <sub>1</sub>
+		<xmp><sub>아래첨자</sub></xmp><br>
+
+		sup = superscript의 줄임말. 아래첨자를 나타낼떄 사용. <sup>1</sup>
+		<xmp><sub>윗첨자</sub></xmp><br><br>
+
+		기타<br>
+		<small>small = 덧붙이는 글이나, 저작권과 법률 표기 등의 작은 텍스트를 나타낼 때 사용.</small><br>
+		비교를 위한 아무 태그 없는 글
+		<xmp><small>덧붙이는 글</small></xmp><br><br>
+
+		mark = 한 문서 내에서 관련성이 있는 <mark>특정 부분을 참조 목적으로 표시하거나 강조</mark>하는 텍스트 구간을 나타낼 떄 사용.
+		<xmp><mark>특정 부분을 참조 목적으로 표시하거나 강조</mark></xmp><br><br>
+
+		del = delete의 줄임말. <del>야호</del> 삭제된 텍스트를 나타낼 떄 사용.
+		<xmp><del>야호</del></xmp><br><br>
+
+		ins = insert의 줄임말. <del>기존의</del><ins>변경된 텍스트를 나타내거나 특정 내용을 강조</ins>할 떄 사용.
+		<xmp><ins>변경된 텍스트를 나타내거나 특정 내용을 강조</ins></xmp><br><br>
+
+		address = 연락처 정보를 나타낼 때 사용. <address>010-1111-2222</address>
+		추가적으로 가장 가까운 조상이 article 또는 body 태그일 경우 그 태그에 대한 연락처 정보를 나타내는데 사용하며<br>
+		그 태그가 body인 경우 연락처 정보는 문서 전체에 적용된다... 라고는 하는데 무슨 말인지 이해가 잘 안간다.
+		<xmp><address>010-1111-2222</address></xmp><br><br>
+
+		abbr = abbreviation의 줄임말. 줄임말을 나타내는 태그이다.<br>
+		이 태그는 title속성과 사용하거나 dfn 태그와 사용하는게 좋을 것 같다.<br>
+		<abbr title="abbreviation">abbr</abbr>
+		<xmp><abbr>줄임말</abbr></xmp><br><br>
+
+		pre = preformatted의 줄임말. 텍스트에 사용된 여백, 줄바꿈이 모두 노출되야 할 떄 사용.<br>
+		xmp태그와는 달리 HTML코드를 텍스트로서 인식하지는 못한다.
+		<pre>      
+			여백을      한번      줘
+			봅시다    .			
+		</pre>
+		HTML코드를 pre안에서 쓰려면 code태그와 var태그, samp태그등을 써야하는데....<br>
+		솔직히 굉장히 번거로워서 이걸 정말 쓸 일이 있을까 싶다.
+		<xmp>
+		<pre>      
+			여백을      한번      줘
+			봅시다    .			
+		</pre>
+		</xmp><br><br>
+
+		xmp = pre태그와 유사하지만 차이점은 HTML코드 또한 텍스트로서 인식한다는 것이다.<br>
+		개인적으로 소스코드를 나타내는데 pre+code태그보다 유용하다고 생각하는데 어떠한 이유에선지<br>
+		W3C는 xmp 코드 대신 pre 태그를 사용하라고 권했고<br>
+		HTML 3.2에서 사용 중지를 예고한 태그이다.<br>
+		아래와 같이 쓴다. (xmp태그 안에서 xmp태그 자체는 인식을 못하는 듯 하다.)
+		<xmp>
+			<head></head>
+		</xmp>
+		가급적 대체재를 찾아보는게 좋을 듯 하다.<br><br>
+
+		kbd = keyboard의 줄임말. 입력장치의 어떤 걸 눌러야 하는지 설명할 떄 쓴다.<br>
+		복사를 할때는 <kbd>Ctrl</kbd> + <kbd>c</kbd> 를 누르면 됩니다.
+		<xmp>
+			복사를 할때는 <kbd>Ctrl</kbd> + <kbd>c</kbd> 를 누르면 됩니다.
+		</xmp><br><br>
+
+		samp = sample의 줄임말. 어떤 기능의 결과물을 설명할 떄 쓰인다.<br>
+		ex : 이 기능을 실행하면 <samp>alert</samp> 이 뜹니다.
+		<xmp>
+		ex : 이 기능을 실행하면 <samp>alert</samp> 이 뜹니다.
+		</xmp>
+
+
+		<h3>u태그.</h3> 
+		Underline의 줄임말.<br>
+		<u>밑줄은 u</u>
+		<xmp><u>밑줄은 u</u></xmp>
+
+		
 
 		<h3>ul과 li태그.</h3>
 		ul은 Unordered Lists의 줄임말. li는 Listed Item의 줄임말.<br>
@@ -141,9 +273,14 @@
 		</xmp>
 
 		<h3>title태그.</h3>
-		탭의 제목을 변경해준다.<br>
+		제목표시줄의 내용을 나타낸다.<br>
+		head 태그 안에 들어간다.<br>
 		검색엔진이 웹페이지를 분석할떄 title을 바라본다고도 한다.<br>
-		<xmp><title>html 공부</title></xmp>
+		<xmp>
+		<head>
+			<title>html 공부</title>
+		</head>
+		</xmp>
 
 		<h3>기본적인 html 구성</h3>
 		<xmp>
@@ -153,10 +290,10 @@
 			<body></body>
 		</html>
 		</xmp>
-		doctype html은 이 웹페이지가 html로 만들어졌다는 것을 표현하는 것이다.<br>
-		html태그는 html내용물을 감싸는 태그이다. html은 HyperText Markup Language의 줄임말.<br>
-		head태그는 본문 설명 태그이다.<br>
-		body태그는 본문 태그이다.<br>
+		doctype html = 이 웹페이지가 HTML5로 만들어졌다는 것을 표현하는 것이다.<br>
+		html =  html 문서를 감싸는 태그이다. 하나만 존재해야 한다. HTML태그 밖에 doctype을 제외한 다른 태그가 있으면 안된다.<br>
+		head = 본문 설명 태그이다. 하나만 존재해야 하며, html 태그 바로 아래 있어야 한다.<br>
+		body = 본문 태그이다. 하나만 존재해야 하며 head 태그 바로 아래 있어야 한다.<br>
 
 		<h3>a태그</h3>
 		Anchor의 줄임말. href는 Hypertext Refernce의 줄임말.<br>
@@ -167,6 +304,22 @@
 		<xmp>
 		<a href="https://www.w3.org/TR/html5/" target="_blank" title="오호?">HTML의 공식 사용설명서 페이지</a>
 		</xmp>
+
+		<h3 class="du">meta 태그</h3>
+		문서에 대한 설명을 표시한다.<br>
+		사람에게는 보이지 않고, 브라우저만 읽을 수 있다.
+
+		<h3>div 태그</h3>
+		division의 줄임말.<br>
+		구역을 지정하는 태그이며, 단순히 디자인의 용도로만 쓰임.<br>
+
+		<h3>img태그.</h3>
+		Image의 줄임말. src는 Source의 줄임말.<br>
+		이미지를 표시하는 태그이다.<br>
+		src와 같은 것을 속성(attribute) 라고 한다.<br>
+		src는 이미지 파일의 경로를 지정할 때 쓴다.<br>
+		<img src="image/html/heart.png" style="width: 10%;" />
+		<xmp><img src="image/html/heart.png" style="width: 10%;" /></xmp>
 
 		<h3>클라이언트와 서버에 대하여</h3>
 		사용자 = 클라이언트 = 웹 클라이언트 = 웹 브라우저<br>

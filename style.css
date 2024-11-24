@@ -1,3 +1,9 @@
+/* 공통 시작============================ */
+.du {
+    color: red;
+}
+/* 공통 끝============================ */
+
 /* index.html 시작============================ */
 .indexTitleEmpty {
     min-height: 30dvh;
@@ -39,6 +45,8 @@
     grid-template-columns: 1fr 1fr;
 }
 /* index.html 끝============================ */
+
+/* Study 시작============================ */
 .studyVer {
     min-height: 5dvh;
 }
@@ -60,3 +68,4 @@
     font-size: 2px;
     color: white;
 }
+/* Study 끝============================ */
