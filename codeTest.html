@@ -37,6 +37,36 @@
 		<!-- navigation 끝 -->
 		
 
+		<form action="codeTest.html" method="get" target="_blank">
+			<input type="text" name="textType" value="textVal" placeholder="text타입입니다."><br>
+			<input type="radio" name="radioType" value="radio1Val" placeholder="radio타입은 어케 노출될까?">1번
+			<input type="radio" name="radioType" value="radio2Val" placeholder="radio타입은 어케 노출될까?">2번<br>
+			<!-- radio는 placeholder 무의미 -->
+			<input type="checkbox" name="checkboxType" value="checkboxVal" placeholder="checkbox타입입니다."><br>
+			<!-- checkbox는 placeholder 무의미 -->
+			<input type="password" name="passwordType" value="passwordVal" placeholder="password타입입니다."><br>
+			<input type="email" name="emailType" value="asd@asd.com" placeholder="email타입입니다."><br>
+			<!-- email의 경우 @가 입력되지 않으면 경고창이 뜬다. 또한 get방식의 경우 @가 %40로 치환되어 나타난다. -->
+			<input type="date" name="dateType" value="dateVal" placeholder="date타입입니다."><br>
+			<!-- date는 placeholder 무의미 -->
+			<input type="time" name="timeType" value="timeVal" placeholder="time타입입니다."><br>
+			<!-- time는 placeholder 무의미 -->|
+			<input type="datetime" name="datetimeType" value="datetimeVal" placeholder="datetime타입입니다."><br>
+			<input type="number" name="numberType" value="numberVal" placeholder="number타입입니다."><br>
+			<input type="range" name="rangeType" value="20" placeholder="range타입입니다."><br>
+			<input type="search" name="searchType" value="searchVal" placeholder="search타입입니다."><br>
+			<input type="url" name="urlType" value="http:/www.urlVal.com" placeholder="url타입입니다."><br>
+			<!-- url의 경우 http를 넣어야 인식이 되며, :// 부분은 %3A%2F%2F 로 치환된다. -->
+			<input type="week" name="weekType" value="weekVal" placeholder="week타입입니다."><br>
+			<!-- week는 placeholder 무의미 -->|
+			<input type="month" name="monthType" value="monthVal" placeholder="month타입입니다."><br>
+			<!-- month는 placeholder 무의미 -->|
+			<input type="submit">
+			<input type="reset">
+		</form>
+
+		
+
 
 
 		<script>

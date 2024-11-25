@@ -4,6 +4,10 @@
 		<meta charset="utf-8">
 		<title>HTML</title>
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="styleEx.css">
+
+		<style>
+		</style>
 	</head>
 	<body>
 		<!-- navigation 시작 -->
@@ -158,7 +162,7 @@
 		<xmp><sub>아래첨자</sub></xmp><br>
 
 		sup = superscript의 줄임말. 아래첨자를 나타낼떄 사용. <sup>1</sup>
-		<xmp><sub>윗첨자</sub></xmp><br><br>
+		<xmp><sup>윗첨자</sup></xmp><br><br>
 
 		기타<br>
 		<small>small = 덧붙이는 글이나, 저작권과 법률 표기 등의 작은 텍스트를 나타낼 때 사용.</small><br>
@@ -221,16 +225,111 @@
 		ex : 이 기능을 실행하면 <samp>alert</samp> 이 뜹니다.
 		</xmp>
 
+		<h3>링크</h3>
+		a = Anchor의 줄임말.<br>
+		클릭 시 다른 페이지로 이동시켜준다.<br>
+		속성은 href, target, title이 있다.<br>
+		href = Hypertext Refernce의 줄임말. 이동하고자 하는 경로 및 주소.<br>
+		target = 새 창을 어디에 띄울건지. (ex: target="_blank"는 새창에서 웹 페이지 불러오기.)<br>
+		title = 툴팁이다.<br>
+		<a href="https://www.w3.org/TR/html5/" target="_blank" title="오호?">HTML의 공식 사용설명서 페이지</a>
+		<xmp>
+		<a href="https://www.w3.org/TR/html5/" target="_blank" title="오호?">HTML의 공식 사용설명서 페이지</a>
+		</xmp>
 
-		<h3>u태그.</h3> 
-		Underline의 줄임말.<br>
-		<u>밑줄은 u</u>
-		<xmp><u>밑줄은 u</u></xmp>
+		<h3>이미지</h3>
+		img = Image의 줄임말.<br>
+		이미지를 표시하는 태그이다.<br>
+		속성은 src, alt, width, height가 있다.<br>
+		src = source의 줄임말. 이미지 파일의 경로를 지정할 때 쓴다.<br>
+		alt가 = Alterate의 줄임말. 이미지 경로가 잘못되었거나 파일이 깨졌을 떄 나오는 대체 메세지 입력란.<br>
+		width = 너비<br>
+		height = 높이<br>
+		src와 같은 것을 속성(attribute) 라고 한다.<br>
+		<img src="image/html/heart.png" alt="이미지깨짐" width="10%">
+		<xmp><img src="image/html/heart.png" alt="이미지깨짐" width="10%"></xmp>
 
-		
+		<h3>테이블</h3>
+		table = 표를 표시하는 태그이다. 테이블 관련 태그 전체를 감싼다.<br>
+		caption = 테이블의 제목<br>
+		thead = 테이블의 첫 줄<br>
+		tbody = 테이블의 중간<br>
+		tfoot = 테이블의 마지막 줄<br>
+		tr = 가로 한 줄<br>
+		th = 제목 칸<br>
+		td = 칸 하나<br>
+		colspan = th, td에서만 사용 가능. 가로 병합이다.<br>
+		rowspan = th, td에서만 사용 가능. 세로 병합이다.<br>
+		※기본적으로 테두리(border)는 지원하지 않는 듯 하다.<br>
+		※개인적으로 쓰기 굉장히 번거롭다. 다른 대체재가 있는지 찾아볼 법 하다.<br>
+		※그냥 쓰게되면 border CSS를 걸었을떄 이상하게 노출된다. table 태그에 border-collapse : collapse; 가 필요하다.<br>
+		<table>
+			<caption class="t_All">시간표</caption>
+			<thead>
+				<tr>
+					<th class="t_left"></th>
+					<td class="t_middle">월</td>
+					<td class="t_middle">화</td>
+					<td class="t_middle">수</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th class="t_left">오전</th>				
+					<td class="t_middle"></td>
+					<td class="t_middle"></td>
+					<td class="t_middle"></td>
+				</tr>
+				<tr>
+					<th class="t_left">오후</th>				
+					<td class="t_middle"></td>
+					<td class="t_middle"></td>
+					<td class="t_middle"></td>
+				</tr>			
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="4" class="t_middle">이렇게 복잡한 걸 굳이 써야하나 싶다...</td>
+				</tr>
+			</tfoot>
+		</table>
+		<br>
+		<xmp>
+		<table>
+			<caption class="t_All">시간표</caption>
+			<thead>
+				<tr>
+					<th class="t_left"></th>
+					<td class="t_middle">월</td>
+					<td class="t_middle">화</td>
+					<td class="t_middle">수</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th class="t_left">오전</th>				
+					<td class="t_middle"></td>
+					<td class="t_middle"></td>
+					<td class="t_middle"></td>
+				</tr>
+				<tr>
+					<th class="t_left">오후</th>				
+					<td class="t_middle"></td>
+					<td class="t_middle"></td>
+					<td class="t_middle"></td>
+				</tr>			
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="4" class="t_middle">이렇게 복잡한 걸 굳이 써야하나 싶다...</td>
+				</tr>
+			</tfoot>
+		</table>
+		</xmp><br><br>
 
-		<h3>ul과 li태그.</h3>
-		ul은 Unordered Lists의 줄임말. li는 Listed Item의 줄임말.<br>
+		<h3>리스트</h3>
+		순서가 없는 것<br>
+		ul = Unordered Lists의 줄임말. li = Listed Item의 줄임말.<br>
 		가급적 부모(ul)-자식(li)관계로 쓰여야 한다.<br>
 		ul은 li들을 그룹짓게 하며 li는 각 항목을 나타내게 된다.
 		<ul>
@@ -257,8 +356,8 @@
 		</ul>
 		</xmp>
 
-		<h3>ol과 li태그.</h3>
-		ol은 Ordered List의 줄임말.<br>
+		순서가 있는 것<br>
+		ol = Ordered List의 줄임말.<br>
 		가급적 부모(ol)-자식(li)관계로 쓰여야 한다.<br>
 		ol은 li에 순번을 노출시킬수 있게 해준다.
 		<ol>
@@ -271,6 +370,233 @@
 			<li>그룹1-2</li>
 		</ol>
 		</xmp>
+
+		<h3>시맨틱 태그</h3>
+		div와 비슷하게 공간을 의미하는 태그이다.<br>
+		일반적으로 div가 많이 쓰이는데, 문제는 div가 너무 많아지다 보니 각각의 div가 무슨 역할을 하는지 알기 힘들어지게 되었다.<br>
+		그래서 명확한 역할을 지닌 시맨틱 태그가 생겨나게 되었다.<br><br>
+
+		아래에 소개하는 부분들은 전부 body태그 안에 쓰인다.<br>
+		body태그 안에서 각각의 영역을 지정해준다는 개념으로 생각하면 될 듯 하다.<br>
+		header = 페이지 소개, 제목을 담당.<br>
+		footer = 페이지 하단의 저작권 정보, 사이트 제공자 정보를 넣는 공간.<br>
+		main = 몸통 부분. 한 페이지 당 하나만 써야하고, 다른 페이지와 겹치면 안된다.<br>
+		nav = 내비게이션 바.<br><br>
+
+		section = 구획. 공지사항 부분, 포스트 부분, 댓글 부분 등 구획을 의미한다.<br>
+		article = 포스트 부분. article 태그 포함 안의 컨텐츠를 다른 페이지나 다른 사이트에 놓아도 내용이 말이 되야 한다.<br>
+		즉, 하나의 완전한 영역이라고 보면 된다. section 태그 안에 쓰인다.<br>
+		aside = 메인 내용과 간접적인 연관성이 있는 부분을 따로 분리하는 태그.<br>
+		페이지에서 이전글, 다음글 등을 담당하는 태그이다.<br><br>
+
+		이러한 시맨틱 태그들은 웹 접근성에는 어떤 영향을 미치는지는 잘 모르겠으나, 외관으로 보기에는 딱히 특별한 점은 없다.<br>
+		현재로선 단순히 각 구역을 보다 의미있게 정리하기 위해 쓰인다 정도로만 인식하고 있다.<br>
+
+		<header class="t_All">LSJ의 Study Site</header>
+		<nav>
+			<table>
+				<thead>
+					<tr>
+						<td class="t_All">메인 화면</td>
+						<td class="t_All">HTML</td>
+					</tr>
+				</thead>
+			</table>
+		</nav>
+		<main>
+			<section class="t_All">
+				<h5>메인 화면</h5>
+			</section>
+			<section>
+				<article class="t_All">꾸준히 공부해보자~</article>
+				<aside class="t_All">다음글</aside>
+			</section>
+		</main>
+		<footer class="t_All">
+			Copyright LeeSeungJun	
+		</footer>
+
+		<xmp>
+		<header class="t_All">LSJ의 Study Site</header>
+		<nav>
+			<table>
+				<thead>
+					<tr>
+						<td class="t_All">메인 화면</td>
+						<td class="t_All">HTML</td>
+					</tr>
+				</thead>
+			</table>
+		</nav>
+		<main>
+			<section class="t_All">
+				<h5>메인 화면</h5>
+			</section>
+			<section>
+				<article class="t_All">꾸준히 공부해보자~</article>
+				<aside class="t_All">다음글</aside>
+			</section>
+		</main>
+		<footer class="t_All">
+			Copyright LeeSeungJun	
+		</footer>	
+		</xmp>
+
+		<h3>폼</h3>
+		form = 클라이언트에서 서버로 정보를 보낼때 사용.<br>
+		속성은 action, actocomplete, enctype, method, name, target, accept-charset가 있다.<br>
+		action = 정보를 보낼 서버 주소를 입력하는 부분이다.<br>
+		actocomplete = 양식의 자동완성을 지정하는 기능. on, off 두 가지 값만 허용한다. 디폴트는 on 이다.<br>
+		전체에 적용하고 싶다면 form태그에 걸면되겠지만, input등 특정 요소에만 적용하는 것도 가능하다.<br>
+		enctype = 컨텐츠 타입을 지정할 때 쓴다.
+		지정하지 않아도 기본값으로 application/x-www-form-urlencoded 를 쓴다. 이는 모든 문자들은 서버로 보내기 전에 인코딩 됨을 명시한다.<br>
+		파일, 이미지를 보낼떄는 multipart/form-data라고 명시해줘야 한다.<br>
+		또한 반드시 아래에서 서술할 method = post로 설정해야한다.<br>
+		method = 데이터를 보내는 방식을 정할때 사용한다.<br>
+		get과 post가 있으며 자세한 내용은 아래와 같다.<br>
+		get = url뒤에 input박스의 내용이 key=value 형태로 변환되어 전송 된다.<br>
+		ex: htmlStudy.html?id=asd&pw=ddd<br>
+		위처럼 form에서 전송하는 데이터가 주소창에 그대로 노출되므로 보안에 취약하다.<br>
+		딱히 보안이 필요없는 그런 데이터를 전달할때 쓴다.<br>
+		post = get방식과는 다르게 서버에 전달한 데이터가 사용자에게 노출되지 않는다.<br>
+		실무에서 굉장히 많이 쓰이는 방식이다.<br>
+		name = form을 식별하기 위한 이름을 지정할 때 쓴다.<br>
+		target = 데이터를 서버로 전달 후 받는 응답이 열릴 위치를 명시한다.<br>
+		_blank, _self, _parent, _top, 프레임 이름이 있으며 자세한 내용은 아래와 같다.<br>
+		_blank = 응답을 새로운 탭에서 보여준다.
+		_self = 기본값으로 생략이 가능하다. 응답을 링크가 현재 프레임에서 보여준다.
+		_parent = 응답을 링크가 현재 프레임의 부모 프레임에서 보여준다.
+		_top = 응답을 현재 윈도우 전체에서 보여준다.
+		프레임 이름 = 응답을 명시된 프레임에서 보여준다.
+		accept-charset = 데이터를 전송할 때 문자셋을 지정할 때 사용한다.<br>
+		만약 브라우저 문자셋과 서버의 문자셋이 틀리면 글자가 깨지게 된다.<br>
+		예를 들어 웹 페이지는 EUC-KR 이고 서버는 UTF-8이라 문제가 생긴다면 accept-charset으로 UTF-8을 세팅한 후 보내면 된다.<br>
+		
+		<form action="htmlStudy.html" method="get" target="_blank">
+			<input type="text" name="inputVal">
+			<input type="submit">
+		</form>
+
+		<xmp>
+		<form action="htmlStudy.html" method="get" target="_blank">
+			<input type="text" name="inputVal">
+			<input type="submit">
+		</form>	
+		</xmp>
+
+		<h3>input</h3>
+		input = form에 전송한 정보를 입력할 떄 쓴다.<br>
+		속성은 type, placeholder, name, value, id가 있다.<br>
+		type = input이 어떤 형식의 정보를 받을지 정하는 부분이다.<br>
+		type은 그 종류가 굉장히 많다. 대표적으로 쓰이는 것은 text, radio, checkbox, password, submit, reset가 있다.<br>
+		일단 알고있는 모든 종류를 나열해보겠다.<br>
+		text, email, date, time, datetime, password, number, range, search, url, week, month 가 있다.<br>
+		이 중 radio의 경우 같이 사용할 radio 타입의 name은 서로 같아야 한다.<br>
+		placeholder = inupt에 아무 값도 입력되지 않았을 때 나타나는 글을 입력하는 곳이다.<br>
+		name = form을 전송했을 때 서버에서 받을 이름(Key)을 입력하는 곳이다.<br>
+		value = form을 전송했을 때 서버에서 받을 값(value)을 입력하는 곳이다.<br>
+		id = input의 유니크한 이름이다. 추후에 언급할 label과 연결할 값을 입력한다.<br>
+		
+		<form action="codeTest.html" method="get" target="_blank">
+			<input type="text" name="textType" value="textVal" placeholder="text타입입니다."><br>
+			<input type="radio" name="radioType" value="radio1Val" placeholder="radio타입은 어케 노출될까?">1번
+			<input type="radio" name="radioType" value="radio2Val" placeholder="radio타입은 어케 노출될까?">2번<br>
+			<!-- radio는 placeholder 무의미 -->
+			<input type="checkbox" name="checkboxType" value="checkboxVal" placeholder="checkbox타입입니다."><br>
+			<!-- checkbox는 placeholder 무의미 -->
+			<input type="password" name="passwordType" value="passwordVal" placeholder="password타입입니다."><br>
+			<input type="email" name="emailType" value="asd@asd.com" placeholder="email타입입니다."><br>
+			<!-- email의 경우 @가 입력되지 않으면 경고창이 뜬다. 또한 get방식의 경우 @가 %40로 치환되어 나타난다. -->
+			<input type="date" name="dateType" value="dateVal" placeholder="date타입입니다."><br>
+			<!-- date는 placeholder 무의미 -->
+			<input type="time" name="timeType" value="timeVal" placeholder="time타입입니다."><br>
+			<!-- time는 placeholder 무의미 -->|
+			<input type="datetime" name="datetimeType" value="datetimeVal" placeholder="datetime타입입니다."><br>
+			<input type="number" name="numberType" value="numberVal" placeholder="number타입입니다."><br>
+			<input type="range" name="rangeType" value="20" placeholder="range타입입니다."><br>
+			<input type="search" name="searchType" value="searchVal" placeholder="search타입입니다."><br>
+			<input type="url" name="urlType" value="http:/www.urlVal.com" placeholder="url타입입니다."><br>
+			<!-- url의 경우 http를 넣어야 인식이 되며, :// 부분은 %3A%2F%2F 로 치환된다. -->
+			<input type="week" name="weekType" value="weekVal" placeholder="week타입입니다."><br>
+			<!-- week는 placeholder 무의미 -->|
+			<input type="month" name="monthType" value="monthVal" placeholder="month타입입니다."><br>
+			<!-- month는 placeholder 무의미 -->|
+			<input type="submit">
+			<input type="reset">
+		</form>
+
+		<xmp>
+		<form action="htmlStudy.html" method="get" target="_blank">
+			<input type="text" name="textType" value="textVal" placeholder="text타입입니다."><br>
+			<input type="radio" name="radioType" value="radio1Val" placeholder="radio타입은 어케 노출될까?">1번
+			<input type="radio" name="radioType" value="radio2Val" placeholder="radio타입은 어케 노출될까?">2번<br>
+			<!-- radio는 placeholder 무의미 -->
+			<input type="checkbox" name="checkboxType" value="checkboxVal" placeholder="checkbox타입입니다."><br>
+			<!-- checkbox는 placeholder 무의미 -->
+			<input type="password" name="passwordType" value="passwordVal" placeholder="password타입입니다."><br>
+			<input type="email" name="emailType" value="asd@asd.com" placeholder="email타입입니다."><br>
+			<!-- email의 경우 @가 입력되지 않으면 경고창이 뜬다. 또한 get방식의 경우 @가 %40로 치환되어 나타난다. -->
+			<input type="date" name="dateType" value="dateVal" placeholder="date타입입니다."><br>
+			<!-- date는 placeholder 무의미 -->
+			<input type="time" name="timeType" value="timeVal" placeholder="time타입입니다."><br>
+			<!-- time는 placeholder 무의미 -->|
+			<input type="datetime" name="datetimeType" value="datetimeVal" placeholder="datetime타입입니다."><br>
+			<input type="number" name="numberType" value="numberVal" placeholder="number타입입니다."><br>
+			<input type="range" name="rangeType" value="20" placeholder="range타입입니다."><br>
+			<input type="search" name="searchType" value="searchVal" placeholder="search타입입니다."><br>
+			<input type="url" name="urlType" value="http:/www.urlVal.com" placeholder="url타입입니다."><br>
+			<!-- url의 경우 http를 넣어야 인식이 되며, :// 부분은 %3A%2F%2F 로 치환된다. -->
+			<input type="week" name="weekType" value="weekVal" placeholder="week타입입니다."><br>
+			<!-- week는 placeholder 무의미 -->|
+			<input type="month" name="monthType" value="monthVal" placeholder="month타입입니다."><br>
+			<!-- month는 placeholder 무의미 -->|
+			<input type="submit">
+			<input type="reset">
+			<!-- 초기화를 누르면 소스상에 적혀있는 value값으로 돌아간다. -->|
+		</form>	
+		</xmp>
+
+		<h3>select</h3>
+		select = 옵션으로 구성된 드롭다운 형식의 태그. 사용자가 원하는 옵션을 선택할 수 있게 할 때 사용한다.<br>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+
+
+
+
+
+
+
+
+
+		<h3>u태그.</h3> 
+		Underline의 줄임말.<br>
+		<u>밑줄은 u</u>
+		<xmp><u>밑줄은 u</u></xmp>
+
+		
+
+		
 
 		<h3>title태그.</h3>
 		제목표시줄의 내용을 나타낸다.<br>
@@ -295,15 +621,7 @@
 		head = 본문 설명 태그이다. 하나만 존재해야 하며, html 태그 바로 아래 있어야 한다.<br>
 		body = 본문 태그이다. 하나만 존재해야 하며 head 태그 바로 아래 있어야 한다.<br>
 
-		<h3>a태그</h3>
-		Anchor의 줄임말. href는 Hypertext Refernce의 줄임말.<br>
-		href는 이동하고자 하는 경로.<br>
-		target="_blank"는 새창에서 웹 페이지 불러오기.<br>
-		title은 툴팁이다.<br>
-		<a href="https://www.w3.org/TR/html5/" target="_blank" title="오호?">HTML의 공식 사용설명서 페이지</a>
-		<xmp>
-		<a href="https://www.w3.org/TR/html5/" target="_blank" title="오호?">HTML의 공식 사용설명서 페이지</a>
-		</xmp>
+		
 
 		<h3 class="du">meta 태그</h3>
 		문서에 대한 설명을 표시한다.<br>
@@ -312,14 +630,9 @@
 		<h3>div 태그</h3>
 		division의 줄임말.<br>
 		구역을 지정하는 태그이며, 단순히 디자인의 용도로만 쓰임.<br>
+		Block 형식의 태그 중 대표적인 것이다.<br>
 
-		<h3>img태그.</h3>
-		Image의 줄임말. src는 Source의 줄임말.<br>
-		이미지를 표시하는 태그이다.<br>
-		src와 같은 것을 속성(attribute) 라고 한다.<br>
-		src는 이미지 파일의 경로를 지정할 때 쓴다.<br>
-		<img src="image/html/heart.png" style="width: 10%;" />
-		<xmp><img src="image/html/heart.png" style="width: 10%;" /></xmp>
+		
 
 		<h3>클라이언트와 서버에 대하여</h3>
 		사용자 = 클라이언트 = 웹 클라이언트 = 웹 브라우저<br>

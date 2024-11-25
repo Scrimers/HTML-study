@@ -1,0 +1,22 @@
+/* 간단한 예시의 스타일을 위해 작성 */
+table {
+    border-collapse : collapse;
+}
+.t_All {
+    border: 1px solid black;
+    
+}
+.t_middle {
+    border: 1px solid black;
+    border-top: 0px;
+}
+.t_left {
+    border: 1px solid black;
+    border-top: 0px;
+    border-right: 0px;
+}
+.t_right {
+    border: 1px solid black;
+    border-top: 0px;
+    border-left: 0px;
+}
