@@ -557,17 +557,166 @@
 		</xmp>
 
 		<h3>select</h3>
-		select = 옵션으로 구성된 드롭다운 형식의 태그. 사용자가 원하는 옵션을 선택할 수 있게 할 때 사용한다.<br>
+		select = 옵션으로 구성된 드롭다운 형식의 태그.<br>
+		사용자가 원하는 옵션을 선택할 수 있게 할 때 사용한다.<br>
+		속성은 id, name, required, multiple, disabled 등이 있다.<br>
+		※autofocus, size 등의 속성도 있으나 호환성 문제도 있고 해서 따로 적지는 않겠다.<br>
+		id = select태그의 유니크한 값. label태그와 연결할 때 사용하기도 한다.<br>
+		name = form을 통해 데이터 전송 시 key값이 된다.<br>
+		required = 필수로 옵션태그를 선택해야 함을 명시한다.<br>
+		multiple = 옵션태그를 다중 선택할 수 있음을 명시한다.<br>
+		disabled = select태그 자체를 비활성화 시킨다.<br><br>
+
+		option = select 태그에 노출되는 옵션들.  <br>
+		속성은 value, selected, disabled 이 있다.<br>
+		value = form을 통해 데이터 전송 시 value값이 된다.<br>
+		selected = 페이지가 처음 로드될때 기본으로 서택되도록 한다.<br>
+		disabled = 해당 옵션의 색상이 회색으로 변하며, 사용자가 선택 자체를 못하도록 비활성화 처리 된다.<br><br>
 		
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+		optgroup = option태그를 감싸 하나의 그룹으로 만들 때 사용한다.<br>
+		속성은 label이 있다.<br>
+		label = 옵션 그룹의 이름을 지정할 때 쓴다.<br><br>
+
+		<form action="htmlStudy.html" method="get" target="_blank">		
+			<label for="noActive">비활성화 selectbox</label>		
+			<select id="noActive" name="noActiveSelect" style="display: block;" disabled required>
+				<!-- select에 disabled 속성이 있으면 required 속성을 무시하며 form전송을 하더라도 해당 selectbox는 데이터 전송이 안된다. -->
+				<option value="asd" selected>테스트 종류를 선택해보세요.</option>				
+			</select>
+
+			<label for="single">단일 선택</label>
+			<!-- label의 for와 select의 id가 일치한다면 label영역 클릭 시 select태그에 포커스가 간다. -->
+			<select id="single" name="singleSelect" style="display: block;" required>
+				<option value="" disabled selected>테스트 종류를 선택해보세요.</option>
+				<!-- 
+					select태그가 require속성을 지니고 있고
+					option태그의 value 값이 없고, disabled, selected 속성을 지니고 있으면
+					목록에서 항목을 선택하라는 창이 뜬다.
+					만약 option태그의 value 값이 있다면 그대로 인식을 한다.
+					또한 optgroup태그 안에 들어가 있는 상태면 value 값이 없어도 인식을 한다.
+				  -->
+				<optgroup label="골라보세요~">					
+					<option value=""></option>
+					<option value="값">값과 텍스트 있을때</option>
+					<option>value없음</option>
+					<option value="value만 있음"></option>
+					<option value="aaa" disabled>비활성화 처리</option>
+					<option value="bbb" style="display: none;">비노출 처리</option>
+				</optgroup>
+				<optgroup label="골라보세요2~">					
+					<option value="">하나의 select에 optgroup 여러개 생성 가능</option>					
+				</optgroup>
+			</select>
+			
+			<label for="multi">다중 선택</label>
+			<select id="multi" name="multiSelect" multiple required style="display: block;">
+				<!-- 다중 선택을 하기 위해선 ctrl을 누르고 선택해야 한다. -->
+				<option value="" disabled selected>테스트 종류를 선택해보세요.</option>
+				<!-- select태그가 required 속성이 있다고 해도 multiple 속성이 있으면 required을 무시하는 듯하다. -->
+				<option value="1">일반1</option>
+				<option value="">일반2</option>
+				<optgroup label="그룹에 포함된 것들">
+					<option value="g1">그룹1</option>
+					<option value="">그룹2</option>
+					<option value="" disabled>그룹3</option>
+				</optgroup>
+			</select>
+
+			<input type="submit">
+		</form>
+
+		<xmp>
+		<form action="htmlStudy.html" method="get" target="_blank">		
+			<label for="noActive">비활성화 selectbox</label>		
+			<select id="noActive" name="noActiveSelect" style="display: block;" disabled required>
+				<!-- select에 disabled 속성이 있으면 required 속성을 무시하며 form전송을 하더라도 해당 selectbox는 데이터 전송이 안된다. -->
+				<option value="asd" selected>테스트 종류를 선택해보세요.</option>				
+			</select>
+
+			<label for="single">단일 선택</label>
+			<!-- label의 for와 select의 id가 일치한다면 label영역 클릭 시 select태그에 포커스가 간다. -->
+			<select id="single" name="singleSelect" style="display: block;" required>
+				<option value="" disabled selected>테스트 종류를 선택해보세요.</option>
+				<!-- 
+					select태그가 require속성을 지니고 있고
+					option태그의 value 값이 없고, disabled, selected 속성을 지니고 있으면
+					목록에서 항목을 선택하라는 창이 뜬다.
+					만약 option태그의 value 값이 있다면 그대로 인식을 한다.
+					또한 optgroup태그 안에 들어가 있는 상태면 value 값이 없어도 인식을 한다.
+					-->
+				<optgroup label="골라보세요~">					
+					<option value=""></option>
+					<option value="값">값과 텍스트 있을때</option>
+					<option>value없음</option>
+					<option value="value만 있음"></option>
+					<option value="aaa" disabled>비활성화 처리</option>
+					<option value="bbb" style="display: none;">비노출 처리</option>
+				</optgroup>
+				<optgroup label="골라보세요2~">					
+					<option value="">하나의 select에 optgroup 여러개 생성 가능</option>					
+				</optgroup>
+			</select>
+			
+			<label for="multi">다중 선택</label>
+			<select id="multi" name="multiSelect" multiple required style="display: block;">
+				<!-- 다중 선택을 하기 위해선 ctrl을 누르고 선택해야 한다. -->
+				<option value="" disabled selected>테스트 종류를 선택해보세요.</option>
+				<!-- select태그가 required 속성이 있다고 해도 multiple 속성이 있으면 required을 무시하는 듯하다. -->
+				<option value="1">일반1</option>
+				<option value="">일반2</option>
+				<optgroup label="그룹에 포함된 것들">
+					<option value="g1">그룹1</option>
+					<option value="">그룹2</option>
+					<option value="" disabled>그룹3</option>
+				</optgroup>
+			</select>
+
+			<input type="submit">
+		</form>	
+		</xmp>
+
+		<h3>textarea</h3>
+		textarea = 텍스트 입력 및 노출을 할 때 사용한다.<br>
+		장점 : 쉽게 여러줄의 일반 텍스트를 입력할 수 있다. 또한 html문법 또한 그대로 노출이된다.<br>
+		단점 : 텍스트의 서식등을 수정할 수 없다. 예를 들어 textarea안에 strong태그 등을 쓸 수 없다는 것이다.<br>
+		textarea는 value 속성이 없다. textarea에 초깃값을 입력하려면 textarea 안에 직접 입력하면 된다.<br>
+		속성은 rows, cols, placeholder, readonly, disabled, minlength, maxlength, required 이 있다.<br>
+		rows = 기본값은 2. 노출되는 textarea의 높이다. height와 같다고 보면 될 듯 하다.<br>
+		cols = 기본값은 20. 노출되는 textarea의 너비다. width와 같다고 보면 될 듯 하다.<br>
+		placeholder = textarea안에 아무 글도 적히지 않았을 때 노출되는 글이다.<br>
+		readonly = 수정이 불가능한 읽기상태 이다. 데이터 전송 시 값이 전달된다.<br>
+		disabled = 수정이 불가능한 비활성화 상태이다. 데이터 전송 시 값이 전달되지 않는다.<br>
+		minlength = 사용자가 입력해야하는 최소한의 문자열 길이<br>
+		maxlength = 사용자가 입력할 수 있는 최대한의 문자열 길이. 이 속성을 사용 안하면 문자를 무제한으로 입력할 수 있다.<br>
+		required = textarea안에 무조건 값을 입력해야 데이터 전송이 가능해진다.<br>
+
+		<textarea rows="10" cols="40" placeholder="텍스트를 입력해주세요.">
+		HELLO!
+		<html> <body>
+		</textarea>
+
+		<xmp>
+		<textarea rows="10" cols="40" placeholder="텍스트를 입력해주세요.">
+		HELLO!
+		<html> <body>
+		</textarea>	
+		</xmp><br><br>
+			
+		<h3>contenteditable 속성</h3>
+		textarea의 서식을 적용시킬 수 없다는 단점을 보완하기 위해 사용해도 좋을 속성.<br>
+		보통 div태그에 contenteditable 속성을 쓴다.<br>
+		contenteditable을 쓰면 콘텐츠 수정은 가능하나 textarea처럼 html문법이 텍스트로 노출되지는 않는다.<br>
+
+		<div contenteditable="true" style="border: 1px solid;">
+			H~ELL~o
+		</div>
+
+		<xmp>
+		<div contenteditable="true" style="border: 1px solid;">
+			H~ELL~o
+		</div>
+		</xmp>
+
 		<br>
 		<br>
 		<br>
