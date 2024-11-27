@@ -130,6 +130,29 @@
 		<i>i = italic의 줄임말. 디자인적으로 기울임.</i>
 		</xmp><br><br>
 
+		밑줄<br>
+		ins = insert의 줄임말. <del>기존의</del><ins>새로 추가된 내용을 의미</ins>할 떄 사용.<br>
+		u = Underline의 줄임말. <u>단순히 밑줄을 그을 때 사용</u>한다.<br>
+		<xmp>
+		<ins>ins는 새로 추가된 내용을 의미</ins>
+		<u>단순 밑줄은 u</u>
+		</xmp><br><br>
+
+		삭제<br>
+		del = delete의 줄임말. <del>야호</del> 삭제된 텍스트를 나타낼 떄 사용.<br>
+		s = strike의 줄임말. <s>제대로 된</s> 잘못된 텍스트를 강조하기 위해 사용.<br>
+		<xmp>
+		<del>야호</del>
+		<s>제대로 된</s>
+		</xmp><br><br>
+
+		<p class="du">텍스트 방향</p>
+		텍스트 방향을 설정하는 태그이며 bdo, bdi 태그가 있다.<br>
+		현재로서는 사용 가능성이 낮다고 판단. 공부를 보류하도록 한다.<br>
+		<br><br>
+
+		
+
 		인용<br>
 		<blockquote>
 			blockquote = 인용문을 쓸 때 쓴다.<br>
@@ -171,12 +194,6 @@
 
 		mark = 한 문서 내에서 관련성이 있는 <mark>특정 부분을 참조 목적으로 표시하거나 강조</mark>하는 텍스트 구간을 나타낼 떄 사용.
 		<xmp><mark>특정 부분을 참조 목적으로 표시하거나 강조</mark></xmp><br><br>
-
-		del = delete의 줄임말. <del>야호</del> 삭제된 텍스트를 나타낼 떄 사용.
-		<xmp><del>야호</del></xmp><br><br>
-
-		ins = insert의 줄임말. <del>기존의</del><ins>변경된 텍스트를 나타내거나 특정 내용을 강조</ins>할 떄 사용.
-		<xmp><ins>변경된 텍스트를 나타내거나 특정 내용을 강조</ins></xmp><br><br>
 
 		address = 연락처 정보를 나타낼 때 사용. <address>010-1111-2222</address>
 		추가적으로 가장 가까운 조상이 article 또는 body 태그일 경우 그 태그에 대한 연락처 정보를 나타내는데 사용하며<br>
@@ -223,7 +240,7 @@
 		ex : 이 기능을 실행하면 <samp>alert</samp> 이 뜹니다.
 		<xmp>
 		ex : 이 기능을 실행하면 <samp>alert</samp> 이 뜹니다.
-		</xmp>
+		</xmp><br><br>
 
 		<h3>링크</h3>
 		a = Anchor의 줄임말.<br>
@@ -235,7 +252,7 @@
 		<a href="https://www.w3.org/TR/html5/" target="_blank" title="오호?">HTML의 공식 사용설명서 페이지</a>
 		<xmp>
 		<a href="https://www.w3.org/TR/html5/" target="_blank" title="오호?">HTML의 공식 사용설명서 페이지</a>
-		</xmp>
+		</xmp><br><br>
 
 		<h3>이미지</h3>
 		img = Image의 줄임말.<br>
@@ -247,7 +264,45 @@
 		height = 높이<br>
 		src와 같은 것을 속성(attribute) 라고 한다.<br>
 		<img src="image/html/heart.png" alt="이미지깨짐" width="10%">
-		<xmp><img src="image/html/heart.png" alt="이미지깨짐" width="10%"></xmp>
+		<xmp><img src="image/html/heart.png" alt="이미지깨짐" width="10%"></xmp><br><br>
+
+		<h3>이미지 맵</h3>
+		map = 클릭할 수 있는 영역을 가지는 영역 그룹<br>
+		사용하려면 img태그에 usemap= map태그의 name명 을 명시해줘야 한다.<br>
+		area = 이미지 맵을 클릭할 수 있는 영역. map안에서 쓰이며, 여러개 사용 가능하다.<br>
+		area태그의 속성은 shape, coords, href, alt 등이 있으며 이 중 shape, coords만 적을 것이다.<br>
+		shape = 영역의 모양을 지정한다. default, rect, circle, poly 등이 있다.<br>
+		coords = 영역의 좌표를 명시한다. shape에 따라서 그 양식이 달라진다.<br>
+		대략적인 사용방법은 아래와 같으나... 보다 자세한 사용방법은 좀 더 알아봐야 할 것 같다.<br>
+
+		<img src="image/html/heart.png" usemap="#imgMap" alt="이미지깨짐" >
+		<map name="imgMap">
+			<area href="htmlStudy.html" alt="하트" shape="rect" coords="0,100,50,50">
+		</map>
+
+		<xmp>
+		<img src="image/html/heart.png" usemap="#imgMap" alt="이미지깨짐" >
+		<map name="imgMap">
+			<area href="htmlStudy.html" alt="하트" shape="rect" coords="0,100,50,50">
+		</map>
+		</xmp><br><br>
+
+		<h3>figure, figcaption</h3>
+		figure = 일러스트, 다이어그램, 사진, 코드등에 주석을 달기 위해 태그들을 감싸는 용도<br>
+		figcaption = 컨텐츠를 참고할 수 있는 설명을 적는다.<br>
+
+		<figure>
+			<img src="image/html/heart.png" alt="이미지깨짐">
+			<figcaption>참고할 수 있는 설명을 적는다.</figcaption>
+		</figure>
+
+		<xmp>
+		<figure>
+			<img src="image/html/heart.png" alt="이미지깨짐">
+			<figcaption>참고할 수 있는 설명을 적는다.</figcaption>
+		</figure>
+		</xmp><br><br>
+	
 
 		<h3>테이블</h3>
 		table = 표를 표시하는 태그이다. 테이블 관련 태그 전체를 감싼다.<br>
@@ -369,7 +424,25 @@
 			<li>그룹1-1</li>
 			<li>그룹1-2</li>
 		</ol>
-		</xmp>
+		</xmp><br><br>
+
+		<h3>용어</h3>
+		※줄임말에 대해서는 description이라는 의견도 있고, definition이라는 의견도 있다.<br>
+		dl = description list의 줄임말. 용어를 설명할 목록을 나타낼 때 쓴다.<br>
+		dt = description term의 줄임말. 옹어를 설명할 내용의 제목이다.<br>
+		dd = description details 줄임말. 옹어 설명이다.<br>
+
+		<dl>
+			<dt>HTML</dt>
+			<dd>HTML은 Hyper Text Markup Language의 약자입니다.</dd>
+		</dl>
+
+		<xmp>
+		<dl>
+			<dt>HTML</dt>
+			<dd>HTML은 Hyper Text Markup Language의 약자입니다.</dd>
+		</dl>
+		</xmp><br><br>
 
 		<h3>시맨틱 태그</h3>
 		div와 비슷하게 공간을 의미하는 태그이다.<br>
@@ -442,7 +515,7 @@
 		</footer>	
 		</xmp>
 
-		<h3>폼</h3>
+		<h3>form</h3>
 		form = 클라이언트에서 서버로 정보를 보낼때 사용.<br>
 		속성은 action, actocomplete, enctype, method, name, target, accept-charset가 있다.<br>
 		action = 정보를 보낼 서버 주소를 입력하는 부분이다.<br>
@@ -487,8 +560,8 @@
 		<h3>input</h3>
 		input = form에 전송한 정보를 입력할 떄 쓴다.<br>
 		속성은 type, placeholder, name, value, id가 있다.<br>
-		type = input이 어떤 형식의 정보를 받을지 정하는 부분이다.<br>
-		type은 그 종류가 굉장히 많다. 대표적으로 쓰이는 것은 text, radio, checkbox, password, submit, reset가 있다.<br>
+		type = input이 어떤 형식의 정보를 받을지 정하는 부분이다. 디폴트 값은 text이다.<br>
+		type은 그 종류가 굉장히 많다. 대표적으로 쓰이는 것은 text, radio, checkbox, password가 있다.<br>
 		일단 알고있는 모든 종류를 나열해보겠다.<br>
 		text, email, date, time, datetime, password, number, range, search, url, week, month 가 있다.<br>
 		이 중 radio의 경우 같이 사용할 radio 타입의 name은 서로 같아야 한다.<br>
@@ -510,7 +583,7 @@
 			<input type="date" name="dateType" value="dateVal" placeholder="date타입입니다."><br>
 			<!-- date는 placeholder 무의미 -->
 			<input type="time" name="timeType" value="timeVal" placeholder="time타입입니다."><br>
-			<!-- time는 placeholder 무의미 -->|
+			<!-- time는 placeholder 무의미 -->
 			<input type="datetime" name="datetimeType" value="datetimeVal" placeholder="datetime타입입니다."><br>
 			<input type="number" name="numberType" value="numberVal" placeholder="number타입입니다."><br>
 			<input type="range" name="rangeType" value="20" placeholder="range타입입니다."><br>
@@ -518,9 +591,9 @@
 			<input type="url" name="urlType" value="http:/www.urlVal.com" placeholder="url타입입니다."><br>
 			<!-- url의 경우 http를 넣어야 인식이 되며, :// 부분은 %3A%2F%2F 로 치환된다. -->
 			<input type="week" name="weekType" value="weekVal" placeholder="week타입입니다."><br>
-			<!-- week는 placeholder 무의미 -->|
+			<!-- week는 placeholder 무의미 -->
 			<input type="month" name="monthType" value="monthVal" placeholder="month타입입니다."><br>
-			<!-- month는 placeholder 무의미 -->|
+			<!-- month는 placeholder 무의미 -->
 			<input type="submit">
 			<input type="reset">
 		</form>
@@ -539,7 +612,7 @@
 			<input type="date" name="dateType" value="dateVal" placeholder="date타입입니다."><br>
 			<!-- date는 placeholder 무의미 -->
 			<input type="time" name="timeType" value="timeVal" placeholder="time타입입니다."><br>
-			<!-- time는 placeholder 무의미 -->|
+			<!-- time는 placeholder 무의미 -->
 			<input type="datetime" name="datetimeType" value="datetimeVal" placeholder="datetime타입입니다."><br>
 			<input type="number" name="numberType" value="numberVal" placeholder="number타입입니다."><br>
 			<input type="range" name="rangeType" value="20" placeholder="range타입입니다."><br>
@@ -547,12 +620,12 @@
 			<input type="url" name="urlType" value="http:/www.urlVal.com" placeholder="url타입입니다."><br>
 			<!-- url의 경우 http를 넣어야 인식이 되며, :// 부분은 %3A%2F%2F 로 치환된다. -->
 			<input type="week" name="weekType" value="weekVal" placeholder="week타입입니다."><br>
-			<!-- week는 placeholder 무의미 -->|
+			<!-- week는 placeholder 무의미 -->
 			<input type="month" name="monthType" value="monthVal" placeholder="month타입입니다."><br>
-			<!-- month는 placeholder 무의미 -->|
+			<!-- month는 placeholder 무의미 -->
 			<input type="submit">
 			<input type="reset">
-			<!-- 초기화를 누르면 소스상에 적혀있는 value값으로 돌아간다. -->|
+			<!-- 초기화를 누르면 소스상에 적혀있는 value값으로 돌아간다. -->
 		</form>	
 		</xmp>
 
@@ -713,8 +786,51 @@
 
 		<xmp>
 		<div contenteditable="true" style="border: 1px solid;">
-			H~ELL~o
+			H~ELL~O
 		</div>
+		</xmp>
+
+		<h3>label</h3>
+		label = 태그가 어떤 역할을 하는지 알려주는 이름표 태그이다. 다른 태그와 연결하지 않고 개별으로 쓰일 수도 있다.<br>		
+		다른 태그와 연결을 하려면 다른 태그의 id와 label태그의 for의 값이 일치해야 한다.<br>
+		label 태그를 쓰는 이유는 가독성과 웹 접근성(스크린리더) 향상을 위해서 이다.<br>
+		label과 함께 사용할 수 있는 태그들은 다음과 같다.<br>
+		input, textarea, select, meter, progress, output<br>
+		반면 label과 함께 사용해선 안되는 태그들도 있으며 다음과 같다.<br>
+		input(hidden, button, reset, submit), button<br>
+		<label for="asd">값을 입력하세요.</label>
+		<input id="asd">
+
+		<xmp>
+		<label for="asd">값을 입력하세요.</label>
+		<input id="asd">
+		</xmp>
+
+		<h3>button</h3>
+		button = 말 그대로 버튼과 관련된 태그이다.<br>
+		속성은 type, disabled, autofocus, formnovalidate가 있다.<br>
+		이 중 autofocus는 ios호환성문제, formnovalidate는 현재로선 필요성을 못느껴 다루지 않을 것이다.<br>
+		type 속성 입력으로 button태그를 어떤 형식으로 사용할지를 정할 수 있다.<br>
+		button 태그의 type속성의 디폴트 값은 submit이다.<br>
+		type을 입력안하고 form태그 안에 있다면 작동하겠지만,form태그 밖에 있다면 작동하지 않는다.<br>
+		type 속성은 submit, reset, button이 있으며 자세한 설명은 다음과 같다.<br>
+		submit = 보통 form태그 안에서 쓰이며, 서버로 데이터를 전송할 떄 쓰인다. type속성의 디폴트 값이다.<br>
+		reset = 보통 form태그 안에서 쓰이며, input태그 등에 쓴 값들이 최초의 상태로 초기화 된다.<br>
+		button = 기본 동작이 없다. 이 속성을 사용하기 위해선 JavaScript와 함께 사용해야 한다. 가장 많이 쓰이는 type이기도 하다.<br>
+		disabled = 버튼을 비활성화 시킨다. 사용자가 클릭하는 것을 막는다.<br><br>
+
+		한가지 이상한 점이 있다. input태그에도 type=submit이 있다는 것이다. button의 submit과 어떤 차이가 있는 것일까?<br>
+		사실 input과 button의 submit은 기능적으로는 아무런 차이가 없다.<br>
+		다만 button이 디자인적인 관점에서 input에 비해 매우 자유롭다고 하니 가급적 button을 쓰는게 어떨까 싶다.<br>
+
+		<button type="submit">submit 타입 버튼</button>
+		<button type="reset">reset 타입 버튼</button>
+		<button type="button">button 타입 버튼</button>
+
+		<xmp>
+		<button type="submit">submit 타입 버튼</button>
+		<button type="reset">reset 타입 버튼</button>
+		<button type="button">button 타입 버튼</button>	
 		</xmp>
 
 		<br>
@@ -726,8 +842,6 @@
 		<br>
 		<br>
 		<br>
-		<br>
-		<br>
 
 
 
@@ -738,10 +852,7 @@
 
 
 
-		<h3>u태그.</h3> 
-		Underline의 줄임말.<br>
-		<u>밑줄은 u</u>
-		<xmp><u>밑줄은 u</u></xmp>
+		
 
 		
 
