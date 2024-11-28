@@ -49,9 +49,10 @@
 			let testData;
 
 			$.getJSON('json/htmlStudy.json', function(data){
+				console.log("서버1 : "+JSON.stringify(data));
 			})
 			.done(function() {
-				console.log("서버 : "+JSON.stringify(data));
+				console.log("서버2 : "+JSON.stringify(data));
 			})
 			.fail(function() {
 				// testData = JSON.parse(JSON.stringify(htmlStudy));
