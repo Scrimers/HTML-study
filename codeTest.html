@@ -48,6 +48,7 @@
 		<script>
 			let jsonData;
 
+			$.ajaxSetup({ async: false });	// 전역으로 동기화 설정
 			$.getJSON('json/htmlStudy.json', function(data){
 				console.log("서버1 : "+JSON.stringify(data));
 				jsonData = data;
@@ -60,7 +61,7 @@
 				console.log("최종 : "+JSON.stringify(jsonData));
 				jsonData = JSON.parse(JSON.stringify(jsonData));
 			});
-
+			$.ajaxSetup({ async: true });	// 전역으로 비동기화 설정
 			console.log("최종2 : "+jsonData);
 
 				
