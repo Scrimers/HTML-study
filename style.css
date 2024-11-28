@@ -2,6 +2,9 @@
 .du {
     color: red;
 }
+.noDisplay {
+    display: none;
+}
 /* 공통 끝============================ */
 
 /* index.html 시작============================ */
@@ -46,26 +49,82 @@
 }
 /* index.html 끝============================ */
 
-/* Study 시작============================ */
-.studyVer {
+/* nav_Study 시작============================ */
+.nav_studyVer {
     min-height: 5dvh;
 }
-.studyTitleGrid {
+.nav_studyTitleGrid {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
-.studyTitleDiv {
+.nav_studyTitleDiv {
     padding: 20px 0px 20px 0px;
 }
-.studyTitleText {
+.nav_studyTitleText {
     border-bottom: 2px dotted black;
     margin-block-start: 0px;
     margin-block-end: 0;
 }
-.studyTitleTextUnderLine {
+.nav_studyTitleTextUnderLine {
     border-bottom: 2px dotted black;
     display: block;
     font-size: 2px;
     color: white;
+}
+/* nav_Study 끝============================ */
+
+/* Study 시작============================ */
+.mainTitleSection {
+    display: inline-block;
+    width: 70%;
+    background: linear-gradient(to right, #6ed16e, transparent);
+    margin: 40px 0px 50px 0px;
+    padding-left: 10px;
+}
+.mainTitleText {
+    margin: 3px 0px 3px 0px;
+    color: #fdfdfd;
+    font-size: 34px;
+}
+.subArticle {
+    width: 50%;
+    margin: 0px 0px 30px 0px;
+}
+.subTitle {
+    margin: 0px;
+    padding: 10px;
+    background: #a7e5a7;
+    color: #fdfdfd;
+}
+.subGrid {
+    display: grid;
+    grid-template-columns: 15% auto;
+}
+.subTitle {
+    align-content: center;
+    text-align: center;
+    background: #a7e5a7;
+    color: #fdfdfd;
+    border: 1px solid #7fd57f;
+}
+.subText {
+    border: 1px solid #7fd57f;
+    padding: 5px 0px 5px 5px;
+}
+.subTitleHowUse {
+    align-content: center;
+    text-align: center;
+    background: #a7e5a7;
+    color: #fdfdfd;
+    border: 1px solid #7fd57f;
+    padding: 0px;
+}
+.subTextHowUse {
+    align-content: center;
+    text-align: center;
+    background: #a7e5a7;
+    color: #fdfdfd;
+    border: 1px solid #7fd57f;
+    padding: 1px;
 }
 /* Study 끝============================ */
