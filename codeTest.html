@@ -44,11 +44,23 @@
 
 		</div>
 	
-		<script src="json/htmlStudy.json" type="text/javascript"></script>
+		<script src="json/local/htmlStudy.json" type="text/javascript"></script>
 		<script>
+			let testData;
 
-				let testData = JSON.parse(JSON.stringify(htmlStudy));
-				console.log(testData);
+			$.getJSON('json/htmlStudy.json', function(data){
+			})
+			.done(function() {
+				console.log("서버 : "+JSON.stringify(data));
+			})
+			.fail(function() {
+				// testData = JSON.parse(JSON.stringify(htmlStudy));
+				console.log("로컬 : "+JSON.stringify(htmlStudy));
+			});
+
+				
+
+				
 
 
 			// $(document).ready(function () {
