@@ -2,11 +2,17 @@ htmlStudy = [
     {
         "title" : "제목",
         "purpose" : "용도",
-        "explain" : "설명"        
+        "explain" : "설명" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WbeNKgJ" data-pen-title="문단" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"><span>See the Pen <a href="https://codepen.io/scrimer/pen/WbeNKgJ">문단</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
         "title" : "제목2",
-        "purpose" : "용도2",
+        // "purpose" : "용도2",
         "explain" : "설명2"        
+    },
+    {
+        "title" : "제목3",
+        "purpose" : "",
+        "explain" : "설명3"        
     }
 ]
