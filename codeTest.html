@@ -46,15 +46,22 @@
 	
 		<script src="json/local/htmlStudy.json" type="text/javascript"></script>
 		<script>
-			let testData;
+			let jsonData;
 
 			$.getJSON('json/htmlStudy.json', function(data){
 				console.log("서버1 : "+JSON.stringify(data));
+				jsonData = data;
 			})
 			.fail(function() {
-				// testData = JSON.parse(JSON.stringify(htmlStudy));
 				console.log("로컬 : "+JSON.stringify(htmlStudy));
+				jsonData = htmlStudy;
+			})
+			.always(function() {
+				console.log("최종 : "+JSON.stringify(jsonData));
+				jsonData = JSON.parse(JSON.stringify(jsonData));
 			});
+
+			console.log("최종2 : "+jsonData);
 
 				
 
