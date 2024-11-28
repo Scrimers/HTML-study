@@ -51,9 +51,6 @@
 			$.getJSON('json/htmlStudy.json', function(data){
 				console.log("서버1 : "+JSON.stringify(data));
 			})
-			.done(function() {
-				console.log("서버2 : "+JSON.stringify(data));
-			})
 			.fail(function() {
 				// testData = JSON.parse(JSON.stringify(htmlStudy));
 				console.log("로컬 : "+JSON.stringify(htmlStudy));
