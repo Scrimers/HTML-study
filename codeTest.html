@@ -44,8 +44,13 @@
 
 		</div>
 	
-
+		<script src="json/htmlStudy.json" type="text/javascript"></script>
 		<script>
+
+				let testData = JSON.parse(JSON.stringify(htmlStudy));
+				console.log(testData);
+
+
 			// $(document).ready(function () {
 			// 	$("#divTarget").load("json/htmlStudy.json", function(responseTxt, statusTxt, xhr){
 			// 		console.log("responseTxt : "+responseTxt);
@@ -62,23 +67,26 @@
 			// });
 
 
-			$.getJSON('json/htmlStudy.json', function(data){
-				console.log("data : "+JSON.stringify(data))
-				// var html = [];
+			// $.getJSON('htmlStudy.json', function(data){
+			// 	console.log("data : "+JSON.stringify(data))
+			// 	// var html = [];
 
-				// $.each(data, function(i, item){
-				// console.log(item.users.length);
-				// for(var num = 0; num < item.users.length; num++){
-				// 	html.push('<div style="margin: 1em 1em 1em 1em;">');
-				// 	html.push('<div> 아이디 : '+item.users[num].id+'</div>');
-				// 	html.push('<div> 닉네임 : '+item.users[num].nickname+'</div>');
-				// 	html.push('<div> 블로그주소 : <a href="'+item.users[num].blog+'" target="_blank">'+item.users[num].blog+'</a></div>');
-				// 	html.push('</div>');
-				// }
-				// });
-				// $('#data-container').html(html.join(''));
-			});
+			// 	// $.each(data, function(i, item){
+			// 	// console.log(item.users.length);
+			// 	// for(var num = 0; num < item.users.length; num++){
+			// 	// 	html.push('<div style="margin: 1em 1em 1em 1em;">');
+			// 	// 	html.push('<div> 아이디 : '+item.users[num].id+'</div>');
+			// 	// 	html.push('<div> 닉네임 : '+item.users[num].nickname+'</div>');
+			// 	// 	html.push('<div> 블로그주소 : <a href="'+item.users[num].blog+'" target="_blank">'+item.users[num].blog+'</a></div>');
+			// 	// 	html.push('</div>');
+			// 	// }
+			// 	// });
+			// 	// $('#data-container').html(html.join(''));
+			// });
 
+
+			
+			
 
 		</script>
 	</body>
