@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>CODE TEST</title>
 		<link rel="stylesheet" href="style.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 		<style>	
 		</style>
 	</head>
@@ -39,55 +40,46 @@
 		<br><br>
 		
 		
-		<header>꾸준히 공부를 해보자~</header>
-		<nav>네비게이션</nav>
-		<main>
-			<section class="mainTitleSection">
-				<h1 class="mainTitleText">CODE TEST</h1>
-			</section>
-			<section>
-				<article class="subArticle">
-					<h3 class="subTitle">
-						제목
-					</h3>
-					<div class="subGrid">
-						<div class="subTitle">용도</div>
-						<div class="subText">
-							ㄴㄴㄴㄴㄴ<br>
-							ㅇㅇㅇㅇㅇ<br>
-							ㅁㅁㅁㅁㅁ<br>
-							ㄴㄴㄴㄴㄴ<br>
-							ㅇㅇㅇㅇㅇ<br>
-							ㅁㅁㅁㅁㅁ<br>
-						</div>
-					</div>
-					<div class="subGrid">	
-						<div class="subTitle">설명</div>
-						<div class="subText">
+		<div id="divTarget">
 
-						</div>
-					</div>
-					<div>
-						<div class="subTitleHowUse">사용법</div>
-						<div class="subTextHowUse">
-							<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zxOYaNP" data-pen-title="주석" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-								<span>See the Pen <a href="https://codepen.io/scrimer/pen/zxOYaNP">
-								주석</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)
-								on <a href="https://codepen.io">CodePen</a>.</span>
-							</p>
-							<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-						</div>
-					</div>
-				</article>
-			</section>
-			<section>
-				<aside></aside>
-			</section>
-		</main>
-		<footer>푸터</footer>
+		</div>
 	
 
 		<script>
+			// $(document).ready(function () {
+			// 	$("#divTarget").load("json/htmlStudy.json", function(responseTxt, statusTxt, xhr){
+			// 		console.log("responseTxt : "+responseTxt);
+			// 		console.log("statusTxt : "+statusTxt);
+			// 		console.log("xhr : "+xhr);
+
+			// 		if (statusTxt == "success") {
+			// 		console.log("로드 완료!");
+			// 		}
+			// 		if (statusTxt == "error") {
+			// 		console.log("에러 발생: " + xhr.status + ": " + xhr.statusText);
+			// 		}
+			// 	});
+			// });
+
+
+			$.getJSON('json/htmlStudy.json', function(data){
+				console.log("data : "+JSON.stringify(data))
+				// var html = [];
+
+				// $.each(data, function(i, item){
+				// console.log(item.users.length);
+				// for(var num = 0; num < item.users.length; num++){
+				// 	html.push('<div style="margin: 1em 1em 1em 1em;">');
+				// 	html.push('<div> 아이디 : '+item.users[num].id+'</div>');
+				// 	html.push('<div> 닉네임 : '+item.users[num].nickname+'</div>');
+				// 	html.push('<div> 블로그주소 : <a href="'+item.users[num].blog+'" target="_blank">'+item.users[num].blog+'</a></div>');
+				// 	html.push('</div>');
+				// }
+				// });
+				// $('#data-container').html(html.join(''));
+			});
+
+
 		</script>
 	</body>
 </html>
