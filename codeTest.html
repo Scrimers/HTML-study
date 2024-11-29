@@ -39,18 +39,81 @@
 		
 		<br><br>
 		
-		
-		<div id="divTarget">
 
-		</div>
-	
+
+		<article class="subArticle">	
+			<h3 class="subTitle">제목</h3>
+			<div class="subGroup">
+				<h4 class="subTitle">제목</h4>	
+				
+				<div class="subGrid">		
+					<div class="subTitle">용도</div>		
+					<div class="subText">용도 텍스트</div>	
+				</div>
+
+				<div class="subGrid">		
+					<div class="subTitle">설명</div>		
+					<div class="subText">설명 텍스트</div>	
+				</div>	
+				
+				<div>		
+					<div class="subTitleHowUse">사용법</div>		
+					<div class="subTextHowUse">사용법 텍스트</div>
+				</div>
+			</div>
+
+			<div class="subGroup">
+				<h4 class="subTitle">제목</h4>	
+				
+				<div class="subGrid">		
+					<div class="subTitle">용도</div>		
+					<div class="subText">용도 텍스트</div>	
+				</div>
+
+				<div class="subGrid">		
+					<div class="subTitle">설명</div>		
+					<div class="subText">설명 텍스트</div>	
+				</div>	
+				
+				<div>		
+					<div class="subTitleHowUse">사용법</div>		
+					<div class="subTextHowUse">사용법 텍스트</div>
+				</div>
+			</div>
+		</article>
+
+
+		<!--
+		<article class="subArticle">	
+			<h3 class="subTitle">제목</h3>	
+			
+			<div class="subGrid">		
+				<div class="subTitle">용도</div>		
+				<div class="subText">용도 텍스트</div>	
+			</div>
+
+			<div class="subGrid">		
+				<div class="subTitle">설명</div>		
+				<div class="subText">설명 텍스트</div>	
+			</div>	
+			
+			<div>		
+				<div class="subTitleHowUse">사용법</div>		
+				<div class="subTextHowUse">사용법 텍스트</div>
+			</div>
+		</article>
+		-->
+
+		
+		
+	<!-- 
 		<script src="json/local/htmlStudy.json" type="text/javascript"></script>
 		<script>
 			let jsonData;
 
 			$.ajaxSetup({ async: false });	// 전역으로 동기화 설정
 			$.getJSON('json/htmlStudy.json', function(data){
-				//서버에서 실해 시 
+				//서버에서 실행 시 
 				jsonData = data;
 			})
 			.fail(function() {
@@ -108,49 +171,7 @@
 				html.push('</article>');
 			});
 			$('#divTarget').html(html.join(''));	
-
-				
-	
-
-
-
-			// $(document).ready(function () {
-			// 	$("#divTarget").load("json/htmlStudy.json", function(responseTxt, statusTxt, xhr){
-			// 		console.log("responseTxt : "+responseTxt);
-			// 		console.log("statusTxt : "+statusTxt);
-			// 		console.log("xhr : "+xhr);
-
-			// 		if (statusTxt == "success") {
-			// 		console.log("로드 완료!");
-			// 		}
-			// 		if (statusTxt == "error") {
-			// 		console.log("에러 발생: " + xhr.status + ": " + xhr.statusText);
-			// 		}
-			// 	});
-			// });
-
-
-			// $.getJSON('htmlStudy.json', function(data){
-			// 	console.log("data : "+JSON.stringify(data))
-			// 	// var html = [];
-
-			// 	// $.each(data, function(i, item){
-			// 	// console.log(item.users.length);
-			// 	// for(var num = 0; num < item.users.length; num++){
-			// 	// 	html.push('<div style="margin: 1em 1em 1em 1em;">');
-			// 	// 	html.push('<div> 아이디 : '+item.users[num].id+'</div>');
-			// 	// 	html.push('<div> 닉네임 : '+item.users[num].nickname+'</div>');
-			// 	// 	html.push('<div> 블로그주소 : <a href="'+item.users[num].blog+'" target="_blank">'+item.users[num].blog+'</a></div>');
-			// 	// 	html.push('</div>');
-			// 	// }
-			// 	// });
-			// 	// $('#data-container').html(html.join(''));
-			// });
-
-
-			
-			
-
 		</script>
+	-->
 	</body>
 </html>
