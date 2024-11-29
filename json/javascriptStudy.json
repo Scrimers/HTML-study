@@ -1,0 +1,218 @@
+[
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "JavaScript란",
+        "purpose" : "정적인 요소만을 지닌 HTML에 사용자와 상호작용 가능한 동적인 요소를 추가하기 위해 사용한다.",
+        "explain" : "" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "JavaScript 이용방법",
+        "purpose" : "",
+        "explain" : "웹브라우저가 JavaScript를 인식할 수 있도록 HTML코드로 알려줘야 한다.<br>body태그안에 script태그를 쓰면 된다.",
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WbebKpj" data-pen-title="JavaScript 이용방법" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/WbebKpj">  JavaScript 이용방법</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "write",
+        "purpose" : "웹페이지에 글씨를 출력할 때 사용",
+        "explain" : "" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WbebKjO" data-pen-title="write" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/WbebKjO">  write</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "이벤트",
+        "title" : "onclick",
+        "purpose" : "클릭 시 이벤트 발생",
+        "explain" : "" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zxOxLwm" data-pen-title="onclick" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/zxOxLwm">  onclick</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "onchange",
+        "purpose" : "내용물 변경 시 이벤트 발생",
+        "explain" : "내용물 변경 후 해당 영역에서 벗어나야 작동" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VYZYBWZ" data-pen-title="onchange" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/VYZYBWZ">  onchange</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "onkeydown",
+        "purpose" : "내용물에 입력 시(키를 눌렀을때) 이벤트 발생",
+        "explain" : "" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="PwYwBjz" data-pen-title="onkeydown" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/PwYwBjz">  onkeydown</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : ".length",
+        "purpose" : "문자열의 크기를 알고싶을때 쓴다.",
+        "explain" : "" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ZYzYjyo" data-pen-title="length" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/ZYzYjyo">  length</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "toUpperCase",
+        "purpose" : "소문자를 대문자로 치환하고 싶을때 쓴다.",
+        "explain" : "" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="LEPEBLo" data-pen-title="toUpperCase" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/LEPEBLo">  toUpperCase</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "indexOf",
+        "purpose" : "특정 문자열의 index를 알고 싶을때 쓴다.",
+        "explain" : "" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="OPLPwjR" data-pen-title="indexOf" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/OPLPwjR">  indexOf</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "trim",
+        "purpose" : "공백을 제거하고 싶을때 쓴다.",
+        "explain" : "문자열이 포함되지 않은 앞, 뒤 공백만을 제거한다." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jENEpLG" data-pen-title="trim" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/jENEpLG">  trim</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "변수와 사용법",
+        "purpose" : "",
+        "explain" : "var 변수명 으로 사용한다. var는 variable의 줄임말.<br>아래와 같이 사용할 수 있다." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XJrJBax" data-pen-title="변수와 사용법" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/XJrJBax">  변수와 사용법</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "querySelector",
+        "purpose" : "대상을 선택자로 선택하여 제어할 수 있는 것.",
+        "explain" : "querySelector의 경우 조회된 결과값의 가장 첫번째것만 선택 및 반영이 된다.<br>테스트 해본 결과 id선택자의 우선순위가 가장 높은 듯 싶다.<br>아래의 예시에서 태그+아이디 부분이다." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bNbNjvR" data-pen-title="querySelector" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/bNbNjvR">  querySelector</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "getElementById",
+        "purpose" : "id로 대상을 선택하는 것이다.",
+        "explain" : "※getElementById 는 querySelector('#아이디명') 과 동일하다." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="azozjYM" data-pen-title="getElementById" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/azozjYM">  getElementById</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "== 과 === 의 차이",
+        "purpose" : "== : 값의 일치여부만 비교<br>=== : 값, 데이터 종류를 비교",
+        "explain" : "" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bNbNjMR" data-pen-title="== 과 === 의 차이" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/bNbNjMR">  == 과 === 의 차이</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "purpose" : "",
+        "explain" : "" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "purpose" : "",
+        "explain" : "" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "purpose" : "",
+        "explain" : "" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "purpose" : "",
+        "explain" : "" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "purpose" : "",
+        "explain" : "" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "purpose" : "",
+        "explain" : "" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "purpose" : "",
+        "explain" : "" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "purpose" : "",
+        "explain" : "" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "purpose" : "",
+        "explain" : "" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "purpose" : "",
+        "explain" : "" ,
+        "howUse" : ''       
+    },
+]

@@ -4,8 +4,7 @@
 		<meta charset="utf-8">
 		<title>JAVASCRIPT</title>
 		<link rel="stylesheet" href="style.css">
-		<style>	
-		</style>
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	</head>
 	<body>
 		<!-- header 시작 -->
@@ -42,170 +41,176 @@
 		</nav>
 		<!-- navigation 끝 -->
 
-		<div class="nav_studyTitleGrid">
-			<div class="nav_studyTitleDiv">
-				<h1 class="nav_studyTitleText">JAVASCRIPT</h1>
-				<span class="nav_studyTitleTextUnderLine">underLine</span>
-			</div>
-			<div></div>
-		</div>
+		<!-- 메인 시작 -->
+		<main>
+			<!-- title 시작 -->
+			<section class="mainTitleSection">
+				<h1 class="mainTitleText">JAVASCRIPT</h1>
+			</section>
+			<!-- title 끝 -->
 
-		<h3>JavaScript란</h3>
-		정적인 요소만을 지닌 HTML에 사용자와 상호작용 가능한 동적인 요소를 추가하기 위해 사용한다.
+			<!-- 메인컨텐츠 시작 -->
+			<section id="mainSection">
+			</section>
+			<!-- 메인컨텐츠 끝 -->
+		</main>
+		<!-- 메인 끝 -->
 
-		<h3>JavaScript 이용방법</h3>
-		웹브라우저가 JavaScript를 인식할 수 있도록 HTML코드로 알려줘야 한다.<br>
-		아래와 같은 태그를 body태그 안에 쓰면 된다.
-		<xmp>
-		<body>	
-		<script></script>
-		</body>
-		</xmp>
+		<!-- 푸터 시작 -->
+		<footer></footer>
+		<!-- 푸터 끝 -->
 
-		<h3>write에 대하여</h3>
-		웹페이지에 글씨를 출력할 때 사용
-		<xmp>
-		document.write(1+1);
-		document.write('wow');
-		</xmp>
-
-		<h3>이벤트에 대하여</h3>
-		onclick = 클릭 시 이벤트 발생<br>
-		<input type="button" value="asd" onclick="alert('onclick')">	
-		<xmp>
-		<input type="button" value="asd" onclick="alert('onclick')">	
-		</xmp><br>
-
-		onchange = 내용물 변경 시 이벤트 발생 (내용물 변경 후 해당 영역에서 벗어나야 작동)<br>		
-		<input type="text" onchange="alert('onchange')">	
-		<xmp>
-		<input type="text" onchange="alert('onchange')">	
-		</xmp><br>
-
-		onkeydown = 내용물에 입력 시(키를 눌렀을때) 이벤트 발생<br>
-		<input type="text" onkeydown="alert('onkeydown')">	
-		<xmp>
-		<input type="text" onkeydown="alert('onkeydown')">	
-		</xmp><br>
-
-
-		<h3>.length에 대하여</h3>
-		문자열의 크기를 알고싶을때 쓴다.<br>		
-		<xmp>
-		'안녕'.length;
-		</xmp><br>
-
-		<h3>toUpperCase에 대하여</h3>
-		소문자를 대문자로 치환하고 싶을때 쓴다.<br>		
-		<xmp>
-		'asd'.toUpperCase();
-		</xmp><br>
-
-		<h3>indexOf에 대하여</h3>
-		특정 문자열의 index를 알고 싶을때 쓴다.<br>		
-		<xmp>
-		'asd'.indexOf('d');
-		</xmp><br>
-
-
-		<h3>trim에 대하여</h3>
-		공백을 제거하고 싶을때 쓴다.<br>		
-		(문자열이 포함되지 않은 앞, 뒤 공백만을 제거한다.)<br>
-		<xmp>
-		'       asd        d           '.trim();
-		</xmp><br>
-
-
-		<h3>변수와 사용법</h3>
-		var 변수명 으로 사용한다. var는 variable의 줄임말.<br>
-		아래와 같이 사용할 수 있다.<br>
-		<xmp>
-		var asd = '자바스크립트';
-		alert('저는 지금 '+asd+'를 공부하고 있습니다.');
-		</xmp><br>
-
-
-		<h3>querySelector</h3>
-		대상을 선택자로 선택하여 제어할 수 있는 것.<br>
-		아래와 같이 사용할 수 있다.<br>
-		※querySelector의 경우 조회된 결과값의 가장 첫번째것만 선택 및 반영이 된다.
-		<xmp>
-		//태그로 선택 시 
-		document.querySelector('span').style.color="red";
-
-		//클래스로 선택 시 
-		document.querySelector('.spanClass').style.color="red";
-
-		//id로 선택 시 
-		document.querySelector('#spanId').style.color="red";
-		</xmp><br>
-		
-		
-		<h3>getElementById</h3>
-		id로 대상을 선택하는 것이다.<br>
-		아래와 같이 사용한다.
-		<xmp>
-		document.getElementById('spanId').style.color="green";
-
-		getElementById 는 querySelector('#아이디명') 과 동일하다.
-		</xmp><br>
-
-		<h3>== 과 === 의 차이</h3>
-		== : 값의 일치여부만 비교<br>
-		=== : 값, 데이터 종류를 비교<br>
-
+		<script src="json/local/javascriptStudy.json" type="text/javascript"></script>
 		<script>
-			var NData = 1;
-			var SData = "1";
-			if(NData == SData) {
-				document.write("값이 일치함 / ")
-			}else {
-				document.write("값이 일치하지 않음 / ")
-			}			
+			let jsonData;
 
-			if(NData === SData) {
-				document.write("값과 데이터 타입 전부 일치함")
-			}else {
-				document.write("값과 데이터 타입 전부 일치하지 않음")
-			}
+			$.ajaxSetup({ async: false });	// 전역으로 동기화 설정
+			$.getJSON('json/javascriptStudy.json', function(data){
+				//서버에서 실행 시 
+				jsonData = data;
+			})
+			.fail(function() {
+				//로컬에서 실행 시 (CORS에러 때문에 작성)
+				jsonData = javascriptStudy;
+			})
+			.always(function() {
+				jsonData = JSON.parse(JSON.stringify(jsonData));
+			});
+			$.ajaxSetup({ async: true });	// 전역으로 비동기화 설정
+			
+			var html = [];
+			$.each(jsonData, function(i, item){
+				if(item.title == undefined) {
+					console.log("명시되지 않은 타입 존재");
+					return true;	//continue
+				}
+			
+				if(item.type == "groupStart") {
+					html.push('<article class="subArticle">');
+					html.push('	<h3 class="subTitle">');
+					html.push(item.mainTitle);
+					html.push('	</h3>');
+
+					html.push('	<div class="subGroup">');		
+					if(item.reStudy == "y") {
+						html.push('		<h4 class="subTitle du">');
+					}else {
+						html.push('		<h4 class="subTitle">');
+					}
+					html.push(item.title);
+					html.push('		</h4>');
+
+					if(item.purpose != undefined && item.purpose != "") {
+						html.push('	<div class="subGrid">');
+						html.push('		<div class="subTitle">용도</div>');
+						html.push('		<div class="subText">');
+						html.push(item.purpose);
+						html.push('		</div>');
+						html.push('	</div>');
+					}
+
+					if(item.explain != undefined && item.explain != "") {
+						html.push('	<div class="subGrid">');
+						html.push('		<div class="subTitle">설명</div>');
+						html.push('		<div class="subText">');
+						html.push(item.explain);
+						html.push('		</div>');
+						html.push('	</div>');
+					}
+
+					if(item.howUse != undefined && item.howUse != "") {
+							html.push('	<div>');
+							html.push('		<div class="subTitleHowUse">사용법</div>');
+							html.push('		<div class="subTextHowUse">');
+						html.push(item.howUse);
+						html.push('		</div>');
+						html.push('	</div>');
+					}
+				}
+				else if(item.type == "groupIng" || item.type == "groupEnd") {
+					html.push('	<div class="subGroupC">');		
+					if(item.reStudy == "y") {
+						html.push('		<h4 class="subTitle du">');
+					}else {
+						html.push('		<h4 class="subTitle">');
+					}	
+					html.push(item.title);
+					html.push('		</h4>');
+
+					if(item.purpose != undefined && item.purpose != "") {
+						html.push('	<div class="subGrid">');
+						html.push('		<div class="subTitle">용도</div>');
+						html.push('		<div class="subText">');
+						html.push(item.purpose);
+						html.push('		</div>');
+						html.push('	</div>');
+					}
+
+					if(item.explain != undefined && item.explain != "") {
+						html.push('	<div class="subGrid">');
+						html.push('		<div class="subTitle">설명</div>');
+						html.push('		<div class="subText">');
+						html.push(item.explain);
+						html.push('		</div>');
+						html.push('	</div>');
+					}
+
+					if(item.howUse != undefined && item.howUse != "") {
+							html.push('	<div>');
+							html.push('		<div class="subTitleHowUse">사용법</div>');
+							html.push('		<div class="subTextHowUse">');
+						html.push(item.howUse);
+						html.push('		</div>');
+						html.push('	</div>');
+					}
+
+					if(item.type == "groupEnd") {
+						html.push('	</div>');
+						html.push('</article>');
+					}
+				}
+				else {
+					html.push('<article class="subArticle">');
+
+					if(item.reStudy == "y") {
+						html.push('	<h3 class="subTitle du">');
+					}else {
+						html.push('	<h3 class="subTitle">');
+					}
+					html.push(item.title);
+					html.push('	</h3>');
+
+					if(item.purpose != undefined && item.purpose != "") {
+						html.push('	<div class="subGrid">');
+						html.push('		<div class="subTitle">용도</div>');
+						html.push('		<div class="subText">');
+						html.push(item.purpose);
+						html.push('		</div>');
+						html.push('	</div>');
+					}
+					
+					if(item.explain != undefined && item.explain != "") {
+						html.push('	<div class="subGrid">');
+						html.push('		<div class="subTitle">설명</div>');
+						html.push('		<div class="subText">');
+						html.push(item.explain);
+						html.push('		</div>');
+						html.push('	</div>');
+					}
+
+					if(item.howUse != undefined && item.howUse != "") {
+							html.push('	<div>');
+							html.push('		<div class="subTitleHowUse">사용법</div>');
+							html.push('		<div class="subTextHowUse">');
+						html.push(item.howUse);
+						html.push('		</div>');
+						html.push('	</div>');
+					}
+
+					html.push('</article>');
+				}
+			});
+			$('#mainSection').html(html.join(''));	
 		</script>
-		<xmp>
-		var NData = 1;
-		var SData = "1";
-		if(NData == SData) {
-			document.write("값이 일치함 / ")
-		}else {
-			document.write("값이 일치하지 않음 / ")
-		}			
-
-		if(NData === SData) {
-			document.write("값과 데이터 타입 전부 일치함")
-		}else {
-			document.write("값과 데이터 타입 전부 일치하지 않음")
-		}			
-		</xmp><br>
-
-
-		<h3></h3>
-		<xmp>
-		</xmp><br>
-
-		<h3></h3>
-		<xmp>
-		</xmp><br>
-
-		<h3></h3>
-		<xmp>
-		</xmp><br>
-
-		<h3></h3>
-		<xmp>
-		</xmp><br>
-
-		<h3></h3>
-		<xmp>
-		</xmp><br>
-
-
 	</body>
 </html>

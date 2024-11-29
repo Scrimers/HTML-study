@@ -41,137 +41,22 @@
 		
 
 
-		<article class="subArticle">	
-			<h3 class="subTitle">제목</h3>
-			<div class="subGroup">
-				<h4 class="subTitle">제목</h4>	
-				
-				<div class="subGrid">		
-					<div class="subTitle">용도</div>		
-					<div class="subText">용도 텍스트</div>	
-				</div>
+		<p>url을 입력했을 때</p>
+		<iframe src="index.html">아이프레임을 지원하지 않을 시 표시됨</iframe><br><br>
 
-				<div class="subGrid">		
-					<div class="subTitle">설명</div>		
-					<div class="subText">설명 텍스트</div>	
-				</div>	
-				
-				<div>		
-					<div class="subTitleHowUse">사용법</div>		
-					<div class="subTextHowUse">사용법 텍스트</div>
-				</div>
-			</div>
-
-			<div class="subGroup">
-				<h4 class="subTitle">제목</h4>	
-				
-				<div class="subGrid">		
-					<div class="subTitle">용도</div>		
-					<div class="subText">용도 텍스트</div>	
-				</div>
-
-				<div class="subGrid">		
-					<div class="subTitle">설명</div>		
-					<div class="subText">설명 텍스트</div>	
-				</div>	
-				
-				<div>		
-					<div class="subTitleHowUse">사용법</div>		
-					<div class="subTextHowUse">사용법 텍스트</div>
-				</div>
-			</div>
-		</article>
-
-
-		<!--
-		<article class="subArticle">	
-			<h3 class="subTitle">제목</h3>	
-			
-			<div class="subGrid">		
-				<div class="subTitle">용도</div>		
-				<div class="subText">용도 텍스트</div>	
-			</div>
-
-			<div class="subGrid">		
-				<div class="subTitle">설명</div>		
-				<div class="subText">설명 텍스트</div>	
-			</div>	
-			
-			<div>		
-				<div class="subTitleHowUse">사용법</div>		
-				<div class="subTextHowUse">사용법 텍스트</div>
-			</div>
-		</article>
-		-->
-
-		
-		
-	<!-- 
-		<script src="json/local/htmlStudy.json" type="text/javascript"></script>
+		<p>url을 입력하지 않고 스크립트로 문서 입력</p>
+		<iframe id="noURL" src="index.html"></iframe><br><br>
 		<script>
-			let jsonData;
-
-			$.ajaxSetup({ async: false });	// 전역으로 동기화 설정
-			$.getJSON('json/htmlStudy.json', function(data){
-				//서버에서 실행 시 
-				jsonData = data;
-			})
-			.fail(function() {
-				//로컬에서 실행 시 (CORS에러 때문에 작성)
-				jsonData = htmlStudy;
-			})
-			.always(function() {
-				jsonData = JSON.parse(JSON.stringify(jsonData));
-			});
-			$.ajaxSetup({ async: true });	// 전역으로 비동기화 설정
+			const iframe = document.getElementById("noURL");
+			const iframeDoc = iframe.contentWindow.document;
 			
-			
-			
-			var html = [];
-
-			$.each(jsonData, function(i, item){
-				if(item.title == undefined) {
-					console.log("명시되지 않은 타입 존재");
-					return true;	//continue
-				}
-			
-				html.push('<article class="subArticle">');
-
-				html.push('	<h3 class="subTitle">');
-				html.push(item.title);
-				html.push('	</h3>');
-
-				if(item.purpose != undefined && item.purpose != "") {
-					html.push('	<div class="subGrid">');
-					html.push('		<div class="subTitle">용도</div>');
-					html.push('		<div class="subText">');
-					html.push(item.purpose);
-					html.push('		</div>');
-					html.push('	</div>');
-				}
-				
-				if(item.explain != undefined && item.explain != "") {
-					html.push('	<div class="subGrid">');
-					html.push('		<div class="subTitle">설명</div>');
-					html.push('		<div class="subText">');
-					html.push(item.explain);
-					html.push('		</div>');
-					html.push('	</div>');
-				}
-
-				if(item.howUse != undefined && item.howUse != "") {
-					html.push('	<div>');
-					html.push('		<div class="subTitleHowUse">사용법</div>');
-					html.push('		<div class="subTextHowUse">');
-					html.push(item.howUse);
-					html.push('		</div>');
-					html.push('	</div>');
-				}
-
-				html.push('</article>');
-			});
-			$('#divTarget').html(html.join(''));	
+			iframeDoc.open();
+			iframeDoc.write("<p>자바스크립트로 문서를 삽입!</p>");
+			iframeDoc.close();
 		</script>
-	-->
+
+		<p>srcdoc 속성 사용했을 때</p>
+		<iframe srcdoc="<h6>srcdoc으로 HTML태그 입력</h6>"></iframe><br><br>
+
 	</body>
 </html>
