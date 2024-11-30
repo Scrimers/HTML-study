@@ -1,0 +1,35 @@
+@media (hover: none) { 
+    .indexTitle {
+        padding: 1dvh 0dvh 1dvh 0dvh;
+    }
+    .indexTitleText {
+        font-size: 50px;
+    }
+    .indexATag {
+        font-size: 30px;
+    }
+    .mainTitleText {
+        font-size: 80px;
+    }
+    h3.subTitle {
+        font-size: 60px;
+    }
+    h4.subTitle {
+        font-size: 40px;
+    }
+    div.subTitle {
+        font-size: 40px;
+    }
+    .subText {
+        font-size: 40px;
+    }
+    .subArticle {
+        margin: 0px 0px 100px 0px;
+    }
+    iframe.cp_embed_iframe{
+        height: 500px;
+    }
+    .subHowUse {
+        margin-bottom: 20px;
+    }
+}

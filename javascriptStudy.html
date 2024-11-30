@@ -3,8 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<title>JAVASCRIPT</title>
+		<!-- style.css 로드 후 mobileStyle.css가 로드되기에 같은 선택자의 속성은 mobileStyle.css 걸로 덮어씌워진다. -->
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="mobileStyle.css">
 		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<!-- 웹 페이지가 모바일 기기에서 올바르게 렌더링되게 할 수 있도록 선언 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
 		<!-- header 시작 -->
@@ -119,9 +123,9 @@
 					}
 
 					if(item.howUse != undefined && item.howUse != "") {
-							html.push('	<div>');
-							html.push('		<div class="subTitleHowUse">사용법</div>');
-							html.push('		<div class="subTextHowUse">');
+						html.push('	<div class="subHowUse">');
+						html.push('		<div class="subTitleHowUse">사용법</div>');
+						html.push('		<div class="subTextHowUse">');
 						html.push(item.howUse);
 						html.push('		</div>');
 						html.push('	</div>');
@@ -156,9 +160,13 @@
 					}
 
 					if(item.howUse != undefined && item.howUse != "") {
+						if(item.type == "groupIng") {
+							html.push('	<div class="subHowUse">');
+						}else {
 							html.push('	<div>');
-							html.push('		<div class="subTitleHowUse">사용법</div>');
-							html.push('		<div class="subTextHowUse">');
+						}
+						html.push('		<div class="subTitleHowUse">사용법</div>');
+						html.push('		<div class="subTextHowUse">');
 						html.push(item.howUse);
 						html.push('		</div>');
 						html.push('	</div>');
