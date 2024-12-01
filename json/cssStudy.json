@@ -171,22 +171,67 @@
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="pvzvpNG" data-pen-title="디스플레이 Inline-block" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/pvzvpNG">  디스플레이 Inline-block</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
-        "type" : "groupStart",
+        "type" : "",
         "reStudy" : "",
-        "mainTitle" : "박스 모델",
-        "title" : "박스 모델",
+        "mainTitle" : "",
+        "title" : "박스 모델(position 제외)",
         "purpose" : "",
         "explain" : "content = width(너비)와 height(높이)가 차지하는 공간.<br>보통 태그가 차지하는 공간이다.<br>padding = 테두리 기준 내부 여백.<br>※스크롤바는 padding 공간 안에 생성된다.<br>border = 테두리.<br>margin = 테두리 기준 외부 여백.<br>※width에는 포함되지 않는다.<br>※padding, border, margin등 동서남북으로 값을 줄 수 있는 것들은 연달아 값을 설정해줄 수 있다.<br>예를 들어 padding-right: 10px 은 padding: 0 10px 0 0 으로 표현할 수 있다.<br>위 오른쪽 아래 왼쪽 순으로 적으면 된다.<br><br>※padding과 border 모두 width에 포함되지 않는다.<br>만약 width가 50px, height가 30px이고 padding이 10px, border가 10px이면 총 width는 90(50 + 20 + 20)px, height는 70(30 + 20 + 20)px가 됩니다. 20px씩 더하는 이유는 좌우 또는 상하에 padding과 border가 각각 있기 때문이다.<br>이러한 번거로움을 해결하기 위해 box-sizing: border-box 를 해주면 width와 height는 content의 너비가 아니라 border까지 포함한 태그의 너비가 된다.<br>기본적으로는 box-sizing: content-box이다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="LEPEexR" data-pen-title="박스 모델" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/LEPEexR">  박스 모델</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
-        "type" : "groupEnd",
-        "reStudy" : "y",
-        "mainTitle" : "",
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "박스 모델(position)",
         "title" : "position",
-        "purpose" : "태그들의 위치를 결정할 때 쓴다.",
-        "explain" : "" ,
+        "purpose" : "HTML 문서 상에서 요소가 배치되는 방식을 설정",
+        "explain" : "일반적으로 정확한 위치 지정을 위해서 top, right, bottom, left 속성을 함께 쓴다." ,
         "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "position: static",
+        "purpose" : "",
+        "explain" : "디폴트 값이다. static 상태일 땐 HTML에 작성된 순서 그대로 브라우저 화면에 표시가 되며 top, right, bottom, left 속성값은 position 속성이 static일 때는 무시된다." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="GgKgevo" data-pen-title="position:static" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/GgKgevo">    position:static</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "position: relative",
+        "purpose" : "요소를 원래 위치를 기준으로 상대적(relative)으로 배치해준다.",
+        "explain" : "top, right, bottom, left 속성을 이용해서, 요소가 원래 위치에 있을 때 보다 얼마나 떨어지게 할지를 지정할 수 있다.<br>떨어지게 하는 거라 예를 들어 right=20px 을 주게 된다면 오른쪽으로 20px 이동 하는게 아니라<br>현재 위치에서 오른쪽에 20px만큼의 공간이 들어서게 되어 왼쪽으로 밀리게 된다고 보면 된다." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dPbPrVx" data-pen-title="position: relative" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/dPbPrVx">    position: relative</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "position: absolute",
+        "purpose" : "position 속성이 static이 아닌 요소를 기준으로 위치를 지정한다.",
+        "explain" : "absolute속성을 지닌 자신을 기준으로 부모, 조상에 해당하는 요소들의 속성을 찾는다.<br>속성 중 static이 아닌 첫 번째 상위요소를 배치 기준으로 설정한다.<br>만약 상위요소 중 static이 아닌 것이 없다면 body가 배치 기준이 된다.<br>absolute 속성값은 relative 속성값과 함께 사용되는 경우가 많다.<br>※헷갈리는 부분이 적잖이 있기 때문에 꽤나 많은 연습을 해봐야 할 것 같다." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jENPbww" data-pen-title="position: absolute" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/jENPbww">  position: absolute</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "position: fixed",
+        "purpose" : "요소의 위치를 고정할 때 쓴다.",
+        "explain" : "fixed 속성값의 배치 기준은 브라우저 전체화면(뷰포트(viewport))이다.<br>즉, 부모의 영향을 전혀 받지 않는다.<br>fixed속성에서의 top, right, bottom, left는 브라우저의 상단, 우측, 하단, 좌측으로 부터 얼마나 떨어져 있는지 이다.<br>※그런데 조금 이상한 점이... div는 block이라서 너비를 전체를 차지할텐데, 왜인지 텍스트가 있는 div는 너비가 컨텐츠의 길이까지 밖에 안된다." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ByBNoPp" data-pen-title="position: fixed" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/ByBNoPp">  position: fixed</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "position: sticky",
+        "purpose" : "fixed와 비슷하지만... 자신의 위치를 벗어났을때 그떄 달라 붙는다.<br>글로선 표현하기 좀 힘드니 예시를 보는게 좋을 것 같다.",
+        "explain" : "fixed와 sticky의 차이는<br>fixed는 처음부터 지정한 위치에 달라 붙어 있지만, sticky는 해당 영역을 넘어서야 달라 붙게된다.<br>예를 들어 top:100px의 속성을 지닌 fixed가 있다고 헸을때 스크롤을 내리던, 내리지 않던 무조건 top:100px에 해당하는 위치에 고정되어 있다.<br>반면 sticky의 경우 처음부터 top:100px에 해당하는 위치에 고정되어 있는게 아니라 스크롤을 내리다 sticky 속성을 지닌 요소를 지나쳤을때 달라붙게 된다." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="raBVOqq" data-pen-title="position: sticky" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/raBVOqq">  position: sticky</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
         "type" : "",
