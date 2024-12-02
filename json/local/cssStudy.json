@@ -203,7 +203,7 @@ cssStudy = [
         "mainTitle" : "",
         "title" : "position: relative",
         "purpose" : "요소를 원래 위치를 기준으로 상대적(relative)으로 배치해준다.",
-        "explain" : "top, right, bottom, left 속성을 이용해서, 요소가 원래 위치에 있을 때 보다 얼마나 떨어지게 할지를 지정할 수 있다.<br>떨어지게 하는 거라 예를 들어 right=20px 을 주게 된다면 오른쪽으로 20px 이동 하는게 아니라<br>현재 위치에서 오른쪽에 20px만큼의 공간이 들어서게 되어 왼쪽으로 밀리게 된다고 보면 된다." ,
+        "explain" : "top, right, bottom, left 속성을 이용해서, 요소가 원래 위치에 있을 때 보다 얼마나 떨어지게 할지를 지정할 수 있다.<br>떨어지게 하는 거라 예를 들어 right=20px 을 주게 된다면 오른쪽으로 20px 이동 하는게 아니라<br>현재 위치에서 오른쪽에 20px만큼의 공간이 들어서게 되어 왼쪽으로 밀리게 된다고 보면 된다.<br>만약 반대쪽으로 이동하게 하고 싶다면 음수(ex : -20px)를 쓰면 된다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dPbPrVx" data-pen-title="position: relative" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/dPbPrVx">    position: relative</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -212,7 +212,7 @@ cssStudy = [
         "mainTitle" : "",
         "title" : "position: absolute",
         "purpose" : "position 속성이 static이 아닌 요소를 기준으로 위치를 지정한다.",
-        "explain" : "absolute속성을 지닌 자신을 기준으로 부모, 조상에 해당하는 요소들의 속성을 찾는다.<br>속성 중 static이 아닌 첫 번째 상위요소를 배치 기준으로 설정한다.<br>만약 상위요소 중 static이 아닌 것이 없다면 body가 배치 기준이 된다.<br>absolute 속성값은 relative 속성값과 함께 사용되는 경우가 많다.<br>※헷갈리는 부분이 적잖이 있기 때문에 꽤나 많은 연습을 해봐야 할 것 같다." ,
+        "explain" : "absolute속성을 지닌 자신을 기준으로 부모, 조상에 해당하는 요소들의 속성을 찾는다.<br>속성 중 static이 아닌 첫 번째 상위요소를 배치 기준으로 설정한다.<br>만약 상위요소 중 static이 아닌 것이 없다면 body가 배치 기준이 된다.<br>absolute 속성값은 relative 속성값과 함께 사용되는 경우가 많다.<br>또한 absolute가 되면 div여도 더는 width: 100%가 아니게 된다.<br>※헷갈리는 부분이 적잖이 있기 때문에 꽤나 많은 연습을 해봐야 할 것 같다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jENPbww" data-pen-title="position: absolute" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/jENPbww">  position: absolute</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -221,7 +221,7 @@ cssStudy = [
         "mainTitle" : "",
         "title" : "position: fixed",
         "purpose" : "요소의 위치를 고정할 때 쓴다.",
-        "explain" : "fixed 속성값의 배치 기준은 브라우저 전체화면(뷰포트(viewport))이다.<br>즉, 부모의 영향을 전혀 받지 않는다.<br>fixed속성에서의 top, right, bottom, left는 브라우저의 상단, 우측, 하단, 좌측으로 부터 얼마나 떨어져 있는지 이다.<br>※그런데 조금 이상한 점이... div는 block이라서 너비를 전체를 차지할텐데, 왜인지 텍스트가 있는 div는 너비가 컨텐츠의 길이까지 밖에 안된다." ,
+        "explain" : "fixed 속성값의 배치 기준은 브라우저 전체화면(뷰포트(viewport))이다.<br>즉, 부모의 영향을 전혀 받지 않는다.<br>fixed속성에서의 top, right, bottom, left는 브라우저의 상단, 우측, 하단, 좌측으로 부터 얼마나 떨어져 있는지 이다.<br>fixed도 absolute와 마찬가지로 div태그여도 더는 width: 100%가 아니게 된다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ByBNoPp" data-pen-title="position: fixed" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/ByBNoPp">  position: fixed</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -252,6 +252,25 @@ cssStudy = [
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XJrJVaJ" data-pen-title="반응형 디자인" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/XJrJVaJ">  반응형 디자인</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "정렬",
+        "title" : "기본적인 정렬 방법",
+        "purpose" : "",
+        "explain" : "" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "float",
+        "purpose" : "",
+        "explain" : "" ,
+        "howUse" : ''       
+    },
+
+    {
         "type" : "",
         "reStudy" : "",
         "mainTitle" : "",
@@ -260,15 +279,7 @@ cssStudy = [
         "explain" : "" ,
         "howUse" : ''       
     },
-    {
-        "type" : "",
-        "reStudy" : "",
-        "mainTitle" : "",
-        "title" : "",
-        "purpose" : "",
-        "explain" : "" ,
-        "howUse" : ''       
-    },
+    
     {
         "type" : "",
         "reStudy" : "",
