@@ -1,5 +1,8 @@
-@media (hover: none) { 
-    body {
+@media (pointer: coarse) {
+    h1 {
+        color: red;
+    }
+    /* body {
         padding: 0dvh 3dvh 0dvh 3dvh;
     }
     .indexStudyListGrid, .indexETCGrid {
@@ -35,5 +38,5 @@
     }
     .subTitleHowUse {
         font-size: 1.5dvh;
-    }
+    } */
 }

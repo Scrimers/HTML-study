@@ -4,8 +4,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "CSS란",
-        "purpose" : "Cascading Style Sheets의 줄임말.<br>웹페이지를 꾸미는 디자인 요소로서 쓰인다.",
-        "explain" : "HTML이 만들어진 후 사람들은 단순히 정보를 노출 시키는 것에 불만을 표했다.<br>이를 보완하기 위해 디자인 적 요소가 추가되게 되는데<br>먼저 생긴 것이 font 태그와 같이 기존 html에 디자인과 관련된 태그를 추가하는 것이었다.<br>하지만 수많은 페이지의 수많은 부분의 디자인을 변경해야할 경우 font 태그나 inline-style만으로는 유지보수가 힘들어진다는 한계점에 도달하게 된다.<br>그리하여 HTML에서 스타일만 분리하여 반복적인 부분을 일괄적으로 적용하기 위해 CSS가 탄생하게 되었다.<br><br>CSS는 HTML과는 완전히 다른 언어이지만 서로 호환이 된다.<br>이유는 CSS가 HTML문법으로 작성되었기에 이를 웹브라우저가 인식하여 CSS 문법으로 해석할 수 있기에 호환이 가능한 것이다." ,
+        "explain" : "Cascading Style Sheets의 줄임말.<br><mark class='gray'>웹페이지를 꾸미는 디자인 요소로서 쓰인다.</mark><br>HTML이 만들어진 후 사람들은 단순히 정보를 노출 시키는 것에 불만을 표했다.<br>이를 보완하기 위해 디자인 적 요소가 추가되게 되는데<br>먼저 생긴 것이 font 태그와 같이 기존 html에 디자인과 관련된 태그를 추가하는 것이었다.<br>하지만 수많은 페이지의 수많은 부분의 디자인을 변경해야할 경우 font 태그나 inline-style만으로는 유지보수가 힘들어진다는 한계점에 도달하게 된다.<br>그리하여 <mark class='gray'>HTML에서 스타일만 분리하여 반복적인 부분을 일괄적으로 적용하기 위해 CSS가 탄생하게 되었다.</mark><br><br>CSS는 HTML과는 완전히 다른 언어이지만 서로 호환이 된다.<br>이유는 CSS가 HTML문법으로 작성되었기에 이를 웹브라우저가 인식하여 CSS 문법으로 해석할 수 있기에 호환이 가능한 것이다." ,
         "howUse" : ''       
     },
     {
@@ -13,7 +12,6 @@ cssStudy = [
         "reStudy" : "y",
         "mainTitle" : "",
         "title" : "CSS 파일 변경 시 캐시 삭제 안해도 되는 방법",
-        "purpose" : "",
         "explain" : "" ,
         "howUse" : ''       
     },
@@ -22,8 +20,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "CSS 적용 방법",
         "title" : "인라인 스타일",
-        "purpose" : "",
-        "explain" : "HTML태그의 속성란에 style을 선언하여 적용할 CSS를 적는 방법<br>인라인 스타일의 장점 : 각 요소마다 개별적으로 CSS를 적용시킬 수 있다.<br>인라인 스타일의 단점 : 중복되는 여러 요소들에도 전부 개별적으로 CSS를 적용시켜야 하니 유지보수가 어려워짐." ,
+        "explain" : "<mark class='gray'>HTML태그의 속성란에 style을 선언하여 적용할 CSS를 적는 방법</mark><br>인라인 스타일의 장점 : <mark class='gray'>각 요소마다 개별적으로 CSS를 적용시킬 수 있다.</mark><br>인라인 스타일의 단점 : <mark class='gray'>중복되는 여러 요소들에도 전부 개별적으로 CSS를 적용시켜야 하니 유지보수가 어려워짐.</mark>" ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XJrJVWL" data-pen-title="인라인 스타일" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/XJrJVWL">  인라인 스타일</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -31,8 +28,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "내부 스타일",
-        "purpose" : "",
-        "explain" : "head 태그 밑에 style태그와 선택자를 이용하여 적용할 CSS를 적는 방법<br>내부 스타일의 장점 : 선언한 선택자를 지닌 모든 것들에 일괄적으로 CSS를 적용 가능. 즉, 유지보수 용이<br>내부 스타일의 단점 : 같은 선택자를 지녔으나 서로 다른 CSS를 적용해야 하는 경우 불가능함.<br>(이를 해결하기 위해선 선택자가 상세하게 나뉘어야 한다.)<br>같은 스타일을 공유해야하는 페이지가 여러개 있는 경우 각 페이지 별로 선언해줘야 한다." ,
+        "explain" : "<mark class='gray'>head 태그 밑에 style태그와 선택자를 이용하여 적용할 CSS를 적는 방법</mark><br>내부 스타일의 장점 : 선언한 선택자를 지닌 모든 것들에 일괄적으로 CSS를 적용 가능. 즉, <mark class='gray'>유지보수가 쉽다.</mark><br>내부 스타일의 단점 : 같은 선택자를 지녔으나 서로 다른 CSS를 적용해야 하는 경우 불가능함.<br>(이를 해결하기 위해선 선택자가 상세하게 나뉘어야 한다.)<br><mark class='gray'>같은 스타일을 공유해야하는 페이지가 여러개 있는 경우 각 페이지 별로 선언해줘야 한다.</mark>" ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="emOmymo" data-pen-title="내부 스타일" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/emOmymo">  내부 스타일</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -40,8 +36,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "외부 스타일",
-        "purpose" : "",
-        "explain" : "head태그 밑에 link태그 등으로 css파일을 연결 시켜 CSS를 적용하는 방법<br>가장 많이 쓰이는 방법으로 알고있다." ,
+        "explain" : "<mark class='gray'>head태그 밑에 link태그로 css파일을 연결 시켜 CSS를 적용하는 방법</mark><br>가장 많이 쓰이는 방법으로 알고있다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="raBapVE" data-pen-title="외부 스타일" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/raBapVE">  외부 스타일</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -49,8 +44,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "선택자(Selector)",
         "title" : "태그(Tag)",
-        "purpose" : "태그를 선택하는 방법이다.",
-        "explain" : "" ,
+        "explain" : "태그를 선택하는 방법이다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="KwPwZdr" data-pen-title="태그 선택" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/KwPwZdr">  태그 선택</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -58,8 +52,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "클래스(Class)",
-        "purpose" : "클래스를 선택하는 방법이다.",
-        "explain" : "" ,
+        "explain" : "클래스를 선택하는 방법이다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="OPLPzyz" data-pen-title="클래스 선택" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/OPLPzyz">  클래스 선택</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -67,8 +60,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "아이디(Id)",
-        "purpose" : "아이디를 선택하는 방법이다.",
-        "explain" : "" ,
+        "explain" : "아이디를 선택하는 방법이다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XJrJVmv" data-pen-title="아이디 선택" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/XJrJVmv">  아이디 선택</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -76,8 +68,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "속성",
-        "purpose" : "태그가 지닌 속성으로 선택하는 방법이다.",
-        "explain" : "" ,
+        "explain" : "태그가 지닌 속성으로 선택하는 방법이다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bNbNvxo" data-pen-title="속성 선택" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/bNbNvxo">  속성 선택</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -85,8 +76,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "결합자",
         "title" : "여러 태그 선택",
-        "purpose" : "여러 태그를 선택하는 방법이다",
-        "explain" : "" ,
+        "explain" : "여러 태그를 선택하는 방법이다" ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="NPKPXxz" data-pen-title="여러 태그 선택" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/NPKPXxz">  여러 태그 선택</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -94,8 +84,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "하나의 태그 세밀하게 선택",
-        "purpose" : "하나의 태그를 아이디,클래스,속성들을 세밀하게 선택하는 방법이다",
-        "explain" : "" ,
+        "explain" : "하나의 태그를 아이디,클래스,속성들을 세밀하게 선택하는 방법이다" ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jENEzQz" data-pen-title="하나의 태그 세밀하게 선택" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/jENEzQz">  하나의 태그 세밀하게 선택</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -103,8 +92,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "자손",
-        "purpose" : "자손 태그를 선택하는 방법이다",
-        "explain" : "" ,
+        "explain" : "자손 태그를 선택하는 방법이다" ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="pvzvpyq" data-pen-title="자손 태그 선택" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/pvzvpyq">  자손 태그 선택</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -112,8 +100,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "자식",
-        "purpose" : "자식 태그를 선택하는 방법이다",
-        "explain" : "제일 처음의 p태그 바로 아래에 있는 a태그만 red로 변하게 된다.<br>button의 색상이 변하지 않는 이유는 자식이 아닌 자손이기 떄문이다." ,
+        "explain" : "자식 태그를 선택하는 방법이다<br>제일 처음의 p태그 바로 아래에 있는 a태그만 red로 변하게 된다.<br>button의 색상이 변하지 않는 이유는 자식이 아닌 자손이기 떄문이다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ByByJzr" data-pen-title="자식 태그 선택" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/ByByJzr">  자식 태그 선택</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -121,7 +108,6 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "CSS 적용 순서",
         "title" : "CSS 적용 순서1",
-        "purpose" : "",
         "explain" : "CSS의 적용순서는 선택자에 따라 우선순위가 결정되고<br>같은 우선순위의 선택자인 경우 가장 마지막에 선언된것이 적용된다.<br><br>아래의 코드의 경우 적용되는 CSS는 #aTagId의 color: rgb(225, 255, 0);와 .bColor의 font-size: 50px; 이다.<br>아이디 선택자가 우선적으로 적용되므로 color 속성을 지닌 모든 것들 중에서 아이디 선택자의 것이 적용되는 것이고<br>유일하게 font-size 속성을 지닌 bColor선택자의 속성이 적용되는 것이다" ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="emOmyzw" data-pen-title="CSS 적용 순서1" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/emOmyzw">  CSS 적용 순서1</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
@@ -130,7 +116,6 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "CSS 적용 순서2",
-        "purpose" : "",
         "explain" : "같은 우선순위의 같은 속성을 지닌 아래 코드같은 경우 선택자는 같은 클래스이므로 가장 마지막에 선언된 .aColor가 우선순위를 갖게 되어 color : yellow; 가 적용되게 된다.<br>또한 .aColor와 중복되지 않는 font-size의 경우 .bColor가 .cColor보다 아래에 위치하기 떄문에 font-size: 50px; 이 적용되게 된다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="azozEmO" data-pen-title="CSS 적용 순서2" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/azozEmO">  CSS 적용 순서2</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
@@ -139,8 +124,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "CSS 적용 순서3",
-        "purpose" : "적용 순서에 대해서 최종 정리를 해보겠다.",
-        "explain" : "적용순서는 다음과 같다.<br>1.기본적으로 뒤에 나오는 css가 우선순위가 높다.<br>2.!important<br>3.inline style 속성<br>4.id<br>5.class, 다른 속성, 수도클래스(:first-child같은 것)<br>6.tag element, 수도엘레먼트(::before같은 것).<br>※우선순위가 같다면 개수가 많은 css가 우선순위가 높다.<br><br>※일반적으로 !important와 inline style attribute은 실무에서 사용을 제한하는 경우가 많다." ,
+        "explain" : "적용 순서에 대해서 최종 정리를 해보겠다.<br>적용순서는 다음과 같다.<br>1.기본적으로 뒤에 나오는 css가 우선순위가 높다.<br>2.!important<br>3.inline style 속성<br>4.id<br>5.class, 다른 속성, 수도클래스(:first-child같은 것)<br>6.tag element, 수도엘레먼트(::before같은 것).<br>※우선순위가 같다면 개수가 많은 css가 우선순위가 높다.<br><br>※일반적으로 !important와 inline style attribute은 실무에서 사용을 제한하는 경우가 많다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QwLbaqV" data-pen-title="CSS 적용 순서 3" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/QwLbaqV">  CSS 적용 순서 3</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -148,7 +132,6 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "중복을 줄이는 방법",
-        "purpose" : "",
         "explain" : "h1태그1의 CSS를 h1태그2의 CSS와 같이 줄일 수 있다.<br>이때 순서는 중요치 않다. 예를 들어 h1태그2의 CSS를 red solid 5px 라고 해도 된다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qEWEpqZ" data-pen-title="중복을 줄이는 방법" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/qEWEpqZ">  중복을 줄이는 방법</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
@@ -157,8 +140,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "display",
         "title" : "inline",
-        "purpose" : "컨텐츠 너비만큼 영역이 잡힘",
-        "explain" : "width, height, 상하 padding과 margin을 줄 수 없다...고는 써있는데<br>막상해보니까 width, height, margin을 상하만 줄 수 없다.<br>※컨텐츠의 높이를 따라간다." ,
+        "explain" : "컨텐츠 너비만큼 영역이 잡힘<br>width, height, 상하 padding과 margin을 줄 수 없다...고는 써있는데<br>막상해보니까 width, height, margin을 상하만 줄 수 없다.<br>※컨텐츠의 높이를 따라간다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YPKPYpZ" data-pen-title="디스플레이 inline" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/YPKPYpZ">  디스플레이 inline</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -166,8 +148,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "block",
-        "purpose" : "화면 전체 너비만큼 영역이 잡힘",
-        "explain" : "height를 줄 수 없다..... 고는 써있는데 막상 해보니까 변화가 있긴한데....<br>※컨텐츠의 높이를 따라간다." ,
+        "explain" : "화면 전체 너비만큼 영역이 잡힘<br>height를 줄 수 없다..... 고는 써있는데 막상 해보니까 변화가 있긴한데....<br>※컨텐츠의 높이를 따라간다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="Wbebdog" data-pen-title="디스플레이 block" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/Wbebdog">  디스플레이 block</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -175,8 +156,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "Inline-block",
-        "purpose" : "inline, block의 장점(?)을 합친 것.",
-        "explain" : "inline과 마찬가지로 내용물의 길이만큼 공간을 차지하나 width, height, padding, margin등 여러 속성을 줄 수 있다.<br>일반적으로 가장 많이 쓰이며 Block 타입의 Div태그를 Inline_block로 변경해서 많이 쓴다.<br>※컨텐츠의 높이를 따라간다." ,
+        "explain" : "inline, block의 장점(?)을 합친 것.<br>inline과 마찬가지로 내용물의 길이만큼 공간을 차지하나 width, height, padding, margin등 여러 속성을 줄 수 있다.<br>일반적으로 가장 많이 쓰이며 Block 타입의 Div태그를 Inline_block로 변경해서 많이 쓴다.<br>※컨텐츠의 높이를 따라간다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="pvzvpNG" data-pen-title="디스플레이 Inline-block" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/pvzvpNG">  디스플레이 Inline-block</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -184,7 +164,6 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "박스 모델(position 제외)",
-        "purpose" : "",
         "explain" : "content = width(너비)와 height(높이)가 차지하는 공간.<br>보통 태그가 차지하는 공간이다.<br>padding = 테두리 기준 내부 여백.<br>※스크롤바는 padding 공간 안에 생성된다.<br>border = 테두리.<br>margin = 테두리 기준 외부 여백.<br>※width에는 포함되지 않는다.<br>※padding, border, margin등 동서남북으로 값을 줄 수 있는 것들은 연달아 값을 설정해줄 수 있다.<br>예를 들어 padding-right: 10px 은 padding: 0 10px 0 0 으로 표현할 수 있다.<br>위 오른쪽 아래 왼쪽 순으로 적으면 된다.<br><br>※padding과 border 모두 width에 포함되지 않는다.<br>만약 width가 50px, height가 30px이고 padding이 10px, border가 10px이면 총 width는 90(50 + 20 + 20)px, height는 70(30 + 20 + 20)px가 됩니다. 20px씩 더하는 이유는 좌우 또는 상하에 padding과 border가 각각 있기 때문이다.<br>이러한 번거로움을 해결하기 위해 box-sizing: border-box 를 해주면 width와 height는 content의 너비가 아니라 border까지 포함한 태그의 너비가 된다.<br>기본적으로는 box-sizing: content-box이다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="LEPEexR" data-pen-title="박스 모델" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/LEPEexR">  박스 모델</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
@@ -193,8 +172,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "박스 모델(position)",
         "title" : "position",
-        "purpose" : "HTML 문서 상에서 요소가 배치되는 방식을 설정",
-        "explain" : "일반적으로 정확한 위치 지정을 위해서 top, right, bottom, left 속성을 함께 쓴다." ,
+        "explain" : "HTML 문서 상에서 요소가 배치되는 방식을 설정<br>일반적으로 정확한 위치 지정을 위해서 top, right, bottom, left 속성을 함께 쓴다." ,
         "howUse" : ''       
     },
     {
@@ -202,7 +180,6 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "position: static",
-        "purpose" : "",
         "explain" : "디폴트 값이다. static 상태일 땐 HTML에 작성된 순서 그대로 브라우저 화면에 표시가 되며 top, right, bottom, left 속성값은 position 속성이 static일 때는 무시된다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="GgKgevo" data-pen-title="position:static" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/GgKgevo">    position:static</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
@@ -211,8 +188,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "position: relative",
-        "purpose" : "요소를 원래 위치를 기준으로 상대적(relative)으로 배치해준다.",
-        "explain" : "top, right, bottom, left 속성을 이용해서, 요소가 원래 위치에 있을 때 보다 얼마나 떨어지게 할지를 지정할 수 있다.<br>떨어지게 하는 거라 예를 들어 right=20px 을 주게 된다면 오른쪽으로 20px 이동 하는게 아니라<br>현재 위치에서 오른쪽에 20px만큼의 공간이 들어서게 되어 왼쪽으로 밀리게 된다고 보면 된다.<br>만약 반대쪽으로 이동하게 하고 싶다면 음수(ex : -20px)를 쓰면 된다." ,
+        "explain" : "요소를 원래 위치를 기준으로 상대적(relative)으로 배치해준다.<br>top, right, bottom, left 속성을 이용해서, 요소가 원래 위치에 있을 때 보다 얼마나 떨어지게 할지를 지정할 수 있다.<br>떨어지게 하는 거라 예를 들어 right=20px 을 주게 된다면 오른쪽으로 20px 이동 하는게 아니라<br>현재 위치에서 오른쪽에 20px만큼의 공간이 들어서게 되어 왼쪽으로 밀리게 된다고 보면 된다.<br>만약 반대쪽으로 이동하게 하고 싶다면 음수(ex : -20px)를 쓰면 된다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dPbPrVx" data-pen-title="position: relative" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/dPbPrVx">    position: relative</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -220,8 +196,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "position: absolute",
-        "purpose" : "position 속성이 static이 아닌 요소를 기준으로 위치를 지정한다.",
-        "explain" : "absolute속성을 지닌 자신을 기준으로 부모, 조상에 해당하는 요소들의 속성을 찾는다.<br>속성 중 static이 아닌 첫 번째 상위요소를 배치 기준으로 설정한다.<br>만약 상위요소 중 static이 아닌 것이 없다면 body가 배치 기준이 된다.<br>absolute 속성값은 relative 속성값과 함께 사용되는 경우가 많다.<br>또한 absolute가 되면 div여도 더는 width: 100%가 아니게 된다.<br>※헷갈리는 부분이 적잖이 있기 때문에 꽤나 많은 연습을 해봐야 할 것 같다." ,
+        "explain" : "position 속성이 static이 아닌 요소를 기준으로 위치를 지정한다.<br>absolute속성을 지닌 자신을 기준으로 부모, 조상에 해당하는 요소들의 속성을 찾는다.<br>속성 중 static이 아닌 첫 번째 상위요소를 배치 기준으로 설정한다.<br>만약 상위요소 중 static이 아닌 것이 없다면 body가 배치 기준이 된다.<br>absolute 속성값은 relative 속성값과 함께 사용되는 경우가 많다.<br>또한 absolute가 되면 div여도 더는 width: 100%가 아니게 된다.<br>※헷갈리는 부분이 적잖이 있기 때문에 꽤나 많은 연습을 해봐야 할 것 같다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jENPbww" data-pen-title="position: absolute" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/jENPbww">  position: absolute</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -229,8 +204,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "position: fixed",
-        "purpose" : "요소의 위치를 고정할 때 쓴다.",
-        "explain" : "fixed 속성값의 배치 기준은 브라우저 전체화면(뷰포트(viewport))이다.<br>즉, 부모의 영향을 전혀 받지 않는다.<br>fixed속성에서의 top, right, bottom, left는 브라우저의 상단, 우측, 하단, 좌측으로 부터 얼마나 떨어져 있는지 이다.<br>fixed도 absolute와 마찬가지로 div태그여도 더는 width: 100%가 아니게 된다." ,
+        "explain" : "요소의 위치를 고정할 때 쓴다.<br>fixed 속성값의 배치 기준은 브라우저 전체화면(뷰포트(viewport))이다.<br>즉, 부모의 영향을 전혀 받지 않는다.<br>fixed속성에서의 top, right, bottom, left는 브라우저의 상단, 우측, 하단, 좌측으로 부터 얼마나 떨어져 있는지 이다.<br>fixed도 absolute와 마찬가지로 div태그여도 더는 width: 100%가 아니게 된다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ByBNoPp" data-pen-title="position: fixed" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/ByBNoPp">  position: fixed</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -238,8 +212,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "position: sticky",
-        "purpose" : "fixed와 비슷하지만... 자신의 위치를 벗어났을때 그떄 달라 붙는다.<br>글로선 표현하기 좀 힘드니 예시를 보는게 좋을 것 같다.",
-        "explain" : "fixed와 sticky의 차이는<br>fixed는 처음부터 지정한 위치에 달라 붙어 있지만, sticky는 해당 영역을 넘어서야 달라 붙게된다.<br>예를 들어 top:100px의 속성을 지닌 fixed가 있다고 헸을때 스크롤을 내리던, 내리지 않던 무조건 top:100px에 해당하는 위치에 고정되어 있다.<br>반면 sticky의 경우 처음부터 top:100px에 해당하는 위치에 고정되어 있는게 아니라 스크롤을 내리다 sticky 속성을 지닌 요소를 지나쳤을때 달라붙게 된다." ,
+        "explain" : "fixed와 비슷하지만... 자신의 위치를 벗어났을때 그떄 달라 붙는다.<br>글로선 표현하기 좀 힘드니 예시를 보는게 좋을 것 같다.<br>fixed와 sticky의 차이는<br>fixed는 처음부터 지정한 위치에 달라 붙어 있지만, sticky는 해당 영역을 넘어서야 달라 붙게된다.<br>예를 들어 top:100px의 속성을 지닌 fixed가 있다고 헸을때 스크롤을 내리던, 내리지 않던 무조건 top:100px에 해당하는 위치에 고정되어 있다.<br>반면 sticky의 경우 처음부터 top:100px에 해당하는 위치에 고정되어 있는게 아니라 스크롤을 내리다 sticky 속성을 지닌 요소를 지나쳤을때 달라붙게 된다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="raBVOqq" data-pen-title="position: sticky" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/raBVOqq">  position: sticky</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -247,8 +220,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "그리드",
-        "purpose" : "div : division의 줄임말. 단순히 디자인의 용도로만 쓰임.<br>기본적으로 block level element 이다.<br>span : 단순히 디자인의 용도로만 쓰임.<br>기본적으로 inline level element 이다.",
-        "explain" : "div들을 나란히 배치하고싶다면 부모div가 필요하다.<br>아래와 같이 하면 된다.<br>※fr = 화면전체를 쓸 수 있도록 자동으로 조정되는 단위" ,
+        "explain" : "div : division의 줄임말. 단순히 디자인의 용도로만 쓰임.<br>기본적으로 block level element 이다.<br>span : 단순히 디자인의 용도로만 쓰임.<br>기본적으로 inline level element 이다.<br>div들을 나란히 배치하고싶다면 부모div가 필요하다.<br>아래와 같이 하면 된다.<br>※fr = 화면전체를 쓸 수 있도록 자동으로 조정되는 단위" ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dPbPJWN" data-pen-title="그리드" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/dPbPJWN">  그리드</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -256,8 +228,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "반응형 디자인",
-        "purpose" : "화면의 크기에 따라서 웹페이지의 각 요소들이 최적화된 모양으로 바뀌게 하는 것.<br>이러한 반응형 디자인을 만들기 위해선 미디어쿼리(@media)를 써야한다.",
-        "explain" : "아래의 내용은 div태그는 기본적으로 border, font-size속성을 지니고 있되<br>화면의 최대 크기가 600이하일떄는 div태그를 보이지 않게 하라는 의미이다." ,
+        "explain" : "화면의 크기에 따라서 웹페이지의 각 요소들이 최적화된 모양으로 바뀌게 하는 것.<br>이러한 반응형 디자인을 만들기 위해선 미디어쿼리(@media)를 써야한다.<br>아래의 내용은 div태그는 기본적으로 border, font-size속성을 지니고 있되<br>화면의 최대 크기가 600이하일떄는 div태그를 보이지 않게 하라는 의미이다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XJrJVaJ" data-pen-title="반응형 디자인" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/XJrJVaJ">  반응형 디자인</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -265,8 +236,7 @@ cssStudy = [
         "reStudy" : "y",
         "mainTitle" : "정렬",
         "title" : "기본적인 정렬 방법",
-        "purpose" : "정렬하는 방법은 여러가지가 있는 것으로 보인다.<br>추후 공부 예정.",
-        "explain" : "" ,
+        "explain" : "정렬하는 방법은 여러가지가 있는 것으로 보인다.<br>추후 공부 예정." ,
         "howUse" : ''       
     },
     {
@@ -274,8 +244,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "float",
-        "purpose" : "왼쪽->오른쪽, 위->아래의 순서가 아닌 지정한 위치로 붕 뜨게 하는 정렬방법. ",
-        "explain" : "float를 사용해서 지정 위치로 붕 뜨게 된다면. 그 다음 태그들이 왼쪽->오른쪽, 위->아래의 순서로 빈자리를 메꾸게 된다.<br>이를 방지하기 위해 빈자리를 메꾼 태그들에 clear 속성을 써서 빈자리를 메꾸지 못하게 할 수 있다.<br>flaot를 쓰게되면 div의 경우 width가 100%가 아니게 된다.<br>또한 부모태그가 float속성을 지닌 자식태그의 height를 인식하지 못한다는 문제점이 있다.<br>이를 위해서 부모 태그에게 overflow: auto나 overflow: hidden를 주어 float속성의 자식 태그의 height를 인식하게 할 수 있다.<br>display: inline-block의 간격 문제를 해결하는 데도 float: left가 사용된다." ,
+        "explain" : "왼쪽->오른쪽, 위->아래의 순서가 아닌 지정한 위치로 붕 뜨게 하는 정렬방법.<br>float를 사용해서 지정 위치로 붕 뜨게 된다면. 그 다음 태그들이 왼쪽->오른쪽, 위->아래의 순서로 빈자리를 메꾸게 된다.<br>이를 방지하기 위해 빈자리를 메꾼 태그들에 clear 속성을 써서 빈자리를 메꾸지 못하게 할 수 있다.<br>flaot를 쓰게되면 div의 경우 width가 100%가 아니게 된다.<br>또한 부모태그가 float속성을 지닌 자식태그의 height를 인식하지 못한다는 문제점이 있다.<br>이를 위해서 부모 태그에게 overflow: auto나 overflow: hidden를 주어 float속성의 자식 태그의 height를 인식하게 할 수 있다.<br>display: inline-block의 간격 문제를 해결하는 데도 float: left가 사용된다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="yyBNpOR" data-pen-title="float" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/yyBNpOR">  float</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -283,8 +252,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "z-index",
-        "purpose" : "먼저 나온 태그를 더 위에 배치하고 싶을 떄 사용.<br>z값을 조정하는 것이라고 생각하면 편할 듯 하다.",
-        "explain" : "※z-index는 각 태그들이 왼쪽->오른쪽, 위->아래의 순서로 노출되는 것을 다루는 것이 아니라 어떤 태그가 위에 겹쳐서 노출되는 지를 다루는 것이다.<br>아래의 순서로 겹쳐진다.<br>1. position 속성에 z-index가 있고 z-index가 큰 것.<br>(부모-자식 관계로 형성된 태그가 있다면 부모로 먼저 비교한다.)<br>2. position 속성만 있는 것<br>3. position 속성이 없는 것<br>아래의 예시를 보면 금방 이해할 것으로 생각된다.<br><br>※z-index의 기본 값은 0이다." ,
+        "explain" : "먼저 나온 태그를 더 위에 배치하고 싶을 떄 사용.<br>z값을 조정하는 것이라고 생각하면 편할 듯 하다.<br>※z-index는 각 태그들이 왼쪽->오른쪽, 위->아래의 순서로 노출되는 것을 다루는 것이 아니라 어떤 태그가 위에 겹쳐서 노출되는 지를 다루는 것이다.<br>아래의 순서로 겹쳐진다.<br>1. position 속성에 z-index가 있고 z-index가 큰 것.<br>(부모-자식 관계로 형성된 태그가 있다면 부모로 먼저 비교한다.)<br>2. position 속성만 있는 것<br>3. position 속성이 없는 것<br>아래의 예시를 보면 금방 이해할 것으로 생각된다.<br><br>※z-index의 기본 값은 0이다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="Wbevdga" data-pen-title="z-index" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/Wbevdga">  z-index</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -292,8 +260,7 @@ cssStudy = [
         "reStudy" : "y",
         "mainTitle" : "",
         "title" : "BFC",
-        "purpose" : "Block Formatting Context의 줄임말.<br>보통 마진 콜랩싱이나 float과의 상호작용 처리를 위해 사용한다고 한다.",
-        "explain" : "뭔가 조금 난해한 개념이다. 추후 다시 공부를 해야할 것 같다..." ,
+        "explain" : "Block Formatting Context의 줄임말.<br>보통 마진 콜랩싱이나 float과의 상호작용 처리를 위해 사용한다고 한다.<br>뭔가 조금 난해한 개념이다. 추후 다시 공부를 해야할 것 같다..." ,
         "howUse" : ''       
     },
     {
@@ -301,8 +268,7 @@ cssStudy = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "Margin-collapsing",
-        "purpose" : "마진 겹침 현상이다.<br>두 개 이상인 블록 요소들의 상하 마진이 겹칠 때 어느 한 쪽의 값만 적용하는 브라우저의 렌더링 규칙이라고 보면 될 것 같다.",
-        "explain" : "마진이 겹치는 태그들 사이에 bfc를 생성해주면 된다." ,
+        "explain" : "마진 겹침 현상이다.<br>두 개 이상인 블록 요소들의 상하 마진이 겹칠 때 어느 한 쪽의 값만 적용하는 브라우저의 렌더링 규칙이라고 보면 될 것 같다.<br>마진이 겹치는 태그들 사이에 bfc를 생성해주면 된다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VYZLxja" data-pen-title="Margin-collapsing" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/VYZLxja">  Margin-collapsing</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -310,7 +276,6 @@ cssStudy = [
         "reStudy" : "y",
         "mainTitle" : "",
         "title" : "Flex",
-        "purpose" : "",
         "explain" : "상세 내용을 차후 정리할 예정이다.<br>아래 사이트에서 연습해보면 된다.<br>여러번 해봐야 머릿속에 들어올 것 같다.<br><a href='https://flexboxfroggy.com/#ko'>https://flexboxfroggy.com/#ko</a>" ,
         "howUse" : ''       
     },
@@ -318,22 +283,8 @@ cssStudy = [
         "type" : "",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
-        "purpose" : "",
-        "explain" : "" ,
-        "howUse" : ''       
-    },
-
-    {
-        "type" : "",
-        "reStudy" : "",
-        "mainTitle" : "",
         "title" : "의사 클래스(가상 클래스)",
-        "purpose" : "",
         "explain" : "" ,
         "howUse" : ''       
-    },
-    
-    
-    
+    }
 ]

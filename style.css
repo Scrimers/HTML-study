@@ -47,6 +47,14 @@ body {
 .noDisplay {
     display: none;
 }
+mark.gray {
+    background-color: rgb(176, 176, 176);
+    color: rgb(253, 253, 253);
+}
+mark.green {
+    background-color: rgb(125, 159, 95);
+    color: rgb(58, 58, 58);
+}
 /*공통 끝*/
 
 /* nav_Study 시작============================ */

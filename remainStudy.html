@@ -3,12 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title>REMAIN STUDY</title>
-		<!-- style.css 로드 후 mobileStyle.css가 로드되기에 같은 선택자의 속성은 mobileStyle.css 걸로 덮어씌워진다. -->
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="mobileStyle.css">
 		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 		<!-- 웹 페이지가 모바일 기기에서 올바르게 렌더링되게 할 수 있도록 선언 -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- style.css 로드 후 mobileStyle.css가 로드되기에 같은 선택자의 속성은 mobileStyle.css 걸로 덮어씌워진다. -->		
+		<script src="cssJs.js"></script>
 	</head>
 	<body>
 		<!-- header 시작 -->
@@ -25,21 +24,21 @@
 			</div>
 			<div class="bg_white b_c_gray indexStudyListGrid">
 				<div class="indexStudy rightB_gray">
-					<a href="htmlStudy.html" class="navA_gray">HTML</a><br>		
+					<a href="htmlStudy.html?studyType=htmlStudy" class="navA_gray">HTML</a><br>		
 				</div>
 				<div class="indexStudy rightB_gray">
-					<a href="cssStudy.html" class="navA_gray">CSS</a>
+					<a href="cssStudy.html?studyType=cssStudy" class="navA_gray">CSS</a>
 				</div>
 				<div class="indexStudy">
-					<a href="javascriptStudy.html" class="navA_gray">JAVASCRIPT</a>
+					<a href="javascriptStudy.html?studyType=javascriptStudy" class="navA_gray">JAVASCRIPT</a>
 				</div>
 			</div>
 			<div class="bg_white b_c_gray indexETCGrid">		
 				<div class="indexStudy rightB_gray">
-					<a href="codeTest.html" class="navA_gray">CODE TEST</a>
+					<a href="codeTest.html?studyType=codeTest" class="navA_gray">CODE TEST</a>
 				</div>
 				<div class="indexStudy">
-					<a href="remainStudy.html" class="navA_gray aTagTarget">REMAIN STUDY</a>
+					<a href="remainStudy.html?studyType=remainStudy" class="navA_gray aTagTarget">REMAIN STUDY</a>
 				</div>
 			</div>			
 		</nav>
