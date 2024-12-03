@@ -2,46 +2,65 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Remain Study</title>
+		<title>REMAIN STUDY</title>
+		<!-- style.css 로드 후 mobileStyle.css가 로드되기에 같은 선택자의 속성은 mobileStyle.css 걸로 덮어씌워진다. -->
 		<link rel="stylesheet" href="style.css">
-		<style>	
-		</style>
+		<link rel="stylesheet" href="mobileStyle.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<!-- 웹 페이지가 모바일 기기에서 올바르게 렌더링되게 할 수 있도록 선언 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
 		<!-- header 시작 -->
 		<header></header>
 		<!-- header 끝 -->
-		 
+
 		<!-- navigation 시작 -->
-		<nav>
-			<div class="indexTitleEmpty nav_studyVer"></div>
-			<div class="indexTitle">
+		<div class="nav_study_emptySpace"></div>
+		<nav class="nav_sticky">
+			<div class="bg_white b_c_gray indexTitle">
 				<h1 class="indexTitleText">
-					<a href="index.html" class="indexMainATag">STUDY LIST</a><br>						
+					<a href="index.html" class="navA_gray">STUDY LIST</a><br>						
 				</h1>
 			</div>
-			<div class="indexStudyListGrid">
-				<div class="indexStudy rightB">
-					<a href="htmlStudy.html" class="indexATag">HTML</a><br>		
+			<div class="bg_white b_c_gray indexStudyListGrid">
+				<div class="indexStudy rightB_gray">
+					<a href="htmlStudy.html" class="navA_gray">HTML</a><br>		
 				</div>
-				<div class="indexStudy rightB">
-					<a href="cssStudy.html" class="indexATag">CSS</a>
-				</div>
-				<div class="indexStudy">
-					<a href="javascriptStudy.html" class="indexATag">JAVASCRIPT</a>
-				</div>
-			</div>
-			<div class="indexETCGrid">		
-				<div class="indexStudy rightB">
-					<a href="codeTest.html" class="indexATag">CODE TEST</a>
+				<div class="indexStudy rightB_gray">
+					<a href="cssStudy.html" class="navA_gray">CSS</a>
 				</div>
 				<div class="indexStudy">
-					<a href="remainStudy.html" class="indexATag">Remain Study</a>
+					<a href="javascriptStudy.html" class="navA_gray">JAVASCRIPT</a>
 				</div>
 			</div>
+			<div class="bg_white b_c_gray indexETCGrid">		
+				<div class="indexStudy rightB_gray">
+					<a href="codeTest.html" class="navA_gray">CODE TEST</a>
+				</div>
+				<div class="indexStudy">
+					<a href="remainStudy.html" class="navA_gray aTagTarget">REMAIN STUDY</a>
+				</div>
+			</div>			
 		</nav>
+		<div class="nav_study_emptySpace"></div>
 		<!-- navigation 끝 -->
 
-		https://www.zerocho.com/category/HTML&DOM/post/59155228a22a5d001827ea5d
+		<!-- 메인 시작 -->
+		<main>
+			<!-- 메인컨텐츠 시작 -->
+			<section id="mainSection">
+			</section>
+			<!-- 메인컨텐츠 끝 -->
+		</main>
+		<!-- 메인 끝 -->
+
+		<!-- 푸터 시작 -->
+		<footer></footer>
+		<!-- 푸터 끝 -->
+
+		<script>
+			
+		</script>
 	</body>
 </html>

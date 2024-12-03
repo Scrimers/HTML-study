@@ -1,21 +1,15 @@
 @media (hover: none) { 
-    .indexTitle {
-        padding: 1dvh 0dvh 1dvh 0dvh;
+    body {
+        padding: 0dvh 3dvh 0dvh 3dvh;
     }
-    .indexTitleText {
+    .indexStudyListGrid, .indexETCGrid {
         font-size: 50px;
     }
-    .indexATag {
-        font-size: 30px;
+    .indexTitleText {
+        font-size: 4.2dvh;
     }
-    .mainTitleText {
-        font-size: 80px;
-    }
-    h3.subTitle {
+    h1.subTitle, h3.subTitle {
         font-size: 60px;
-    }
-    h4.subTitle {
-        font-size: 40px;
     }
     div.subTitle {
         font-size: 40px;
@@ -24,12 +18,22 @@
         font-size: 40px;
     }
     .subArticle {
-        margin: 0px 0px 100px 0px;
+        margin: 5dvh 0px 5dvh 0px;
     }
     iframe.cp_embed_iframe{
         height: 500px;
     }
     .subHowUse {
-        margin-bottom: 20px;
+        margin-bottom: 1dvh;
+    }
+    .subGrid {
+        display: grid;
+        grid-template-columns: 3dvh auto;
+    }
+    .bL_gray {
+        border: 3px dashed rgb(176, 176, 176);
+    }
+    .subTitleHowUse {
+        font-size: 1.5dvh;
     }
 }

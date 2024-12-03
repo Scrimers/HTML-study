@@ -1,11 +1,70 @@
-/* index.html 시작============================ */
+/*공통 시작*/
+body {
+    padding: 0dvh 10dvh 0dvh 10dvh;
+}
+.bg_white {
+    background: rgb(253, 253, 253);    
+}
+.bg_black {
+    background: rgb(58, 58, 58);
+}
+.b_c_gray {
+    border: 2px solid rgb(176, 176, 176);
+    color: rgb(176, 176, 176);
+}
+.b_c_green {
+    border: 2px solid rgb(125, 159, 95);
+    color: rgb(125, 159, 95);
+}
+.rightB_gray {
+    border-right: 2px solid rgb(176, 176, 176);
+}
+.rightB_green {
+    border-right: 2px solid rgb(125, 159, 95);
+}
+.navA_gray, .navA_green {
+    text-decoration: none;
+}
+.navA_gray:link, .navA_gray:visited {
+    color: rgb(176, 176, 176);
+}
+.navA_green:link, .navA_green:visited {
+    color: rgb(125, 159, 95);
+}
+.bL_gray {
+    border: 2px dashed rgb(176, 176, 176);
+}
+.bL_green {
+    border: 2px dashed rgb(125, 159, 95);
+}
+.aTagTarget {
+    text-decoration-line: underline;
+}
+
+.du {
+    color: red;
+}
+.noDisplay {
+    display: none;
+}
+/*공통 끝*/
+
+/* nav_Study 시작============================ */
 .indexTitleEmpty {
     min-height: 30dvh;
 }
+.nav_study_emptySpace {
+    min-height: 5dvh;
+}
+.nav_sticky {
+    position: sticky;
+    top: 0;
+    opacity: 0.7;
+}
 .indexTitle {
-    border: 2px solid black;
     border-bottom: none;
-    padding: 2dvh 0dvh 2dvh 0dvh;
+    font-size: 4dvh;
+    padding: 1dvh 0dvh 1dvh 0dvh;
 }
 .indexTitleText {
     text-align: center;
@@ -13,124 +72,61 @@
     margin-block-end: 0px;
 }
 .indexStudyListGrid {
-    border: 2px solid black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .indexStudy {
     text-align: center;
 }
-.rightB {
-    border-right: 2px solid black;
-}
-.indexMainATag, .indexATag {
-    text-decoration: none;
-}
-.indexMainATag:link, .indexMainATag:visited {
-    color: black;
-}
-.indexATag:link, .indexATag:visited {
-    color: rgb(33, 199, 69);
-}
 .indexETCGrid {
-    border: 2px solid black;
     border-top: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-/* index.html 끝============================ */
-
-/* nav_Study 시작============================ */
-.nav_studyVer {
-    min-height: 5dvh;
-}
-.nav_studyTitleGrid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-.nav_studyTitleDiv {
-    padding: 20px 0px 20px 0px;
-}
-.nav_studyTitleText {
-    border-bottom: 2px dotted black;
-    margin-block-start: 0px;
-    margin-block-end: 0;
-}
-.nav_studyTitleTextUnderLine {
-    border-bottom: 2px dotted black;
-    display: block;
-    font-size: 2px;
-    color: white;
-}
 /* nav_Study 끝============================ */
 
 /* Study 시작============================ */
-.mainTitleSection {
-    display: block;
-    background: linear-gradient(to right, #6ed16e, transparent);
-    margin: 40px 0px 50px 0px;
-    padding-left: 10px;
-}
-.mainTitleText {
-    margin: 3px 0px 3px 0px;
-    color: #fdfdfd;
-    font-size: 34px;
-}
 .subArticle {
-    margin: 0px 0px 30px 0px;
+    margin: 50px 0px 50px 0px;
 }
 .subGroup {
     padding: 10px;
-    border: 2px solid #7fd57f;
+    /* border: 2px solid #7fd57f; */
     border-top: 0px;
 }
 .subGroupC {
-    padding-top: 20px;
+    padding-top: 50px;
+}
+.subGrid {
+    display: grid;
+    grid-template-columns: 5dvh auto;
 }
 .subTitle {
     margin: 0px;
     padding: 10px;
-    background: #a7e5a7;
-    color: #fdfdfd;
-}
-.subGrid {
-    display: grid;
-    grid-template-columns: 15% auto;
-}
-.subTitle {
     align-content: center;
-    text-align: center;
-    background: #a7e5a7;
-    color: #fdfdfd;
-    border: 1px solid #7fd57f;
+    text-align: left;
 }
 .subText {
-    border: 1px solid #7fd57f;
     padding: 5px 0px 5px 5px;
+    align-content: center;
 }
 .subTitleHowUse {
     align-content: center;
     text-align: center;
-    background: #a7e5a7;
-    color: #fdfdfd;
-    border: 1px solid #7fd57f;
+    border-top: none;
     padding: 0px;
 }
 .subTextHowUse {
     align-content: center;
     text-align: center;
-    background: #a7e5a7;
-    color: #fdfdfd;
-    border: 1px solid #7fd57f;
+    border-top: none;
     padding: 1px;
 }
+h3.subTitle {
+    border-bottom: none;
+}
+div.subTitle {
+    border-right: none;
+}
 /* Study 끝============================ */
-
-/* 공통 시작============================ */
-.du {
-    color: red;
-}
-.noDisplay {
-    display: none;
-}
-/* 공통 끝============================ */

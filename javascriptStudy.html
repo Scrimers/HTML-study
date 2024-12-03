@@ -14,45 +14,40 @@
 		<!-- header 시작 -->
 		<header></header>
 		<!-- header 끝 -->
-		 
+
 		<!-- navigation 시작 -->
-		<nav>
-			<div class="indexTitleEmpty nav_studyVer"></div>
-			<div class="indexTitle">
+		<div class="nav_study_emptySpace"></div>
+		<nav class="nav_sticky">
+			<div class="bg_white b_c_gray indexTitle">
 				<h1 class="indexTitleText">
-					<a href="index.html" class="indexMainATag">STUDY LIST</a><br>						
+					<a href="index.html" class="navA_gray">STUDY LIST</a><br>						
 				</h1>
 			</div>
-			<div class="indexStudyListGrid">
-				<div class="indexStudy rightB">
-					<a href="htmlStudy.html" class="indexATag">HTML</a><br>		
+			<div class="bg_white b_c_gray indexStudyListGrid">
+				<div class="indexStudy rightB_gray">
+					<a href="htmlStudy.html" class="navA_gray">HTML</a><br>		
 				</div>
-				<div class="indexStudy rightB">
-					<a href="cssStudy.html" class="indexATag">CSS</a>
-				</div>
-				<div class="indexStudy">
-					<a href="javascriptStudy.html" class="indexATag">JAVASCRIPT</a>
-				</div>
-			</div>
-			<div class="indexETCGrid">		
-				<div class="indexStudy rightB">
-					<a href="codeTest.html" class="indexATag">CODE TEST</a>
+				<div class="indexStudy rightB_gray">
+					<a href="cssStudy.html" class="navA_gray">CSS</a>
 				</div>
 				<div class="indexStudy">
-					<a href="remainStudy.html" class="indexATag">Remain Study</a>
+					<a href="javascriptStudy.html" class="navA_gray aTagTarget">JAVASCRIPT</a>
 				</div>
 			</div>
+			<div class="bg_white b_c_gray indexETCGrid">		
+				<div class="indexStudy rightB_gray">
+					<a href="codeTest.html" class="navA_gray">CODE TEST</a>
+				</div>
+				<div class="indexStudy">
+					<a href="remainStudy.html" class="navA_gray">REMAIN STUDY</a>
+				</div>
+			</div>			
 		</nav>
+		<div class="nav_study_emptySpace"></div>
 		<!-- navigation 끝 -->
 
 		<!-- 메인 시작 -->
 		<main>
-			<!-- title 시작 -->
-			<section class="mainTitleSection">
-				<h1 class="mainTitleText">JAVASCRIPT</h1>
-			</section>
-			<!-- title 끝 -->
-
 			<!-- 메인컨텐츠 시작 -->
 			<section id="mainSection">
 			</section>
@@ -91,41 +86,35 @@
 			
 				if(item.type == "groupStart") {
 					html.push('<article class="subArticle">');
-					html.push('	<h3 class="subTitle">');
+					html.push('	<h1 class="bg_white b_c_gray subTitle">');
 					html.push(item.mainTitle);
-					html.push('	</h3>');
+					html.push('	</h1>');
 
-					html.push('	<div class="subGroup">');		
+					html.push('	<div class="bg_white b_c_gray subGroup">');		
 					if(item.reStudy == "y") {
-						html.push('		<h4 class="subTitle du">');
+						html.push('		<h3 class="bg_white b_c_gray subTitle du">');
 					}else {
-						html.push('		<h4 class="subTitle">');
+						html.push('		<h3 class="bg_white b_c_gray subTitle">');
 					}
 					html.push(item.title);
-					html.push('		</h4>');
+					html.push('		</h3>');
 
-					if(item.purpose != undefined && item.purpose != "") {
-						html.push('	<div class="subGrid">');
-						html.push('		<div class="subTitle">용도</div>');
-						html.push('		<div class="subText">');
-						html.push(item.purpose);
-						html.push('		</div>');
-						html.push('	</div>');
-					}
-
+					html.push('	<div class="subGrid">');
+					html.push('		<div class="bg_white b_c_gray subTitle">설명</div>');
+					html.push('		<div class="bg_white b_c_gray subText">');
 					if(item.explain != undefined && item.explain != "") {
-						html.push('	<div class="subGrid">');
-						html.push('		<div class="subTitle">설명</div>');
-						html.push('		<div class="subText">');
 						html.push(item.explain);
-						html.push('		</div>');
-						html.push('	</div>');
 					}
+					else {
+						html.push('-');
+					}
+					html.push('		</div>');
+					html.push('	</div>');
 
 					if(item.howUse != undefined && item.howUse != "") {
 						html.push('	<div class="subHowUse">');
-						html.push('		<div class="subTitleHowUse">사용법</div>');
-						html.push('		<div class="subTextHowUse">');
+						html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법</div>');
+						html.push('		<div class="bg_white b_c_gray bg_white b_c_gray subTextHowUse">');
 						html.push(item.howUse);
 						html.push('		</div>');
 						html.push('	</div>');
@@ -134,30 +123,24 @@
 				else if(item.type == "groupIng" || item.type == "groupEnd") {
 					html.push('	<div class="subGroupC">');		
 					if(item.reStudy == "y") {
-						html.push('		<h4 class="subTitle du">');
+						html.push('		<h3 class="bg_white b_c_gray subTitle du">');
 					}else {
-						html.push('		<h4 class="subTitle">');
+						html.push('		<h3 class="bg_white b_c_gray subTitle">');
 					}	
 					html.push(item.title);
-					html.push('		</h4>');
+					html.push('		</h3>');
 
-					if(item.purpose != undefined && item.purpose != "") {
-						html.push('	<div class="subGrid">');
-						html.push('		<div class="subTitle">용도</div>');
-						html.push('		<div class="subText">');
-						html.push(item.purpose);
-						html.push('		</div>');
-						html.push('	</div>');
-					}
-
+					html.push('	<div class="subGrid">');
+					html.push('		<div class="bg_white b_c_gray subTitle">설명</div>');
+					html.push('		<div class="bg_white b_c_gray subText">');
 					if(item.explain != undefined && item.explain != "") {
-						html.push('	<div class="subGrid">');
-						html.push('		<div class="subTitle">설명</div>');
-						html.push('		<div class="subText">');
 						html.push(item.explain);
-						html.push('		</div>');
-						html.push('	</div>');
 					}
+					else {
+						html.push('-');
+					}
+					html.push('		</div>');
+					html.push('	</div>');
 
 					if(item.howUse != undefined && item.howUse != "") {
 						if(item.type == "groupIng") {
@@ -165,8 +148,8 @@
 						}else {
 							html.push('	<div>');
 						}
-						html.push('		<div class="subTitleHowUse">사용법</div>');
-						html.push('		<div class="subTextHowUse">');
+						html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법</div>');
+						html.push('		<div class="bg_white b_c_gray bg_white b_c_gray subTextHowUse">');
 						html.push(item.howUse);
 						html.push('		</div>');
 						html.push('	</div>');
@@ -175,47 +158,43 @@
 					if(item.type == "groupEnd") {
 						html.push('	</div>');
 						html.push('</article>');
+						html.push('<div class="bL_gray"></div>');
 					}
 				}
 				else {
 					html.push('<article class="subArticle">');
 
 					if(item.reStudy == "y") {
-						html.push('	<h3 class="subTitle du">');
+						html.push('	<h3 class="bg_white b_c_gray subTitle du">');
 					}else {
-						html.push('	<h3 class="subTitle">');
+						html.push('	<h3 class="bg_white b_c_gray subTitle">');
 					}
 					html.push(item.title);
 					html.push('	</h3>');
-
-					if(item.purpose != undefined && item.purpose != "") {
-						html.push('	<div class="subGrid">');
-						html.push('		<div class="subTitle">용도</div>');
-						html.push('		<div class="subText">');
-						html.push(item.purpose);
-						html.push('		</div>');
-						html.push('	</div>');
-					}
 					
+					html.push('	<div class="subGrid">');
+					html.push('		<div class="bg_white b_c_gray subTitle">설명</div>');
+					html.push('		<div class="bg_white b_c_gray subText">');
 					if(item.explain != undefined && item.explain != "") {
-						html.push('	<div class="subGrid">');
-						html.push('		<div class="subTitle">설명</div>');
-						html.push('		<div class="subText">');
 						html.push(item.explain);
-						html.push('		</div>');
-						html.push('	</div>');
 					}
+					else {
+						html.push('-');
+					}
+					html.push('		</div>');
+					html.push('	</div>');
 
 					if(item.howUse != undefined && item.howUse != "") {
 							html.push('	<div>');
-							html.push('		<div class="subTitleHowUse">사용법</div>');
-							html.push('		<div class="subTextHowUse">');
+							html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법</div>');
+							html.push('		<div class="bg_white b_c_gray bg_white b_c_gray subTextHowUse">');
 						html.push(item.howUse);
 						html.push('		</div>');
 						html.push('	</div>');
 					}
 
 					html.push('</article>');
+					html.push('<div class="bL_gray"></div>');
 				}
 			});
 			$('#mainSection').html(html.join(''));	
