@@ -7,7 +7,8 @@
 		<!-- 웹 페이지가 모바일 기기에서 올바르게 렌더링되게 할 수 있도록 선언 -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- style.css 로드 후 mobileStyle.css가 로드되기에 같은 선택자의 속성은 mobileStyle.css 걸로 덮어씌워진다. -->		
-		<script src="cssJs.js"></script>
+		<link id="styleCss" rel="stylesheet" href="style.css">
+		<link id="mobileStyleCss" rel="stylesheet" href="mobileStyle.css">
 	</head>
 	<body>
 		<!-- header 시작 -->
@@ -58,151 +59,9 @@
 		<footer></footer>
 		<!-- 푸터 끝 -->
 
-		<script src="json/local/javascriptStudy.json" type="text/javascript"></script>
-		<script>
-			let jsonData;
-
-			$.ajaxSetup({ async: false });	// 전역으로 동기화 설정
-			$.getJSON('json/javascriptStudy.json', function(data){
-				//서버에서 실행 시 
-				jsonData = data;
-			})
-			.fail(function() {
-				//로컬에서 실행 시 (CORS에러 때문에 작성)
-				jsonData = javascriptStudy;
-			})
-			.always(function() {
-				jsonData = JSON.parse(JSON.stringify(jsonData));
-			});
-			$.ajaxSetup({ async: true });	// 전역으로 비동기화 설정
-			
-			var html = [];
-			$.each(jsonData, function(i, item){
-				if(item.title == undefined) {
-					console.log("명시되지 않은 타입 존재");
-					return true;	//continue
-				}
-			
-				if(item.type == "groupStart") {
-					html.push('<article class="subArticle">');
-					html.push('	<h1 class="bg_white b_c_gray subTitle">');
-					html.push(item.mainTitle);
-					html.push('	</h1>');
-
-					html.push('	<div class="bg_white b_c_gray subGroup">');		
-					if(item.reStudy == "y") {
-						html.push('		<h3 class="bg_white b_c_gray subTitle du">');
-					}else {
-						html.push('		<h3 class="bg_white b_c_gray subTitle">');
-					}
-					html.push(item.title);
-					html.push('		</h3>');
-
-					html.push('	<div class="subGrid">');
-					html.push('		<div class="bg_white b_c_gray subTitle">설명</div>');
-					html.push('		<div class="bg_white b_c_gray subText">');
-					if(item.explain != undefined && item.explain != "") {
-						html.push(item.explain);
-					}
-					else {
-						html.push('-');
-					}
-					html.push('		</div>');
-					html.push('	</div>');
-
-					if(item.howUse != undefined && item.howUse != "") {
-						html.push('	<div class="subHowUse">');
-						html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법</div>');
-						html.push('		<div class="bg_white b_c_gray bg_white b_c_gray subTextHowUse">');
-						html.push(item.howUse);
-						html.push('		</div>');
-						html.push('	</div>');
-					}
-				}
-				else if(item.type == "groupIng" || item.type == "groupEnd") {
-					html.push('	<div class="subGroupC">');		
-					if(item.reStudy == "y") {
-						html.push('		<h3 class="bg_white b_c_gray subTitle du">');
-					}else {
-						html.push('		<h3 class="bg_white b_c_gray subTitle">');
-					}	
-					html.push(item.title);
-					html.push('		</h3>');
-
-					html.push('	<div class="subGrid">');
-					html.push('		<div class="bg_white b_c_gray subTitle">설명</div>');
-					html.push('		<div class="bg_white b_c_gray subText">');
-					if(item.explain != undefined && item.explain != "") {
-						html.push(item.explain);
-					}
-					else {
-						html.push('-');
-					}
-					html.push('		</div>');
-					html.push('	</div>');
-
-					if(item.howUse != undefined && item.howUse != "") {
-						if(item.type == "groupIng") {
-							html.push('	<div class="subHowUse">');
-						}else {
-							html.push('	<div>');
-						}
-						html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법</div>');
-						html.push('		<div class="bg_white b_c_gray bg_white b_c_gray subTextHowUse">');
-						html.push(item.howUse);
-						html.push('		</div>');
-						html.push('	</div>');
-					}
-
-					if(item.type == "groupEnd") {
-						html.push('	</div>');
-						html.push('</article>');
-
-						if((jsonData.length-1) != i) {
-							html.push('<div class="bL_gray"></div>');
-						}
-					}
-				}
-				else {
-					html.push('<article class="subArticle">');
-
-					if(item.reStudy == "y") {
-						html.push('	<h3 class="bg_white b_c_gray subTitle du">');
-					}else {
-						html.push('	<h3 class="bg_white b_c_gray subTitle">');
-					}
-					html.push(item.title);
-					html.push('	</h3>');
-					
-					html.push('	<div class="subGrid">');
-					html.push('		<div class="bg_white b_c_gray subTitle">설명</div>');
-					html.push('		<div class="bg_white b_c_gray subText">');
-					if(item.explain != undefined && item.explain != "") {
-						html.push(item.explain);
-					}
-					else {
-						html.push('-');
-					}
-					html.push('		</div>');
-					html.push('	</div>');
-
-					if(item.howUse != undefined && item.howUse != "") {
-							html.push('	<div>');
-							html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법</div>');
-							html.push('		<div class="bg_white b_c_gray bg_white b_c_gray subTextHowUse">');
-						html.push(item.howUse);
-						html.push('		</div>');
-						html.push('	</div>');
-					}
-
-					html.push('</article>');
-					
-					if((jsonData.length-1) != i) {
-						html.push('<div class="bL_gray"></div>');
-					}
-				}
-			});
-			$('#mainSection').html(html.join(''));	
-		</script>
+		<!-- CSS 캐시 방지 -->
+		<script src="./cachePreventionJS.js"></script>
+		<!-- JSON데이터 불러오기 -->
+		<script src="./jsonLinkJS.js"></script>
 	</body>
 </html>

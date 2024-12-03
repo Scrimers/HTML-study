@@ -8,18 +8,6 @@ var min = now.getMinutes();//분
 var sec = now.getSeconds();//초
 var nowDate = year+month+date+hr+min+sec;
 
-$('#styleCss').attr('href', 'style.css?v='+nowDate);
-$('#mobileStyleCss').attr('href', 'mobileStyle.css?v='+nowDate);
-
-// let stylePClinkURL = "style.css?v="+nowDate;
-// let styleMobilelinkURL = "mobileStyle.css?v="+nowDate;
-
-// let linkElement = document.createElement("link");
-// linkElement.rel = "stylesheet";
-// linkElement.href = stylePClinkURL;
-// document.head.appendChild(linkElement);
-
-// linkElement = document.createElement("link");
-// linkElement.rel = "stylesheet";
-// linkElement.href = styleMobilelinkURL;
-// document.head.appendChild(linkElement);
+//캐시 방지를 위해 pc, 모바일 버전 css파일 변수 추가
+$('#styleCss').attr('href', './style.css?v='+nowDate);
+$('#mobileStyleCss').attr('href', './mobileStyle.css?v='+nowDate);

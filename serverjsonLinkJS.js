@@ -1,7 +1,7 @@
 let jsonData;
 
 $.ajaxSetup({ async: false });	// 전역으로 동기화 설정
-$.getJSON('json/'+studyType+'.json', function(data){
+$.getJSON('./json/'+studyType+'.json', function(data){
     //서버에서 실행 시 
     jsonData = data;
 })

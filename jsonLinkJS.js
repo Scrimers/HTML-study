@@ -6,11 +6,11 @@ let studyType = urlParams.get('studyType');
 //localJson 데이터 불러오기 (CORS에러 때문에 작성)
 let scriptElement = document.createElement("script");
 scriptElement.id = "localJson"
-scriptElement.src = "json/local/"+studyType+".json";
+scriptElement.src = "./json/local/"+studyType+".json";
 scriptElement.type = "text/javascript";
 document.body.appendChild(scriptElement);
 
 //JSON 데이터 파싱 및 노출용 js 불러오기
 scriptElement = document.createElement("script");
-scriptElement.src = "serverjsonLinkJS.js";
+scriptElement.src = "./serverjsonLinkJS.js";
 document.body.appendChild(scriptElement);
