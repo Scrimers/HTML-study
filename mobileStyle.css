@@ -1,42 +1,11 @@
 @media (pointer: coarse) {
-    h1 {
-        color: red;
-    }
-    /* body {
+    body {
         padding: 0dvh 3dvh 0dvh 3dvh;
     }
-    .indexStudyListGrid, .indexETCGrid {
-        font-size: 50px;
+    .indexATag {
+        padding-left: 32%;
     }
     .indexTitleText {
-        font-size: 4.2dvh;
+        font-size: 20px;
     }
-    h1.subTitle, h3.subTitle {
-        font-size: 60px;
-    }
-    div.subTitle {
-        font-size: 40px;
-    }
-    .subText {
-        font-size: 40px;
-    }
-    .subArticle {
-        margin: 5dvh 0px 5dvh 0px;
-    }
-    iframe.cp_embed_iframe{
-        height: 500px;
-    }
-    .subHowUse {
-        margin-bottom: 1dvh;
-    }
-    .subGrid {
-        display: grid;
-        grid-template-columns: 3dvh auto;
-    }
-    .bL_gray {
-        border: 3px dashed rgb(176, 176, 176);
-    }
-    .subTitleHowUse {
-        font-size: 1.5dvh;
-    } */
 }

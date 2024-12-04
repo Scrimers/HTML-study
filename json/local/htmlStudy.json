@@ -253,11 +253,11 @@ const localJson = [
     },
     {
         "type" : "",
-        "reStudy" : "y",
+        "reStudy" : "",
         "mainTitle" : "",
-        "title" : "div",
-        "explain" : "division의 줄임말.<br>구역을 지정하는 태그이며, 단순히 디자인의 용도로만 쓰임.<br>Block 형식의 태그 중 대표적인 것이다." ,
-        "howUse" : ''       
+        "title" : "그리드(div태그, span태그)",
+        "explain" : "div : division의 줄임말.<br><mark class='gray'>div태그는 단순히 디자인의 용도로만 쓰인다.</mark><br>기본적으로 <mark class='gray'>block level element 이다.</mark><br><mark class='gray'>span태그는 단순히 디자인의 용도로만 쓰인다.</mark><br>기본적으로 <mark class='gray'>inline level element 이다.</mark><br>※CSS에서 굉장히 많이 쓰인다." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MYgaqdR" data-pen-title="그리드" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/MYgaqdR">  그리드</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
         "type" : "",

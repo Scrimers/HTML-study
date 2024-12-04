@@ -18,10 +18,35 @@
 		<!-- header 끝 -->
 
 		<!-- navigation 시작 -->
-		<nav>
-			<div class="indexTitleEmpty"></div>
+		<div class="indexTitleEmpty"></div>
+		<nav class="nav_sticky">
 			<div class="bg_white b_c_gray indexTitle">
-				<h1 class="indexTitleText">STUDY LIST</h1>
+				<div>
+					<h1 class="indexTitleText">
+						<a href="index.html" class="navA_gray indexATag">STUDY LIST</a><br>						
+					</h1>
+				</div>
+				<div class="indexTitleSubGrid">
+					<div id="wGMode" class="indexTitleColorGrid">
+						<div class="bg_white"></div>
+						<div style="background: rgb(176, 176, 176);"></div>
+					</div>
+
+					<div id="wGrMode" class="indexTitleColorGrid">
+						<div class="bg_white"></div>
+						<div style="background: rgb(125, 159, 95);"></div>
+					</div>
+
+					<div id="bGMode" class="indexTitleColorGrid">
+						<div class="bg_black"></div>
+						<div style="background: rgb(176, 176, 176);"></div>
+					</div>
+
+					<div id="bGrMode" class="indexTitleColorGrid">
+						<div class="bg_black"></div>
+						<div style="background: rgb(125, 159, 95);"></div>
+					</div>
+				</div>
 			</div>
 			<div class="bg_white b_c_gray indexStudyListGrid">
 				<div class="indexStudy rightB_gray">
@@ -41,13 +66,16 @@
 				<div class="indexStudy">
 					<a href="remainStudy.html?studyType=remainStudy" class="navA_gray">REMAIN STUDY</a>
 				</div>
-			</div>
+			</div>			
 		</nav>
+		<div class="nav_study_emptySpace"></div>
 		<!-- navigation 끝 -->
 
 		<!-- 푸터 시작 -->
 		<footer></footer>
 		<!-- 푸터 끝 -->
 
+		<!-- 색상 변경 js 불러오기 -->
+		<script src="./colorModeJS.js"></script>
 	</body>
 </html>

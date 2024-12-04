@@ -11,6 +11,16 @@
 		<link id="mobileStyleCss" rel="stylesheet" href="./mobileStyle.css">
 		<!-- CSS 캐시 방지 (이걸 쓰면 바로 변경된 CSS가 적용되긴 하지만... 페이지 이동 시 마다 CSS입히기 전의 화면이 0.1초 정도 노출된다.) -->
 		<!-- <script src="./cachePreventionJS.js"></script> -->
+
+		<style>
+			.d1, .d2 {
+				border: 1px solid black;
+				height : 5dvh;
+			}
+			#d2 {
+				
+			}
+		</style>
 	</head>
 	<body>
 		<!-- header 시작 -->
@@ -21,9 +31,32 @@
 		<div class="nav_study_emptySpace"></div>
 		<nav class="nav_sticky">
 			<div class="bg_white b_c_gray indexTitle">
-				<h1 class="indexTitleText">
-					<a href="index.html" class="navA_gray">STUDY LIST</a><br>						
-				</h1>
+				<div>
+					<h1 class="indexTitleText">
+						<a href="index.html" class="navA_gray indexATag">STUDY LIST</a><br>						
+					</h1>
+				</div>
+				<div class="indexTitleSubGrid">
+					<div id="wGMode" class="indexTitleColorGrid">
+						<div class="bg_white"></div>
+						<div style="background: rgb(176, 176, 176);"></div>
+					</div>
+
+					<div id="wGrMode" class="indexTitleColorGrid">
+						<div class="bg_white"></div>
+						<div style="background: rgb(125, 159, 95);"></div>
+					</div>
+
+					<div id="bGMode" class="indexTitleColorGrid">
+						<div class="bg_black"></div>
+						<div style="background: rgb(176, 176, 176);"></div>
+					</div>
+
+					<div id="bGrMode" class="indexTitleColorGrid">
+						<div class="bg_black"></div>
+						<div style="background: rgb(125, 159, 95);"></div>
+					</div>
+				</div>
 			</div>
 			<div class="bg_white b_c_gray indexStudyListGrid">
 				<div class="indexStudy rightB_gray">
@@ -53,16 +86,79 @@
 
 
 
-		<p>일반적인 글</p>
-		<p>ltr : <bdo dir="ltr">bdo적용 글</bdo></p>
-		<p>rtl : <bdo dir="rtl">bdo적용 글</bdo></p>
-		<p><bdi>bdi적용 글</bdi></p>
-		<br><br>
-		<p>일반적인 글-2번째</p>
-		<p>ltr : <bdo dir="ltr">bdo적용 글</bdo>-2번째</p>
-		<p>rtl : <bdo dir="rtl">bdo적용 글</bdo>-2번째</p>
-		<p><bdi>bdi적용 글</bdi>-2번째</p>
+		
+				<div style="
+			display: grid;
+			grid-template-columns: 4fr 1fr;
+		">
+			<div class="d1" style="
+			border-right: 0px;
+		"></div>
+			<div style="
+			/* border-left: 0px; */
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			padding: 1dvh 4dvh 1dvh 1dvh;
+			border: 1px solid black;
+			height: 4dvh;
+			border-left: 0px;
+		" class="">
+			<div style="
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			border: 1px solid;
+			margin-right: 1dvh;
+		">
+			<div style="
+			background: white;
+		"></div>
+			<div style="
+			background: gray;
+		"></div>
+		</div>
 
+		<div style="
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			border: 1px solid;
+			margin-right: 1dvh;
+		">
+			<div style="
+			background: white;
+		"></div>
+			<div style="
+			background: green;
+		"></div>
+		</div><div style="
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			border: 1px solid;
+			margin-right: 1dvh;
+		">
+			<div style="
+			background: black;
+		"></div>
+			<div style="
+			background: gray;
+		"></div>
+		</div><div style="
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			border: 1px solid;
+			margin-right: 1dvh;
+		">
+			<div style="
+			background: black;
+		"></div>
+			<div style="
+			background: green;
+		"></div>
+		</div></div>
+		</div>
 
+		
+
+		<!-- 색상 변경 js 불러오기 -->
+		<script src="./colorModeJS.js"></script>
 	</body>
 </html>
