@@ -1,4 +1,4 @@
-localJson = [
+const localJson = [
     {
         "type" : "",
         "reStudy" : "",

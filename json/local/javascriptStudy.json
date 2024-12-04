@@ -1,4 +1,4 @@
-localJson = [
+const localJson = [
     {
         "type" : "",
         "reStudy" : "",
@@ -115,10 +115,10 @@ localJson = [
         "type" : "",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
+        "title" : "script 동적 추가",
         "purpose" : "",
-        "explain" : "" ,
-        "howUse" : ''       
+        "explain" : "appendChild 를 이용해서 넣어야 한다." ,
+        "howUse" : '<xmp>let scriptElement = document.createElement("script"); scriptElement.src = "./serverjsonLinkJS.js"; document.body.appendChild(scriptElement);</xmp>'       
     },
     {
         "type" : "",
