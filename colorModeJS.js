@@ -3,8 +3,6 @@ if(storageColorMode != null) {
     setColorMode(storageColorMode);
 }
 
-console.log("storageColorMode : "+storageColorMode);
-
 //색상 변경 영역 클릭 시
 $('.indexTitleColorGrid').click(function() {    
     let colorMode = $(this).attr('id');
@@ -13,7 +11,7 @@ $('.indexTitleColorGrid').click(function() {
 });
 
 function setColorMode(colorMode) {
-    debugger;
+    console.log("2");
     let tarBgColor, tarBCColor, tarnavAColor, tarRBColor, tarMarkColor, tarBLColor;
     let chBgColor, chBCColor, chNavAColor, chRBColor, chMarkColor, chBLColor;
 

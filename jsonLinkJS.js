@@ -14,3 +14,10 @@ document.body.appendChild(scriptElement);
 scriptElement = document.createElement("script");
 scriptElement.src = "./serverjsonLinkJS.js";
 document.body.appendChild(scriptElement);
+
+setTimeout(() => {
+    // 색상 변경 js 불러오기
+    scriptElement = document.createElement("script");
+    scriptElement.src = "./colorModeJS.js";
+    document.body.appendChild(scriptElement);
+}, 150);
