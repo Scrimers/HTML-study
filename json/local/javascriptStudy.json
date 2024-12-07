@@ -4,7 +4,7 @@ const localJson = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "JavaScript란",
-        "explain" : "정적인 요소만을 지닌 HTML에 사용자와 상호작용 가능한 동적인 요소를 추가하기 위해 사용한다." ,
+        "explain" : "<mark class='gray'>정적인 요소만을 지닌 HTML에 사용자와 상호작용 가능한 동적인 요소를 추가하기 위해 사용</mark>한다." ,
         "howUse" : ''       
     },
     {
@@ -12,7 +12,7 @@ const localJson = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "JavaScript 이용방법",
-        "explain" : "웹브라우저가 JavaScript를 인식할 수 있도록 HTML코드로 알려줘야 한다.<br>body태그안에 script태그를 쓰면 된다.",
+        "explain" : "웹브라우저가 JavaScript를 인식할 수 있도록 HTML코드로 알려줘야 한다.<br><mark class='gray'>body태그안에 script태그를 쓰면 된다.</mark>",
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WbebKpj" data-pen-title="JavaScript 이용방법" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/WbebKpj">  JavaScript 이용방법</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -20,9 +20,59 @@ const localJson = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "write",
-        "explain" : "웹페이지에 글씨를 출력할 때 사용" ,
+        "explain" : "웹페이지에 <mark class='gray'>글씨를 출력할 때 사용</mark>한다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WbebKjO" data-pen-title="write" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/WbebKjO">  write</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "변수",
+        "explain" : "var = variable의 줄임말.<br><mark class='gray'>변수를 선언할 때 사용</mark>한다.<br><mark class='gray'>변수는 데이터를 저장하는 공간</mark>이다." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XJrJBax" data-pen-title="변수와 사용법" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/XJrJBax">  변수와 사용법</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "데이터의 종류",
+        "explain" : "<mark class='gray'>문자열(String) : 변수에 문자를 저장한다.</mark><br>※문자열 입력 시 큰따옴표 안에 큰따옴표를 넣을 순 없다. 큰따옴표 안에는 작은따옴표를, 작은따옴표 안에는 큰따옴표를 넣을 수 있다.<br>만약 한가지 따옴표만 쓰고 싶을떄는 \\따옴표 이렇게 해주면 된다.<br>※위와 같이 \\를 붙이는 것을 이스케이핑이라고 한다.<br><mark class='gray'>숫자(Number) : Java와 달리 int, float이런 타입을 명시할 필요 없이 그냥 숫자만 넣으면 된다.</mark><br>불린(Boolean) : true, false만을 값으로 지니고 있는 데이터 유형이다. ※따옴표가 없다. 따옴표가 들어가는 순간 문자열이다.<br><mark class='gray'>Null : 변수에 빈 값을 의도적으로 넣어 기존 값을 지울 때 사용</mark>한다.<br><mark class='gray'>Undefined : 변수 선언 후 아무 값도 집어넣지 않았을 때 자동으로 설정되는 값</mark>이다. 데이터 명 그대로 정의되지 않은 값이다.<br>객체(Object) / 배열(Array) / 함수(Function)는 그 양이 많고 중요하므로 아래에서 다룰 예정이다.<br>※아래의 문구 중 var a = '안녕하세요.' 와 같이 <mark class='gray'>=은 변수에 어떠한 값을 대입할 때 쓰이며, 이러한 것을 초기화한다 라고 표현</mark>한다." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QwLNErb" data-pen-title="데이터의 종류" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/QwLNErb">  데이터의 종류</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "객체(Object)",
+        "explain" : "변수에 대입한 값으로 <mark class='gray'>{}로 감싼 문구를 객체라고 한다.</mark><br>객체에는 속성(Property)이 있으며, <mark class='gray'>속성은 키(Key)와 값(Value)으로 이루어져 있다.</mark><br>※키는 따옴표가 없이도 선언할 수 있으나, 있어도 상관없다.<br>※다만 키 값에 띄어쓰기가 들어가게 된다면 반드시 따옴표로 감싸줘야 한다.<br><mark class='gray'>값에 들어가는 데이터는 어떤 것이든 상관없다.</mark> (객체, 함수도 값에 들어갈 수 있다. 즉, <mark class='gray'>객체안에 객체가 존재할 수 있다.</mark>)<br>변수에 대입한 <mark class='gray'>객체 값에 접근을 하기 위해선 변수명.속성키 이렇게 접근하면 된다. 또는 변수명[속성키]로 접근할 수 있다.</mark><br>※일반적으로는 변수명.속성키로 접근을 하며, []를 쓰이는 경우는 속성키에 띄어쓰기가 포함된 경우에 쓰인다.<br>※만약 <mark class='gray'>객체안에 객체에 접근을 하고자 할 때는 변수명.속성키.속성키로 접근</mark>하면 된다.<br><mark class='gray'>객체의 속성을 지우기 위해선 delete키워드를 사용하면 된다. delete 변수명.속성키 이렇게 사용</mark>한다.<br><mark class='gray'>객체를 생성하는 방법으로 new 키워드를 사용하는 방법이 있다.</mark> 이 방법에 대해선 차후 다룰 예정이다.<br>{}를 사용해서 만든 객체를 객체 리터럴이라고 한다.<br>※new키워드를 쓰는 것보다 {}를 사용하는게 권장사항이다." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="azoNZgY" data-pen-title="객체(Object)" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/azoNZgY">  객체(Object)</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "배열(Array)",
+        "explain" : "변수에 대입한 값으로 <mark class='gray'>[]로 감싼 문구를 배열이라고 한다.</mark><br>객체와 마찬가지로 <mark class='gray'>어떤 값이든 들어갈 수 있다.</mark><br>※배열 안에 들어간 것들을 요소(item)라고 한다.<br>※Javascript에서의 배열은 Java와는 달리 <mark class='gray'>배열의 길이를 미리 정할 필요가 없다. 안의 요소에 따라 자동으로 늘어나거나 줄어든다.</mark><br>배열은 객체와는 달리 <mark class='gray'>키가 없고, 값만 순서대로 나열되어 있다.</mark><br><mark class='gray'>배열 안의 요소를 선택하려면 변수명[숫자] 를 입력하면 된다.</mark><br>배열 역시 <mark class='gray'>new 키워드를 사용해서 생성할 수 있다.</mark><br>※new를 사용하지 않고 []만 사용해서 만든 배열을 배열 리터럴이라고 한다.<br><br>※new키워드를 쓰는 것보다 []를 사용하는게 권장사항이다." ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "<mark class='gray'></mark><br>" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "== 과 === 의 차이",
+        "explain" : "== : 값의 일치여부만 비교<br>=== : 값, 데이터 종류를 비교" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bNbNjMR" data-pen-title="== 과 === 의 차이" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/bNbNjMR">  == 과 === 의 차이</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+
+
     {
         "type" : "groupStart",
         "reStudy" : "",
@@ -83,14 +133,6 @@ const localJson = [
         "type" : "",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "변수와 사용법",
-        "explain" : "var 변수명 으로 사용한다. var는 variable의 줄임말.<br>아래와 같이 사용할 수 있다." ,
-        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XJrJBax" data-pen-title="변수와 사용법" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/XJrJBax">  변수와 사용법</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
-    },
-    {
-        "type" : "",
-        "reStudy" : "",
-        "mainTitle" : "",
         "title" : "querySelector",
         "explain" : "대상을 선택자로 선택하여 제어할 수 있는 것.<br>querySelector의 경우 조회된 결과값의 가장 첫번째것만 선택 및 반영이 된다.<br>테스트 해본 결과 id선택자의 우선순위가 가장 높은 듯 싶다.<br>아래의 예시에서 태그+아이디 부분이다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bNbNjvR" data-pen-title="querySelector" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/bNbNjvR">  querySelector</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
@@ -107,16 +149,7 @@ const localJson = [
         "type" : "",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "== 과 === 의 차이",
-        "explain" : "== : 값의 일치여부만 비교<br>=== : 값, 데이터 종류를 비교" ,
-        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bNbNjMR" data-pen-title="== 과 === 의 차이" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/bNbNjMR">  == 과 === 의 차이</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
-    },
-    {
-        "type" : "",
-        "reStudy" : "",
-        "mainTitle" : "",
         "title" : "script 동적 추가",
-        "purpose" : "",
         "explain" : "appendChild 를 이용해서 넣어야 한다." ,
         "howUse" : '<xmp>let scriptElement = document.createElement("script"); scriptElement.src = "./serverjsonLinkJS.js"; document.body.appendChild(scriptElement);</xmp>'       
     },
@@ -125,7 +158,6 @@ const localJson = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "",
-        "purpose" : "",
         "explain" : "" ,
         "howUse" : ''       
     },
@@ -134,7 +166,6 @@ const localJson = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "",
-        "purpose" : "",
         "explain" : "" ,
         "howUse" : ''       
     },
@@ -143,7 +174,6 @@ const localJson = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "",
-        "purpose" : "",
         "explain" : "" ,
         "howUse" : ''       
     },
@@ -152,7 +182,6 @@ const localJson = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "",
-        "purpose" : "",
         "explain" : "" ,
         "howUse" : ''       
     },
@@ -161,7 +190,6 @@ const localJson = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "",
-        "purpose" : "",
         "explain" : "" ,
         "howUse" : ''       
     },
@@ -170,7 +198,6 @@ const localJson = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "",
-        "purpose" : "",
         "explain" : "" ,
         "howUse" : ''       
     },
@@ -179,7 +206,6 @@ const localJson = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "",
-        "purpose" : "",
         "explain" : "" ,
         "howUse" : ''       
     },
@@ -188,7 +214,6 @@ const localJson = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "",
-        "purpose" : "",
         "explain" : "" ,
         "howUse" : ''       
     },
@@ -197,7 +222,6 @@ const localJson = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "",
-        "purpose" : "",
         "explain" : "" ,
         "howUse" : ''       
     },
