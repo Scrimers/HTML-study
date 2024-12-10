@@ -187,9 +187,9 @@ const localJson = [
         "type" : "",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
-        "explain" : "<mark class='gray'></mark><br>" ,
-        "howUse" : ''       
+        "title" : "야구게임",
+        "explain" : "야구게임을 만들어봤다." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bNbpJYw" data-pen-title="야구 게임" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/bNbpJYw">  야구 게임</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
 
 
@@ -328,8 +328,8 @@ const localJson = [
         "type" : "",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
-        "explain" : "<mark class='gray'></mark><br>" ,
+        "title" : "이벤트 위임(Event delegation)",
+        "explain" : "이벤트 위임(Event delegation)이란? HTML DOM에서 부모 요소에 이벤트 핸들러를 할당하고, 하위 요소들의 이벤트를 부모 요소에서 처리하는 기술이다. 이를 통해 성능 개선, 동적 요소 처리, 코드 간결성 등의 이점을 얻을 수 있다. 이벤트 위임을 구현하려면 부모 요소를 선택하고, 해당 요소에 이벤트 핸들러를 할당하면 된다.<br>다음은 jQuery에서 on() 메서드로 이벤트 위임을 사용하는 예시이다.<br><br>$(document).ready(function() {<br>// 이벤트 핸들러를 상위 요소에 연결한다.<br>$(document).on('click', '.itemCheckBox', function() {<br>// 이벤트 처리 코드// ...<br>});<br>});<br>위 코드에서 $(document).on('click', '.itemCheckBox', ...)는 클릭 이벤트 핸들러를 문서에 연결하지만, 실제 이벤트 처리 코드는 .itemCheckBox 요소가 클릭되었을 때에만 실행된다. 이 접근 방식을 통해 동적으로 추가된 요소에 대해 올바르게 이벤트 처리가 되도록 할 수 있다.<br>'.itemCheckBox'를 동적으로 추가된 요소에 해당하는 적절한 선택자로 대체해야 한다. 문서 준비 시에 이미 실행된 $(document).ready() 이벤트를 고려하여 성능을 향상시키기 위해 $(document) 대신 문서 준비 시에 존재하는 다른 상위 요소를 사용할 수도 있다" ,
         "howUse" : ''       
     },
 ]
