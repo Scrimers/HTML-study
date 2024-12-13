@@ -443,6 +443,110 @@ const localJson = [
         "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
+        "title" : "배열.reduce(function() {}), 배열.reduceRight(function() {})",
+        "explain" : "<mark class='gray'>배열.reduce(function() {}) = 배열을 왼쪽부터 조건을 적용해 하나의 값으로 만든다.<br>배열.reduce(function(이전값, 현재, 인덱스, 원본배열) 로 사용한다.<br>매개변수 중 인덱스, 원본배열은 옵션이다.<br>배열.reduceRight(function() {}) = reduce()와 완전히 같은 기능이지만 오른쪽 값부터 연산을 진행한다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="KwPgyNJ" data-pen-title="배열-배열.reduce(function() {}), 배열.reduceRight(function() {})" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/KwPgyNJ">    배열-배열.reduce(function() {}), 배열.reduceRight(function() {})</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "배열.filter(function() {})",
+        "explain" : "<mark class='gray'>기존 배열에서 특정 조건을 만족한 값들만 걸러내어 새 배열로 만든다.<br>배열.filter(function(항목) { 조건 }) 로 사용한다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ZYzpaLd" data-pen-title="배열-배열.filter()" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/ZYzpaLd">    배열-배열.filter()</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "y",
+        "mainTitle" : "",
+        "title" : "배열.sort(function() {})",
+        "explain" : "<mark class='gray'>배열을 특정 조건에 따라 정렬한다.<br>배열.sort(function(이전 값, 다음 값) { 조건 }) 로 사용한다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qEWaVXa" data-pen-title="배열-배열.sort()" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/qEWaVXa">    배열-배열.sort()</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "배열.indexOf(), 배열.lastIndexOf()",
+        "explain" : "문자열에서 사용한 indexOf(), lastIndexOf()와 완전히 같다.<br>다만 배열에도 적용시킬 수 있을 뿐이다." ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "배열.every(function() {}), 배열.some(function() {})",
+        "explain" : "<mark class='gray'>every() = 모든 항목이 조건을 만족하면 true를 반환한다.<br>배열.every(function(항목) { 조건 }) 로 사용한다.<br>some() =  하나의 항목이라도 조건을 만족하면 true를 반환한다.<br>배열.some(function(항목) { 조건 }) 로 사용한다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="yyBaPPd" data-pen-title="배열-배열.every(), 배열.some()" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/yyBaPPd">    배열-배열.every(), 배열.some()</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Array.isArray()",
+        "explain" : "Array 객체 자체의 static 메소드이다.<br><mark class='gray'>인자값이 배열인지 아닌지 확인해준다.<br>Array.isArray(값) 로 사용한다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="wBwzPmY" data-pen-title="배열-Array.isArray()" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/wBwzPmY">    배열-Array.isArray()</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "Window 객체",
+        "title" : "",
+        "explain" : "Window 객체란 브라우저의 요소들과 자바스크립트 엔진, 그리고 모든 변수를 담고 있는 객체이다.<br><mark class='gray'>브라우저 전체를 담당하는 게 Window 객체이고, 웹사이트만 담당하는게 Document 객체이다.<br>당연히 브라우저 안에 웹사이트가 있으니, windoe객체 안에 document객체가 들어있다.<br>window객체는 모든 객체의 조상이므로 전역객체이다.<br>모든 객체를 포함하고 있으므로 window라는 문구는 생략 가능하다.</mark><br>또한 지역변수가 아닌 전역변수로서 선언한 모든 변수들은 window객체 안에 등록된다." ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "window.close()",
+        "explain" : "<mark class='gray'>현재 창을 닫을때 사용한다.</mark><br>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XJrjVNR" data-pen-title="window.close()" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/XJrjVNR">    window.close()</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "y",
+        "mainTitle" : "",
+        "title" : "window.open()",
+        "explain" : "<mark class='gray'>새 창을 열 때 사용한다.<br>첫 번째 인자로 주소를 받고, 두 번째 인자로 새 탭으로 열지, 현재 탭에 열지를 설정할 수 있다. 세 번째 인자로 새 창에 대한 각종 설정을 전달할 수 있다.<br>또한 window.open()을 변수에 저장하여 부모창에서 자식창을 컨트롤 할 수 있다.<br부모창 -> 자식창 컨트롤 : 변수.document.write(내용)<br>자식창 -> 부모창 컨트롤 : 변수.opener.document.write(내용)</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bNbwaKd" data-pen-title="window.open()" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/bNbwaKd">    window.open()</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "<mark class='gray'></mark><br>" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "<mark class='gray'></mark><br>" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "<mark class='gray'></mark><br>" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "<mark class='gray'></mark><br>" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
         "title" : "",
         "explain" : "<mark class='gray'></mark><br>" ,
         "howUse" : ''       
@@ -455,6 +559,15 @@ const localJson = [
         "explain" : "<mark class='gray'></mark><br>" ,
         "howUse" : ''       
     },
+
+
+
+
+
+
+
+
+
 
 
 
