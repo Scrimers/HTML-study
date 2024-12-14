@@ -490,8 +490,8 @@ const localJson = [
     {
         "type" : "groupStart",
         "reStudy" : "",
-        "mainTitle" : "Window 객체",
-        "title" : "",
+        "mainTitle" : "Window 객체의 메소드 및 속성",
+        "title" : "Window 객체란",
         "explain" : "Window 객체란 브라우저의 요소들과 자바스크립트 엔진, 그리고 모든 변수를 담고 있는 객체이다.<br><mark class='gray'>브라우저 전체를 담당하는 게 Window 객체이고, 웹사이트만 담당하는게 Document 객체이다.<br>당연히 브라우저 안에 웹사이트가 있으니, windoe객체 안에 document객체가 들어있다.<br>window객체는 모든 객체의 조상이므로 전역객체이다.<br>모든 객체를 포함하고 있으므로 window라는 문구는 생략 가능하다.</mark><br>또한 지역변수가 아닌 전역변수로서 선언한 모든 변수들은 window객체 안에 등록된다." ,
         "howUse" : ''       
     },
@@ -515,24 +515,64 @@ const localJson = [
         "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
-        "explain" : "<mark class='gray'></mark><br>" ,
-        "howUse" : ''       
+        "title" : "window.encodeURI(), window.decodeURI()",
+        "explain" : "<mark class='gray'>window.encodeURI() = url을 인코딩한다.<br>window.encodeURI(uri값) 로 사용한다.<br>window.decodeURI() = 인코딩 된 url을 디코딩 한다.<br>window.decodeURI(uri값) 로 사용한다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bNbBbVe" data-pen-title="window.encodeURI(), window.decodeURI()" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/bNbBbVe">    window.encodeURI(), window.decodeURI()</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
         "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
-        "explain" : "<mark class='gray'></mark><br>" ,
+        "title" : "window.setTimeout(), window.clearTimeout(), window.setInterval(), window.clearInterval()",
+        "explain" : "<mark class='gray'>setTimeout() = 지정한 시간 뒤에 실행된다.<br>window.setTimeout(function() {}, 밀리초) 로 사용한다.<br>clearTimeout() = setTimeout을 정지시킨다.<br>window.clearTimeout(setTimeout함수) 로 사용한다.<br>setInterval() = 지정한 시간마다 반복 실행된다.<br>window.setInterval(function() {}, 밀리초) 로 사용한다.<br>clearInterval() = setInterval을 중지시킨다.<br>window.clearInterval(setInterval함수) 로 사용한다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QwLGLgg" data-pen-title="window.setTimeout(), window.ClearTimeout(), window.setInterval(), window.ClearInterval()" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/QwLGLgg">    window.setTimeout(), window.ClearTimeout(), window.setInterval(), window.ClearInterval()</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "window.getComputedStyle()",
+        "explain" : "<mark class='gray'>태그에 적용된 CSS속성 값을 알 수 있다.<br>window.getComputedStyle(태그) 로 사용한다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zxOoOJe" data-pen-title="window.getComputedStyle()" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/zxOoOJe">    window.getComputedStyle()</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "Window 객체",
+        "title" : "BOM이란",
+        "explain" : "Browser object model의 줄임말.<br><mark class='gray'>브라우저에 대한 정보를 나타낸다.</mark>" ,
         "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "y",
+        "mainTitle" : "",
+        "title" : "navigator",
+        "explain" : "<mark class='gray'>브라우저나, 운영체제(OS) 대한 정보를 알 수 있다.</mark><br>여러가지 속성이 있으니 필요시 마다 찾아볼 필요가 있어 보인다." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ZYzBGvo" data-pen-title="BOM-navigator" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/ZYzBGvo">    BOM-navigator</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
         "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
-        "explain" : "<mark class='gray'></mark><br>" ,
+        "title" : "screen",
+        "explain" : "화면에 대한 정보를 알려주며,<mark class='gray'>화면 크기에 따라 다른 동작을 하고 싶을 때 사용한다.<br>속성에는 너비(width), 높이(height), 픽셀(pixelDepth), 컬러(colorDepth), 화면 방향(orientation), 작업표시줄을 제외한 너비와 높이(availWidth, availHeight) 등이 있다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qEWqdMz" data-pen-title="BOM-screen" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/qEWqdMz">    BOM-screen</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "y",
+        "mainTitle" : "",
+        "title" : "location",
+        "explain" : "<mark class='gray'>protocol, host, hostname, pathname, href, port, search, hash 속성은 주소에 대한 정보를 알려준다.<br>location.reload() = 새로고침을 한다.<br>location.replace() = 현재 주소를 다른 주소로 교체한다.<br>(다른 페이지로 이동하지만 이전 페이지의 기록을 남기지 않는다.)</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="azoBvRN" data-pen-title="BOM-location" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/azoBvRN">    BOM-location</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "y",
+        "mainTitle" : "",
+        "title" : "history",
+        "explain" : "<mark class='gray'>웹페이지 이동 시 사용된다.<br>history.forward() 또는 history.go(1) = 앞으로가기<br>history.back() 또는 history.go(-1) = 뒤로가기<br>history.go(페이지수) = 히스토리 간의 이동<br>history.length = 뒤로가기 할 수 있는 페이지의 개수<br>history.pushState(객체, 제목, 주소), history.replaceState(객체, 제목, 주소) = 페이지 깜빡임 없이 주소를 바꾸고, 바뀐 주소에 따른 액션을 취할 때 사용된다.<br>※파라미터의 객체부분에 페이지에 대한 정보를 추가할 수 있다.</mark><br>pushState는 뭔가 실행될 때마다 스택이 쌓이므로 이전으로 돌아갈 수 있는데, replaceState는 pushState와 같이 실행 시 새로운 스택이 쌓이는게 아닌, 현재의 것이 바뀌는 것이기 때문에 replaceState를 실행하기 이전, 이전의 페이지로 이동하게 될 것이다." ,
         "howUse" : ''       
     },
     {

@@ -12,39 +12,7 @@
 		<!-- CSS 캐시 방지 (이걸 쓰면 바로 변경된 CSS가 적용되긴 하지만... 페이지 이동 시 마다 CSS입히기 전의 화면이 0.1초 정도 노출된다.) -->
 		<!-- <script src="./cachePreventionJS.js"></script> -->
 
-		<style>
-			input::-webkit-outer-spin-button,
-			input::-webkit-inner-spin-button {
-			-webkit-appearance: none;
-			margin: 0;
-			}
-			#baseBallDiv {
-				border: 2px solid;
-				padding: 3px 10px 3px 10px;
-				min-height: 30px;
-			}
-			b {
-				font-size: 12px;
-    			color: red;
-			}
-			#warnDiv {
-				display: flex;
-				height: 30px;
-				justify-content: center;
-				align-items: center;
-			}
-			#actionDiv {
-				display: flex;
-    			justify-content: center;
-			}
-			.resultDiv {
-				border: 3px double;
-				padding: 10px;
-				margin: 10px 0px 10px 0px;
-			}
-			#reStart {
-				display: none;
-			}
+		<style>		
 		</style>
 	</head>
 	<body>
@@ -106,170 +74,28 @@
 		<div class="nav_study_emptySpace"></div>
 		<!-- navigation 끝 -->
 
-		<br><br><br>
-
-		<div id="baseBallDiv"></div>
-		<div id="warnDiv"></div>
-		<div id="actionDiv">
-			<input id="baseBallInput" type="number" placeholder="숫자4개를 입력해주세요.">
-			<button id="baseBallBtn" type="button">입력</button>
-			<button id="reStart" type="button">다시하기</button>
-		</div>
+		
 		
 		<!-- 색상 변경 js 불러오기 -->
 		<script src="./colorModeJS.js"></script>
 
 
 		<script>
-			var strike, ball, out, numList, baseGameArr;
+			var i = 0;
 
-			//게임 생성 로직
-			createGame();			
+			var inter = setInterval(function() {
+				i++;
+				document.write("<br>interval ",i, "초 째 실행중");
+				
+				if(i >= 10) {    
+					document.write("<br>interval 정지");
+					clearInterval(inter);  
+				}  
+			}, 1000);
 
-			$(document).ready(function() {
-				//입력 버튼 클릭 시 
-				$(document).on("click", "#baseBallBtn", function() {
-					var lengthCk = btnTextLengthCk();	//버튼용 글자수 체크
-					if(!lengthCk) {
-						return false;
-					}
-
-					//결과 계산 로직
-					baseBallResult();
-
-					//인풋창 초기화
-					$('#baseBallInput').val('');
-				});
-
-				//인풋창에서 키에서 손뗐을 때, 키 누르고 있을때 인풋용 글자수 체크
-				$('#baseBallInput').on({
-					"keyup" : function() {
-						inputTextLengthCk($(this));
-					}
-					,"keypress" : function() {
-						inputTextLengthCk($(this));
-					}
-				});
-
-				//다시하기 버튼 클릭 시 
-				$(document).on("click", "#reStart", function() {
-					//게임 생성 로직
-					createGame();
-				});
-			});
-
-			//인풋용 글자수 체크
-			function inputTextLengthCk(textVal) {
-				var valLeng = textVal.val().length;	//사용자가 입력한 글자 수
-
-				//글자수가 5이상이라면
-				if(valLeng >= 5){
-					var warnText = "<b>※4글자를 초과할 수 없습니다.</b>";
-					$('#warnDiv').html(warnText);
-
-					//마지막 입력한 한 글자를 지운다.
-					$('#baseBallInput').val($('#baseBallInput').val().slice(0, -1));
-				}
-				else if(valLeng < 4) {
-					//경고 문구 제거
-					$('#warnDiv').html('');
-				}
-			}
-
-			//버튼용 글자수 체크
-			function btnTextLengthCk() {
-				var valLeng = $('#baseBallInput').val().length;	//사용자가 입력한 글자 수
-				var result = true;
-
-				//글자수가 4글자가 아닐 때
-				if(valLeng != 4){
-					var warnText = "<b>※4글자를 입력해야 합니다.</b>";
-					$('#warnDiv').html(warnText);
-					result = false;
-				}
-
-				return result;
-			}
-
-			//결과 계산 로직
-			function baseBallResult() {				
-				var inputVal = $('#baseBallInput').val().split('');	//사용자가 입력한 값
-
-				var html = [];
-				html.push("<div class='resultDiv'>");
-				// html.push("정답 : "+baseGameArr+"<br>");
-				html.push("입력한 숫자 : "+inputVal);
-
-				//계산 로직
-				for(var i=0 ; i<inputVal.length ; i++) {
-					var numVal = Number(inputVal[i]);
-					var index = baseGameArr.indexOf(numVal);
-
-					//사용자가 입력한 값이 정답 배열값에 있는지 체크
-					if(index > -1) {
-						//값이 정확히 일치하면 strike, 배열안에만 포함되어 있다면 ball
-						baseGameArr[i] == numVal ? strike++ : ball++;
-					}
-					else {
-						//값이 배열에 없으면 out
-						out++;
-					}
-				}
-
-				html.push("<br>S : "+strike+" / B : "+ball+" / O : "+out);
-
-				if(strike == 4) {
-					html.push("<br>게임에 승리하셨습니다. 축하합니다!!");
-					$("#baseBallInput, #baseBallBtn").hide();	//인풋창 숨김처리
-					$("#reStart").show();						//다시하기 버튼 노출
-				}
-
-				html.push("</div>");
-				html.push("<div style='overflow:auto'></div>");	//마진콜랩싱 대비
-				$('#baseBallDiv').append(html.join(''));
-
-				//s, b, o 값 초기화
-				strike = 0;
-				ball = 0; 
-				out = 0;
-			}
-
-			//게임 생성
-			function createGame() {
-				strike = 0;
-				ball = 0; 
-				out = 0;
-				//베이스 숫자 배열
-				numList = [0,1,2,3,4,5,6,7,8,9];
-				//정답 배열
-				baseGameArr = [];
-
-				for(var i=0 ; i<4 ; ) {
-					var ranNum = Math.floor(Math.random()*numList.length);	//랜덤으로 생성
-					//베이스 숫자 배열에 있는 값이라면
-					if(numList.indexOf(ranNum) > -1) {
-						//베이스 숫자 배열에서 제거
-						numList.splice(numList.indexOf(ranNum), 1);
-						//정답 배열에 추가
-						baseGameArr[i] = ranNum;
-						i++;
-						/*
-						console.log("==========================");
-						console.log("numList : "+numList);
-						console.log("baseGameArr : "+baseGameArr);
-						console.log("ranNum : "+ranNum);
-						*/
-					}
-					else {
-						continue;
-					}
-				}
-
-				$("#baseBallDiv, #warnDiv").html('');		//결과창, 경고창 초기화
-				$("#reStart").hide();						//다시하기 버튼 숨김처리
-				$("#baseBallInput, #baseBallBtn").show();	//인풋창 노출
-				$("#baseBallInput").val('');				//인풋창 초기화
-			}
+			var timeout = setTimeout(function() {
+				document.write("<br>timeout 실행 ");
+			}, 3000);
 		</script>
 	</body>
 </html>
