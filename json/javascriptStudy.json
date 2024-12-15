@@ -568,11 +568,59 @@
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="azoBvRN" data-pen-title="BOM-location" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/azoBvRN">    BOM-location</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
-        "type" : "groupIng",
+        "type" : "groupEnd",
         "reStudy" : "y",
         "mainTitle" : "",
         "title" : "history",
         "explain" : "<mark class='gray'>웹페이지 이동 시 사용된다.<br>history.forward() 또는 history.go(1) = 앞으로가기<br>history.back() 또는 history.go(-1) = 뒤로가기<br>history.go(페이지수) = 히스토리 간의 이동<br>history.length = 뒤로가기 할 수 있는 페이지의 개수<br>history.pushState(객체, 제목, 주소), history.replaceState(객체, 제목, 주소) = 페이지 깜빡임 없이 주소를 바꾸고, 바뀐 주소에 따른 액션을 취할 때 사용된다.<br>※파라미터의 객체부분에 페이지에 대한 정보를 추가할 수 있다.</mark><br>pushState는 뭔가 실행될 때마다 스택이 쌓이므로 이전으로 돌아갈 수 있는데, replaceState는 pushState와 같이 실행 시 새로운 스택이 쌓이는게 아닌, 현재의 것이 바뀌는 것이기 때문에 replaceState를 실행하기 이전, 이전의 페이지로 이동하게 될 것이다." ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "Document",
+        "title" : "선택자를 지정하는 여러 방법",
+        "explain" : "document.getElementById(아이디) = html에서 해당 아이디를 가진 태그를 선택한다.<br><br>document.getElementsByClassName(클래스), = html에서 해당 클래스를 가진 태그를 선택한다.<br>document.getElementsByName(이름) = html에서 해당 이름을 가진 태그를 선택한다.<br>document.getElementsByTagName(태그) = html에서 해당 태그명을 가진 태그를 선택한다.<br>※getElementById()와는 달리 여러개 선택되기 때문에 항상 배열이다. 메소드이름도 getElement가 아닌 getElements 이다.<br><mark class='gray'>document.querySelector(선택자) = 지정한 선택자를 지닌 태그를 가장 먼저 조회된 것 하나만 선택한다.<br>document.querySelectorAll(선택자) = 지정한 선택자를 지닌 태그들을 전부 선택한다.<br>※선택자는 CSS선택자를 쓰면 된다. 이러한 선택자의 유형에는 아이디는 #, 클래스는 .(점), 태그명[속성명=속성값], 부모 > 자식, 부모 자손 등이 있다.<br>※getElement 시리즈 보단 querySelector 시리즈를 더 많이 쓴다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bNbBmOW" data-pen-title="선택자를 지정하는 여러 방법" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/bNbBmOW">    선택자를 지정하는 여러 방법</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "document 태그 및 텍스트 생성 관련",
+        "explain" : "<mark class='gray'>document.createElement(태그명) = document에 새로운 태그를 만들 때 사용한다.<br>※해당 메소드를 실행시킨다 해서 바로 생기는게 아닌 변수를 통해 메모리에 저장된다.<br>document.createTextNode(텍스트) = document에 텍스트를 만들 떄 사용한다.<br>※createElement()와 마찬가지로 변수를 통해 메모리에 저장된다.<br>document.createDocumentFragment() = 가짜 document를 만들어 추가할 태그들을 담은 후 한번에 document에 추가할 때 사용한다.<br>※이렇게 하면 document는 한 번만 조작되서 성능에 부담이 덜하게 된다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WbeoaBZ" data-pen-title="document 태그 및 텍스트 생성 관련" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/WbeoaBZ">    document 태그 및 텍스트 생성 관련</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },    
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "각종 태그에 접근하는 방법",
+        "explain" : "<mark class='gray'>document.head = html의 head에 접근.<br>document.body = html의 body에 접근.<br>document.anchors = html의 anchors에 접근.<br>document.links = html의 links에 접근.<br>document.forms = html의 forms에 접근.<br>document.images = html의 images에 접근.<br>document.scripts = html의 scripts에 접근.<br>document.title = html의 title에 접근.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MYgbPMB" data-pen-title="각종 태그에 접근하는 방법" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/MYgbPMB">    각종 태그에 접근하는 방법</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "<mark class='gray'></mark><br>" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "<mark class='gray'></mark><br>" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "<mark class='gray'></mark><br>" ,
         "howUse" : ''       
     },
     {
@@ -599,7 +647,6 @@
         "explain" : "<mark class='gray'></mark><br>" ,
         "howUse" : ''       
     },
-
 
 
 
