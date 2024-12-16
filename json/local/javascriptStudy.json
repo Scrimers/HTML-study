@@ -602,9 +602,41 @@ const localJson = [
     {
         "type" : "groupStart",
         "reStudy" : "",
+        "mainTitle" : "DOM",
+        "title" : "DOM",
+        "explain" : "Document Object Model의 줄임말.<br>document를 객체로 구현한 것이라 보면 된다.<br>html은 계층적 구조로 되어 있기에 객체로 표현이 가능하다.<br>이렇게 <mark class='gray'>HTML구조를 객체로서 표현한 것이 DOM</mark>이다." ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
-        "explain" : "<mark class='gray'></mark><br>" ,
+        "title" : "Node와 Element",
+        "explain" : "<mark class='gray'>Node =  태그 노드와 텍스트 노드 전체를 가리킨다.<br>Element = 태그 노드만 가리킨다.</mark><br>※예를 들어 document.get'Element'ById 와 같이 태그만 검색하는 것은 Element가 붙은 메소드를 쓴다." ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "태그.nodeType",
+        "explain" : "<mark class='gray'>선택한 태그의 종류를 알고 싶을때 사용한다.<br><br>종류는 다음과 같다.<br>1 = Node.ELEMENT_NODE (Element를 의미)<br>3 = Node.TEXT_NODE (텍스트를 의미)<br>8 = Node.COMMENT_NODE (주석을 의미)<br>9 = Node.DOCUMENT_NODE (Document를 의미)<br>10 = Node.DOCUMENT_TYPE_NODE (DOCTYPE를 의미)<br>11 = Node.DOCUMENT_FRAGMENT_NODE (Document Fragment를 의미)</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QwLGYjE" data-pen-title="태그.nodeType" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/QwLGYjE">    태그.nodeType</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "태그.children, 태그.childNodes",
+        "explain" : "<mark class='gray'>자식을 선택할 때 사용한다.<br>childNodes = 자식에 해당하는 태그 노드와 텍스트 노드 전체 선택 가능<br>children = 자식에 해당하는 태그 노드만 선택 가능<br>document.body.children[1] 내지는 document.querySelector('body').children[1] 같은 방식으로 사용할 수 있다.</mark><br>특정 태그의 자식들을 찾아야 하는 경우에 사용한다." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MYgbLvO" data-pen-title="태그.children, 태그.childNodes" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/MYgbLvO">    태그.children, 태그.childNodes</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "태그.firstChild, 태그.firstElementChild, 태그.lastChild, 태그.lastElementChild",
+        "explain" : "<mark class='gray'>태그.firstChild = 첫번째 자식에 해당하는 태그 노드와 텍스트 노드 전체 선택 가능.<br>태그.firstElementChild = 첫번째 자식에 해당하는 태그 노드만 선택 가능.</mark>" ,
         "howUse" : ''       
     },
     {
