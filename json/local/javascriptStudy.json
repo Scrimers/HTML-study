@@ -636,48 +636,80 @@ const localJson = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "태그.firstChild, 태그.firstElementChild, 태그.lastChild, 태그.lastElementChild",
-        "explain" : "<mark class='gray'>태그.firstChild = 첫번째 자식에 해당하는 태그 노드와 텍스트 노드 전체 선택 가능.<br>태그.firstElementChild = 첫번째 자식에 해당하는 태그 노드만 선택 가능.</mark>" ,
-        "howUse" : ''       
+        "explain" : "<mark class='gray'>태그.firstChild = 첫번째 자식에 해당하는 태그 노드 또는 텍스트 노드 선택 가능.<br>태그.firstElementChild = 첫번째 자식에 해당하는 태그 노드만 선택 가능.<br>태그.lastChild = 마지막 자식에 해당하는 태그 노드 또는 텍스트 노드 선택 가능.<br>태그.lastElementChild = 마지막 자식에 해당하는 태그 노드만 선택 가능.</mark><br>children, childNodes와는 달리 첫번째, 마지막 자식은 하나뿐이므로 s가 안붙는다." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="KwPawQw" data-pen-title="태그.firstChild, 태그.firstElementChild, 태그.lastChild, 태그.lastElementChild" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/KwPawQw">    태그.firstChild, 태그.firstElementChild, 태그.lastChild, 태그.lastElementChild</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
         "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
-        "explain" : "<mark class='gray'></mark><br>" ,
-        "howUse" : ''       
+        "title" : "태그.parentNode, 태그.parentElement",
+        "explain" : "<mark class='gray'>부모를 선택할 때 사용한다.<br>태그.parentNode = 부모에 해당하는 태그 노드 또는 텍스트 노드 선택 가능.<br>태그.parentElement = 부모에 해당하는 태그 노드만 선택 가능.</mark><br>firstChild 등과 마찬가지로 부모는 하나뿐이기에 s가 안붙는다." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="LEPxEBe" data-pen-title="태그.parentNode, 태그.parentElement" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/LEPxEBe">    태그.parentNode, 태그.parentElement</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
         "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
-        "explain" : "<mark class='gray'></mark><br>" ,
-        "howUse" : ''       
+        "title" : "태그.previousSibling, 태그.nextSibling, 태그.previousElementSibling, 태그.nextElementSibling",
+        "explain" : "<mark class='gray'>형제 태그를 선택할 때 사용한다.<br>태그.previousSibling = 이전 형제에 해당하는 태그 노드 또는 텍스트 노드 선택 가능.<br>태그.nextSibling = 다음 형제에 해당하는 태그 노드 또는 텍스트 노드 선택 가능.<br>태그.previousElementSibling = 이전 형제에 해당하는 태그 노드만 선택 가능.<br>태그.nextElementSibling = 다음 형제에 해당하는 태그만 선택 가능.</mark><br>마찬가지로 자신 기준 형제는 하나씩이므로 s가 안붙는다." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QwLdwzw" data-pen-title="태그.previousSibling, 태그.nextSibling, 태그.previousElementSibling, 태그.nextElementSibling" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/QwLdwzw">    태그.previousSibling, 태그.nextSibling, 태그.previousElementSibling, 태그.nextElementSibling</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
         "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
-        "explain" : "<mark class='gray'></mark><br>" ,
-        "howUse" : ''       
+        "title" : "태그.innerHTML, 태그.outerHTML",
+        "explain" : "<mark class='gray'>선택한 태그의 내용물을 얻어오거나 바꿀 때 사용한다.<br>태그.innerHTML = 자기자신을 제외한 안쪽 태그, 텍스트만 가져온다.<br>태그.outerHTML = 자기자신을 포함한 안쪽 태그, 텍스트만 가져온다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jENyERb" data-pen-title="태그.innerHTML, 태그.outerHTML" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/jENyERb">    태그.innerHTML, 태그.outerHTML</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
         "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
-        "explain" : "<mark class='gray'></mark><br>" ,
-        "howUse" : ''       
+        "title" : "태그.attributes 및 속성 선택 조회",
+        "explain" : "<mark class='gray'>태그.attributes = 선택한 태그가 가진 모든 속성을 조회할 때 사용한다.<br>태그.속성으로 값에 접근할 수 있다.<br>접근한 값은 그대로 조회할 수도, 변경할 수도 있다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="wBwgBLw" data-pen-title="태그.attributes 및 속성 선택 조회" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/wBwgBLw">    태그.attributes 및 속성 선택 조회</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "높이와 너비에 관한 것들",
+        "explain" : "<mark class='gray'>태그.clientHeight = 태그의 margin, border, scrollbar을 제외한 높이를 반환한다.<br>태그.clientWidth = 태그의 margin, border, scrollbar을 제외한 너비를 반환한다.<br>태그.offsetHeight = 태그의 margin만 제외한 높이를 반환한다.<br>태그.offsetWidth = 태그의 margin만 제외한 너비를 반환한다.<br>태그.scrollHeight = 스크롤 가능한 범위까지 포함한 태그의 높이를 반환한다.<br>태그.scrollWidth = 스크롤 가능한 범위까지 포함한 태그의 너비를 반환</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MYgJwjo" data-pen-title="Untitled" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/MYgJwjo">    Untitled</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "태그.appendChild()",
+        "explain" : "<mark class='gray'>createElement() 함수로 생성한 태그를 선택한 태그의 자식으로 추가할 때 사용한다.<br>마지막 순서의 자식 태그로 추가된다.</mark><br>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bNbgdyW" data-pen-title="태그.appendChild" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/bNbgdyW">    태그.appendChild</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "태그.removeChild()",
+        "explain" : "<mark class='gray'>선택한 자식 태그를 삭제할 때 사용한다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="mybReeE" data-pen-title="태그.removeChild()" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/mybReeE">    태그.removeChild()</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "태그.insertBefore()",
+        "explain" : "<mark class='gray'>createElement() 함수로 생성한 태그를 선택한 태그의 이전 형제로 추가할 때 사용한다.<br>부모.insertBefore(넣을 태그, 기준 태그) 로 사용한다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="mybRemR" data-pen-title="태그.insertBefore" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/mybRemR">    태그.insertBefore</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },   
     {
         "type" : "groupEnd",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
-        "explain" : "<mark class='gray'></mark><br>" ,
-        "howUse" : ''       
+        "title" : "태그.cloneNode()",
+        "explain" : "<mark class='gray'>자신을 복사할 떄 사용한다.</mark><br>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VYZPvdm" data-pen-title="태그.cloneNode()" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/VYZPvdm">    태그.cloneNode()</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
 
 
