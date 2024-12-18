@@ -711,9 +711,54 @@ const localJson = [
         "explain" : "<mark class='gray'>자신을 복사할 떄 사용한다.</mark><br>" ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VYZPvdm" data-pen-title="태그.cloneNode()" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/VYZPvdm">    태그.cloneNode()</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
-
-
-
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Date",
+        "explain" : "<mark class='gray'>날짜를 표현할 때 사용한다.<br>날짜.getFullYear() = 연도를 가져온다.<br>날짜.setFullYear(연도) = 연도를 설정한다.<br>날짜.getMonth() = 달을 가져온다.<br>날짜.setMonth(달) = 달을 설정한다.<br>#Month()시리즈는 0부타 시작한다.<br>그래서 날짜.getMonth() + 1 을<br>해야 설정한 혹은 현재의 달이 정상적으로 나온다.<br>날짜.getDate() = 일을 가져온다.<br>날짜.setDate() = 일을 설정한다<br>날짜.getDay() = 요일을 가져온다.<br>날짜.setDay() = 요일을 설정한다.<br>#일요일이 0이다. 즉, 화요일이면 2고, 토요일이면 6이다.<br>날짜.getHours() = 시를 가져온다.<br>날짜.getMinutes() = 분을 가져온다.<br>날짜.getSeconds() = 초를 가져온다.<br>날짜.setHours() = 시를 설정한다.<br>날짜.setMinutes() = 분을 설정한다.<br>날짜.setSeconds() = 초를 설정한다.<br>날짜.toString() = 날짜를 문자로 바꿔 표현한다.</mark><br>날짜.toLocaleString() = 보기좋은 날짜정보로 바꿔 표현한다.<br>날짜.toUTCString() = 세계시 기준 정보를 보여준다." ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "RegExp",
+        "explain" : "<mark class='gray'>정규 표현식을 나타낼 때 사용한다.<br>정규식은 특정한 규칙을 가진 문자열의 집합을 표현 할 때 사용한다.</mark><br>#이건 공부하려면 꽤나 오랜 시간이 걸리므로 필요시마다 찾아서 하는게 좋을 듯 하다." ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "객체 지향 프로그래밍",
+        "title" : "생성자 함수",
+        "explain" : "<mark class='gray'>객체를 생성하는 함수</mark>이다.<br>#다른 언어에서는 class가 있지만 Javascript에는 없다. 대신 생성자 함수가 그 역할을 한다.<br><mark class='gray'>생성자 함수를 만들기 = function 생성자명() {}<br>#생성자 함수 명은 대문자로 시작하게 만들어야 한다.</mark>(그냥 규칙이다.)<br><mark class='gray'>생성자 함수 호출 = new 생성자함수명(인자);<br>this = 생성자 함수 자기자신<br>this.속성으로 사용한다.<br>this에 저장된 것들은 new를 통해 객체를 만들 때 그 객체에 적용된다.</mark><br>#따로 변수를 선언하지 않고 this.asd 이렇게 해도 적용이 되는 걸까?" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "prototype",
+        "explain" : "<mark class='gray'>같은 생성자로 부터 만들어진 객체들은 전부 프로토타입 객체를 공유한다.</mark><br>즉, Person의 prototype 객체에 sayHello라는 메소드를 넣으면 Person 생성자로 만든 모든 객체는 이 메소드 사용이 가능하다.<br><mark class='gray'>생성자함수명prototype.속성으로 사용한다.<br>#this.속성 보다 this.prototype.속성이 더 효율적이다.<br>이유는 prototype은 모든 객체가 공유하고 있어서 한 번만 만들어지지만, this에 넣은 것은 객체 하나를 만들 때마다 메소드도 하나씩 만들어지기 때문에 불필요한 메모리 낭비가 발생한다.</mark><br>#어떤 디자인 패턴의 경우 메소드뿐만 아니라 속성까지 전부 prototype에 넣기도 한다." ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "__proto__",
+        "explain" : "<mark class='gray'>생성자 호출을 통해 객체가 생성될 때 생성자의 prototype이 참조된 것<br>prototype을 참조하기 때문에 prototype과 __proto__는 같다.</mark><br>다음은 단순 참고사항이다.<br>constructor는 생성자 함수 그 자체를 가리킨다.<br>prototype은 생성자 함수에 정의한 모든 객체가 공유할 원형이다.<br>__proto__는 생성자 함수를 new로 호출할 때, 정의해두었던 prototype을 참조한 객체이다.<br>prototype은 생성자 함수에 사용자가 직접 넣는 거고, __proto__는 new를 호출할 때 prototype을 참조하여 자동으로 만들어진다.<br>생성자에는 prototype, 생성자로부터 만들어진 객체에는 __proto__ 이다.<br>따라서 사용자는 prototype만 신경쓰면 된다.<br> __proto__는 prototype이 제대로 구현되었는지 확인용으로 사용한다." ,
+        "howUse" : ''       
+    },    
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "prototype, __proto__와 constructor의 관계",
+        "explain" : "prototype과 constructor는 부모자식 관계라고 생각하면 된다.<br>아래와 같은 관계이다.<br><mark class='gray'>Person.prototype.constructor === Person;<br>Person.prototype === (Person생성자로 만들어진 객체).__proto__;<br>(Person생성자로 만들어진 객체).__proto__.constructor === Person;</mark>" ,
+        "howUse" : ''       
+    },
 
 
 
