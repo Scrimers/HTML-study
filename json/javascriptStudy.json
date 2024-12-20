@@ -759,8 +759,22 @@
         "explain" : "prototype과 constructor는 부모자식 관계라고 생각하면 된다.<br>아래와 같은 관계이다.<br><mark class='gray'>Person.prototype.constructor === Person;<br>Person.prototype === (Person생성자로 만들어진 객체).__proto__;<br>(Person생성자로 만들어진 객체).__proto__.constructor === Person;</mark>" ,
         "howUse" : ''       
     },
-
-
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "상속",
+        "explain" : "<mark class='gray'>후손생성자에 상속시키기 = function 후손생성자명() { 조상생성자명.apply(this, arguments); }<br>※위 코드의 의미는 후손생성자에게 조상생성자의 this(조상생성자 그 자체)와 arguments(조상생성자의 매개변수)를 적용시키라는 의미다.<br>후손생성자가 조상생성자의 prototype 사용할 수 있게 하기 = 자손생성자명.prototype = Object.create(조상생성자명.prototype);<br>※위의 코드는 후손생성자의 prototype과 조상생성자의 prototype을 연결하는 것이다.<br> 즉, 후손생성자는 조상생성자의 prototype을 전부 사용할 수 있게 된다.<br>위의 코드 중 Object.create는 조상생성자명.prototype을 상속하는 새로운 객체를 만드는 메소드이다.<br>※Object.create(조상생성자명.prototype) 과 new 조상생성자명()은 차이가 있다.<br> ※Object.create(조상생성자명.prototype)은 새로운 객체를 만들되 생성자는 실행하지 않는데, new 조상생성자명()은 객체를 만들고 생성자를 실행한다.<br><br>위와 같이 후손생성자가 조상생성자로부터 상속을 받게되면 후손생성자명.prototype.constructor 는 조상생성자가 되어 버린다.<br>이는 JavaScript자체의 문제이므로 이를 해결하기 위해선 후손생성자명.prototype.constructor = 후손생성자명 라고 명시를 해줘야 한다.</mark><br><br>위 글만으로는 완전히 이해가 되기 어려우니 반드시 아래의 예제를 보도록 하자." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ogvZqZr" data-pen-title="상속" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/ogvZqZr">    상속</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "자판기 게임",
+        "explain" : "자판기 게임을 만들어봤다." ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="azoJYxe" data-pen-title="자판기 게임" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/azoJYxe">    자판기 게임</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
+    },
 
 
 

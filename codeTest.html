@@ -13,6 +13,42 @@
 		<!-- <script src="./cachePreventionJS.js"></script> -->
 
 		<style>		
+			input::-webkit-outer-spin-button,
+			input::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+			}
+			#logDiv {
+			border: 2px solid;
+			padding: 3px 10px 3px 10px;
+			min-height: 30px;
+			}
+			b {
+			font-size: 12px;
+			color: red;
+			}
+			#warnDiv {
+			display: flex;
+			height: 30px;
+			justify-content: center;
+			align-items: center;
+			}
+			#actionDiv {
+			display: flex;
+			justify-content: center;
+			}
+			#resultDiv {
+			border: 3px double;
+			padding: 10px;
+			margin: 10px 0px 10px 0px;
+			display: none;
+			}
+			#replayBtn {
+			display: none;
+			}
+			#beverageInput {
+			width: 14%; 
+			}
 		</style>
 	</head>
 	<body>
@@ -75,27 +111,178 @@
 		<!-- navigation 끝 -->
 
 		
+
+		<div id="logDiv">
+			<p>구매하실 음료를 선택해 주세요.</p>
+			<div id="beverageList"></div>
+			<div id='resultDiv'></div>
+		</div>
+		<div id="warnDiv"></div>
+		<div id="actionDiv">
+			<input id="beverageInput" type="number" placeholder="구매하실 음료 버튼을 입력해주세요.">
+			<button id="purchaseBtn" type="button" onclick="purchase()">구매</button>
+			<button id="replayBtn" type="button" onclick="replay()">다시하기</button>
+		</div>
+
+
 		
 		<!-- 색상 변경 js 불러오기 -->
 		<script src="./colorModeJS.js"></script>
-
-
 		<script>
-			var i = 0;
+			//음료 생성자
+			function Beverage(numP, nameP, priceP) {
+				this.num = numP;
+				this.name = nameP;
+				this.price = priceP;
+				this.purchaseYn = "N";
+			}
+			Beverage.prototype.beverageInfo = function() {
+				return "번호 : "+this.num+" ▷ "+this.name+"("+this.price+")";
+			};
 
-			var inter = setInterval(function() {
-				i++;
-				document.write("<br>interval ",i, "초 째 실행중");
+
+			//유저 생성자
+			function User(numP, nameP, priceP) {
+				Beverage.apply(this, arguments);
+			}
+			User.prototype = Object.create(Beverage.prototype);
+			User.prototype.constructor = User;
+			User.prototype.cash = 10000;  //유저 소지 금액
+
+			User.prototype.purchaseLog = function() {
+				return this.name+"을 구매하셨습니다. (남은 잔액 : "+this.cash+"원)";
+			};
+
+
+			//음료 종류 
+			var cola = new User(0, "콜라", 1000);
+			var cidar = new User(1, "사이다", 1000);
+			var pineBud = new User(2, "솔의눈", 1000);
+			var ceylonTea = new User(3, "실론티", 1000);
+			var oranC = new User(4, "오란씨", 1000);
+			var milkis = new User(5, "밀키스", 1000);
+			var mountainDew = new User(6, "마운틴듀", 1000);
+			var water = new User(7, "물", 1000);
+			var letsBe = new User(8, "레쓰비", 1000);
+			var georgia = new User(9, "조지아", 9000);
+
+			var beverageList = [cola, cidar, pineBud, ceylonTea, oranC, milkis, mountainDew, water, letsBe, georgia];
+
+			//음료정보 텍스트
+			var fragment = document.createDocumentFragment();
+			for(var i=0 ; i<beverageList.length ; i++) {
+				let spanTag = document.createElement("span");
+				spanTag.setAttribute("id", i);
+				spanTag.style.setProperty('display', 'block');
+				let beverageInfo = document.createTextNode(beverageList[i].beverageInfo());
+
+				spanTag.appendChild(beverageInfo);
+				fragment.appendChild(spanTag);
+			}
+			document.querySelector('#beverageList').appendChild(fragment);
+
+			//음료 구매 로직
+			function purchase() {	
+				let chooseNum = document.querySelector('#beverageInput').value;	//유저가 입력한 입력 값				
+				document.querySelector('#beverageInput').value = ""; //인풋창 값 초기화				
+
+				//경고 문구 초기화
+				let warnDivChild = document.querySelector('#warnDiv').children[0];
+				if(warnDivChild != undefined) {
+					document.querySelector('#warnDiv').removeChild(warnDivChild);
+				}
+
+				//입력 값이 없을 때
+				if(chooseNum == "") {
+					return false;
+				}
+
+				//자판기에 없는 번호일때 경고문구 노출 또는 이미 구매한 음료일때 경고문구 노출
+				if(chooseNum < 0 || chooseNum > beverageList.length-1 || beverageList[chooseNum].purchaseYn == "Y") {
+					let warnTag = document.createElement("b");
+					let warnText;
+					if(chooseNum < 0 || chooseNum > beverageList.length-1) {
+						warnText = document.createTextNode("자판기에 없는 번호입니다.");
+					}
+					else if(beverageList[chooseNum].purchaseYn == "Y") {
+						warnText = document.createTextNode(beverageList[chooseNum].name+"은 이미 구매한 음료입니다.");
+					}
+					else {
+						warnText = document.createTextNode("다시 시도해 주십시오.");
+					}
+					
+					let fragment = document.createDocumentFragment();
+					warnTag.appendChild(warnText);
+					fragment.appendChild(warnTag);
+					document.querySelector('#warnDiv').appendChild(fragment);
+					return false;
+				}
+
+				//구메 결과창이 미노출 상태일 때
+				if(getComputedStyle(document.querySelector('#resultDiv')).getPropertyValue('display') == "none") {
+					//결과 창 노출
+					document.querySelector('#resultDiv').style.setProperty('display', 'block');
+				}
+
+				//구매 로직
+				User.prototype.cash -= beverageList[chooseNum].price;
+
+				//구매한 결과 출력
+				let purchaseResult = document.createTextNode(beverageList[chooseNum].purchaseLog());
+				let brTag = document.createElement("br"); 
+				let fragment = document.createDocumentFragment();
+				fragment.append(purchaseResult);
+				fragment.append(brTag);
 				
-				if(i >= 10) {    
-					document.write("<br>interval 정지");
-					clearInterval(inter);  
-				}  
-			}, 1000);
+				//구매한 음료 미노출처리
+				document.getElementById(chooseNum).style.setProperty('display', 'none');
+				//구매한 음료 구매여부 Y로 변경
+				beverageList[chooseNum].purchaseYn = "Y";
 
-			var timeout = setTimeout(function() {
-				document.write("<br>timeout 실행 ");
-			}, 3000);
+				if(User.prototype.cash <= 0) {
+					let gameEndText;
+					//잔액이 정확히 0원일때
+					if(User.prototype.cash == 0) {
+						//게임클리어 문구 노출
+						gameEndText = document.createTextNode("축하합니다! 게임을 클리어하셨습니다!!");
+					}
+					//잔액이 0원 밑으로 떨어졌을 때
+					else if(User.prototype.cash < 0) {
+						//게임오버 문구 노출
+						gameEndText = document.createTextNode("이런... 잔액을 초과해버렸습니다. 다시 시도해 보세요!");
+					}
+
+					fragment.append(gameEndText);
+					//인풋, 구매버튼 미노출
+					document.querySelector('#beverageInput').style.setProperty('display', 'none');
+					document.querySelector('#purchaseBtn').style.setProperty('display', 'none');					
+					//다시하기 버튼 노출
+					document.querySelector('#replayBtn').style.setProperty('display', 'block');
+				}
+				document.querySelector('#resultDiv').appendChild(fragment);
+			}
+
+			//다시하기
+			function replay() {
+				User.prototype.cash = 10000;  //유저 소지 금액 초기화
+
+				//음료 노출 여부 초기화, 구매 여부 초기화
+				for(var i=0 ; i<beverageList.length ; i++) {
+					beverageList[i].purchaseYn = "N";
+					if(getComputedStyle(document.getElementById(i)).getPropertyValue('display') == 'none') {
+						document.getElementById(i).style.setProperty('display', 'block');
+					}
+				}
+
+				//인풋, 구매버튼 노출
+				document.querySelector('#beverageInput').style.setProperty('display', 'block');
+				document.querySelector('#purchaseBtn').style.setProperty('display', 'block');					
+				//다시하기 버튼 미노출
+				document.querySelector('#replayBtn').style.setProperty('display', 'none');
+				//결과창 미노출 처리 및 내용물 비우기				
+				document.querySelector('#resultDiv').style.setProperty('display', 'none');
+				document.querySelector('#resultDiv').innerHTML = '';
+			}
 		</script>
 	</body>
 </html>
