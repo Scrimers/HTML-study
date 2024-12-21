@@ -748,7 +748,7 @@ const localJson = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "__proto__",
-        "explain" : "<mark class='gray'>생성자 호출을 통해 객체가 생성될 때 생성자의 prototype이 참조된 것<br>prototype을 참조하기 때문에 prototype과 __proto__는 같다.</mark><br>다음은 단순 참고사항이다.<br>constructor는 생성자 함수 그 자체를 가리킨다.<br>prototype은 생성자 함수에 정의한 모든 객체가 공유할 원형이다.<br>__proto__는 생성자 함수를 new로 호출할 때, 정의해두었던 prototype을 참조한 객체이다.<br>prototype은 생성자 함수에 사용자가 직접 넣는 거고, __proto__는 new를 호출할 때 prototype을 참조하여 자동으로 만들어진다.<br>생성자에는 prototype, 생성자로부터 만들어진 객체에는 __proto__ 이다.<br>따라서 사용자는 prototype만 신경쓰면 된다.<br> __proto__는 prototype이 제대로 구현되었는지 확인용으로 사용한다." ,
+        "explain" : "<mark class='gray'>생성자 호출을 통해 객체가 생성될 때 생성자의 prototype이 참조된 것.<br> 구현된 객체의 prototype을 확인할 때 사용한다.<br>prototype을 참조하기 때문에 prototype과 __proto__는 같다.</mark><br>다음은 단순 참고사항이다.<br>constructor는 생성자 함수 그 자체를 가리킨다.<br>prototype은 생성자 함수에 정의한 모든 객체가 공유할 원형이다.<br>__proto__는 생성자 함수를 new로 호출할 때, 정의해두었던 prototype을 참조한 객체이다.<br>prototype은 생성자 함수에 사용자가 직접 넣는 거고, __proto__는 new를 호출할 때 prototype을 참조하여 자동으로 만들어진다.<br>생성자에는 prototype, 생성자로부터 만들어진 객체에는 __proto__ 이다.<br>따라서 사용자는 prototype만 신경쓰면 된다.<br> __proto__는 prototype이 제대로 구현되었는지 확인용으로 사용한다." ,
         "howUse" : ''       
     },    
     {
@@ -775,7 +775,14 @@ const localJson = [
         "explain" : "자판기 게임을 만들어봤다." ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="azoJYxe" data-pen-title="자판기 게임" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/azoJYxe">    자판기 게임</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
-
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Object 객체",
+        "explain" : "<mark class='gray'></mark><br>" ,
+        "howUse" : ''       
+    },
 
 
 
