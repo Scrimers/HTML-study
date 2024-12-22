@@ -732,7 +732,7 @@ const localJson = [
         "reStudy" : "",
         "mainTitle" : "객체 지향 프로그래밍",
         "title" : "생성자 함수",
-        "explain" : "<mark class='gray'>객체를 생성하는 함수</mark>이다.<br>#다른 언어에서는 class가 있지만 Javascript에는 없다. 대신 생성자 함수가 그 역할을 한다.<br><mark class='gray'>생성자 함수를 만들기 = function 생성자명() {}<br>#생성자 함수 명은 대문자로 시작하게 만들어야 한다.</mark>(그냥 규칙이다.)<br><mark class='gray'>생성자 함수 호출 = new 생성자함수명(인자);<br>this = 생성자 함수 자기자신<br>this.속성으로 사용한다.<br>this에 저장된 것들은 new를 통해 객체를 만들 때 그 객체에 적용된다.</mark><br>#따로 변수를 선언하지 않고 this.asd 이렇게 해도 적용이 되는 걸까?" ,
+        "explain" : "<mark class='gray'>객체를 생성하는 함수</mark>이다.<br>#다른 언어에서는 class가 있지만 Javascript에는 없다. 대신 생성자 함수가 그 역할을 한다.<br><mark class='gray'>생성자 함수를 만들기 = function 생성자명() {}<br>#생성자 함수 명은 대문자로 시작하게 만들어야 한다.</mark>(그냥 규칙이다.)<br>※생성자 함수를 만드는 것이기에 당연히 <mark class='gray'>함수표현식으로도 만들 수 있다.<br> var 생성자명 = function() {}으로 만들면 된다.</mark><br><mark class='gray'>생성자 함수 호출 = new 생성자함수명(인자);<br>this = 생성자 함수 자기자신<br>this.속성으로 사용한다.<br>this에 저장된 것들은 new를 통해 객체를 만들 때 그 객체에 적용된다.</mark><br>#따로 변수를 선언하지 않고 this.asd 이렇게 해도 적용이 되는 걸까?" ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MYgpQOJ" data-pen-title="생성자 함수" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/MYgpQOJ">    생성자 함수</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
@@ -776,16 +776,117 @@ const localJson = [
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="azoJYxe" data-pen-title="자판기 게임" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/azoJYxe">    자판기 게임</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
-        "type" : "",
+        "type" : "groupStart",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "Object 객체",
-        "explain" : "<mark class='gray'></mark><br>" ,
+        "title" : "Object 객체란",
+        "explain" : "<mark class='gray'>Object는 모든 객체의 최종 prototype 이다.</mark>생성자를 생성 후 prototype을 추가한 뒤, 객체.__proto__를 하게 되면 추가한 prototype의 정보가 나오게 된다.<br>여기에서 만약 객체.__proto__.__proto__ 를 하게 된다면 Object가 나오게 된다.<br><mark class='gray'>즉, 생성자를 통해 만든 객체는 prototype의 prototype도 Object 객체이다.<br>Object 객체 자체의 prototype은 null이다.<br>이유는 위에서 언급했듯 Object는 모든 객체의 최종 prototype이기 떄문이다.<br>Object 객체의 생성자는 window객체에 저장되어 있다.<br>모든 객체가 Object 객체로부터 상속받기 떄문에 모든 객체는 Object 객체의 메소드들을 사용할 수 있다.</mark>" ,
         "howUse" : ''       
     },
-
-
-
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "객체.hasOwnProperty(속성명)",
+        "explain" : "<mark class='gray'>객체의 속성이 상속받지 않은 속성인지 알려준다.<br>자신의 속성이면 true, 부모의 속성이거나 아예 속성이 아니면 false를 반환한다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="pvzPrMM" data-pen-title="객체.hasOwnProperty(속성명)" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/pvzPrMM">    객체.hasOwnProperty(속성명)</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://public.codepenassets.com/embed/index.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "객체.isPrototypeOf(대상), 객체 instanceof 대상",
+        "explain" : "<mark class='gray'>객체.isPrototypeOf(대상) = 객체가 대상의 조상인지 확인 할 수 있다.<br>instanceof = 객체가 대상의 자식인지 확인 할 수 있다.</mark><br>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dPbWgqK" data-pen-title="객체.isPrototypeOf(대상)" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/dPbWgqK">    객체.isPrototypeOf(대상)</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://public.codepenassets.com/embed/index.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Object.getPrototypeOf(객체), Object.setPrototypeOf(객체, prototype)",
+        "explain" : "<mark class='gray'>Object.getPrototypeOf(객체) = 객체의 prototype을 조회한다.<br>Object.setPrototypeOf(객체, prototype) = 객체의 prototype을 설정한다.</mark><br>" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Object.create(prototype, 속성들)",
+        "explain" : "<mark class='gray'>객체를 생성하는 방법 중 하나이다.<br>속성은 writable, configurable, enumerable, get, set ,value의 옵션이 있다.</mark>" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Object.defineProperties(객체, 속성들), Object.defineProperty(객체, 속성, 설명)",
+        "explain" : "<mark class='gray'>객체의 속성을 자세하게 정의할 때 사용한다.<br>속성에 대한 설명은 다음과 같다.<br>writable = 속성값을 변경할 수 있는지 여부<br>※writable을 false로 해도, value가 객체인 경우에는 객체의 속성을 바꾸는 것을 막지 못한다.<br>enumerable = for ... in 반복문 안에서 사용할 수 있는지 여부<br>configurable = 속성의 설명을 바꿀 수 있는지 여부<br>※false인 경우 delete 동작도 불가능하다.※기본적으로 writable, enumerable, configurable은 false이다.<br>value = 속성의 값<br>get = 속성의 값을 가져올 때<br>set은 속성의 값을 설정할 때</mark>" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Object.freeze, Object.seal, Object.preventExtensions",
+        "explain" : "<mark class='gray'>Object.freeze = 객체 전체를 바꾸지 못하게 고정할 수 있다.<br>값도 못 바꿀뿐더러, 속성을 추가 또는 제거할 수도 없고, 속성의 설명을 바꿀 수도 없다.<br>※writable을 false로 해도, value가 객체인 경우에는 객체의 속성을 바꾸는 것을 막지 못하지만 Object.freeze를 쓰면 바꾸지 못하게 할 수 있다.<br>Object.seal = 속성의 추가, 제거를 막고, configurable을 false로 바꾼다.<br>대신 속성의 값은 writable이 true이기만 하면 바꿀 수 있다.<br>Object.preventExtensions = 속성의 추가만 막을 때 사용한다.<br>그 외의 속성 제거, 값 변경, 설정 변경은 가능하다.</mark>" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Object.isFrozen, Object.isSealed, Object.isExtensible",
+        "explain" : "<mark class='gray'>Object.isFrozen = 객체가 freeze 되었는지 여부<br>Object.isSealed = 객체가 sealed 되었는지 여부<br>Object.isExtensible = 객체가 preventExtension 되었는지 여부</mark>" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "객체.toString",
+        "explain" : "객체를 alert하거나 console.log할 때 원하는 결과는 안 나오고, [object Object] 이런 게 나올 때가 있다. 이는 내부적으로 toString 메소드가 호출된 결과이다.<br><mark class='gray'>객체.toString = 객체의 종류를 알려준다.<br>toString은 사용자가 임의로 바꿀수 있으며 일반적으로 문자열끼리 더할 때 사용된다.</mark>" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "객체.valueOf",
+        "explain" : "<mark class='gray'>객체.valueOf = 객체가 지닌 키와 값을 나타낸다.<br>toString과 마찬가지로 사용자가 임의로 변경이 가능하며, 일반적으로 숫자 계산을 할 때 사용한다.</mark><br>toString처럼 내부적으로 호출된다" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Object.getOwnPropertyDescriptor(객체, 속성)",
+        "explain" : "<mark class='gray'>속성의 설명 값을 불러올 때 사용한다.</mark><br>" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Object.keys",
+        "explain" : "<mark class='gray'>객체의 속성명 만을 모두 가져와 배열로 만든다.<br>enumerable이 false인 것은 빠진다.</mark>" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "typeof",
+        "explain" : "<mark class='gray'>변수에 할당된 값의 데이터 타입을 알고 싶을 떄 사용한다.<br>※배열과 null도 object로 표시되기 때문에 배열을 구분하려면 Array.isArray 메소드를 사용하고, null을 구분하려면 따로 처리해야한다.</mark>" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "delete",
+        "explain" : "<mark class='gray'>객체 내의 속성을 지울 수 있다.<br>성공하면 true를 실패하면 false를 반환한다. configurable이 false거나 freeze된 상태면 실패한다.</mark>" ,
+        "howUse" : ''       
+    },
 
 
 
